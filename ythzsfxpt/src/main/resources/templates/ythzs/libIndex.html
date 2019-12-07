@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>两人库首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/libIndex.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/layui/css/layui.css"  media="all">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/login.css">
+</head>
+<body>
+<div id="app">
+	<input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div class="m-canvas">
+        <!--三层背景部分-->
+        <div class="lib-bg">
+            <div class="lib-bg1"></div>
+            <div class="lib-bg2"></div>
+            <div class="lib-bg3"></div>
+        </div>
+        <!--中间主体内容-->
+        <div class="lib-content">
+            <div class="content-text label1">法人库</div>
+            <div class="content-text label2">人口库</div>
+            <div class="content-text label3">证照库</div>
+        </div>
+        <!--云彩-->
+        <div class="lib-cloud"></div>
+        <!--中间圆柱部分-->
+        <div class="lib-cylinder"></div>
+    </div>
+    <div id="main">
+        <div class="m-left-section">
+            <ul class="flex-list vert-list">
+                <li class="panel population-database" style="flex: 2;">
+                    <div class="panel-header">
+                        <span>人口库整体情况</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="pic-num-list">
+                            <li>
+                                <div class="pic-num-left icon1"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">济南市总人口总数</span>
+                                    <span class="num">723.31</span>&nbsp;&nbsp;万人
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="item-chart">
+                           <ul>
+                               <li>
+                                   <div class="item-title">户籍人口</div>
+                                   <div class="item-content" id="card-type1"></div>
+                                   <div class="item-num">62%</div>
+
+                               </li>
+                               <li>
+                                   <div class="item-title">流动人口</div>
+                                   <div class="item-content" id="card-type2"></div>
+                                   <div class="item-num">38%</div>
+                               </li>
+                           </ul>
+                        </div>
+                        <div class="rate-list">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <span class="num">1.67</span>%
+                                    </div>
+                                    <div class="rate-name">出生率</div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="num">0.98</span>%
+                                    </div>
+                                    <div class="rate-name">死亡率</div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <span class="num">0.69</span>%
+                                    </div>
+                                    <div class="rate-name">自然增长率</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel legal-database" style="flex: 3;">
+                    <div class="panel-header">
+                        <span>法人库整体情况</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="pic-num-list">
+                            <li>
+                                <div class="pic-num-left icon2"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">法人总数</span>
+                                    <span class="num">494280</span>&nbsp;&nbsp;人
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic-num-left icon2"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">个体工商户总量</span>
+                                    <span class="num">838065</span>&nbsp;&nbsp;个
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="chart-content" id="legal-type">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right-section">
+            <ul class="flex-list vert-list">
+                <li class="panel data-dire-list" style="flex: 2;">
+                    <div class="panel-header">
+                        <span>数据目录总数</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="num-list">
+                            <ul></ul>
+                        </div>
+                        <div class="icon-list">
+                            <ul>
+                                <li>
+                                    <div class="pic-icon icon1"></div>
+                                    <span>记录条数<br/><em class="shadow">5362</em>万条</span>
+                                </li>
+                                <li>
+                                    <div class="pic-icon icon2"></div>
+                                    <span>接口<br/><em class="shadow">15</em>个</span>
+                                </li>
+                                <li>
+                                    <div class="pic-icon icon3"></div>
+                                    <span>文件<br/><em class="shadow">492</em>个</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel data-unit-table" style="flex: 3;">
+                    <div class="panel-header">
+                        <span>数据提供单位数</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="data-unit-title">
+                            <span class="active">人口库</span>
+                            <span>法人库</span>
+                            <span>电子证照库</span>
+                        </div>
+                        <div class="data-unit-content">
+                            <div>
+                                <span><em class="num">5</em>个</span>
+                                <div class="data-unit-tit">
+                                    <table>
+                                        <tr>
+                                            <th width="35%">部门</th>
+                                            <th width="21%">目录数</th>
+                                            <th width="22%">接口数</th>
+                                            <th width="22%">文件数</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="data-unit-ul niceScroll">
+                                    <table>
+                                        <tr>
+                                            <td width="35%">人事部</td>
+                                            <td width="21%">6</td>
+                                            <td width="22%">2</td>
+                                            <td width="22%">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文化部</td>
+                                            <td>5</td>
+                                            <td>0</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>工商局</td>
+                                            <td>4</td>
+                                            <td>0</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>烟草局</td>
+                                            <td>9</td>
+                                            <td>0</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文物局</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>4</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="display: none">
+                                <span><em class="num">7</em>个</span>
+                                <div class="data-unit-tit">
+                                    <table>
+                                        <tr>
+                                            <th width="35%">部门</th>
+                                            <th width="21%">目录数</th>
+                                            <th width="22%">接口数</th>
+                                            <th width="22%">文件数</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="data-unit-ul niceScroll">
+                                    <table>
+                                        <tr>
+                                            <td width="35%">人事部</td>
+                                            <td width="21%">6</td>
+                                            <td width="22%">2</td>
+                                            <td width="22%">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文化部</td>
+                                            <td>5</td>
+                                            <td>0</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>工商局</td>
+                                            <td>4</td>
+                                            <td>0</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>烟草局</td>
+                                            <td>9</td>
+                                            <td>0</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文物局</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教育局</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>公安局</td>
+                                            <td>2</td>
+                                            <td>7</td>
+                                            <td>9</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div style="display: none">
+                                <span><em class="num">9</em>个</span>
+                                <div class="data-unit-tit">
+                                    <table>
+                                        <tr>
+                                            <th width="35%">部门</th>
+                                            <th width="21%">目录数</th>
+                                            <th width="22%">接口数</th>
+                                            <th width="22%">文件数</th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="data-unit-ul niceScroll">
+                                    <table>
+                                        <tr>
+                                            <td width="35%">人事部</td>
+                                            <td width="21%">6</td>
+                                            <td width="22%">2</td>
+                                            <td width="22%">12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文化部</td>
+                                            <td>5</td>
+                                            <td>0</td>
+                                            <td>20</td>
+                                        </tr>
+                                        <tr>
+                                            <td>工商局</td>
+                                            <td>4</td>
+                                            <td>0</td>
+                                            <td>16</td>
+                                        </tr>
+                                        <tr>
+                                            <td>烟草局</td>
+                                            <td>9</td>
+                                            <td>0</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>文物局</td>
+                                            <td>2</td>
+                                            <td>0</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>教育局</td>
+                                            <td>1</td>
+                                            <td>2</td>
+                                            <td>3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>公安局</td>
+                                            <td>2</td>
+                                            <td>7</td>
+                                            <td>9</td>
+                                        </tr>
+                                        <tr>
+                                            <td>发改委</td>
+                                            <td>7</td>
+                                            <td>8</td>
+                                            <td>4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>人社厅</td>
+                                            <td>8</td>
+                                            <td>9</td>
+                                            <td>1</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-bottom-section">
+            <ul class="flex-list hori-list">
+	        	<!-- 登记单位 -->
+                <li class="panel pic-panel">
+                    <div class="panel-header">
+                        <span>登记单位</span>
+                    </div>
+                    <div class="djdws-n-chart">
+                        <div id="djdws-real-time"></div>
+                    </div>
+                    <!-- <div class="panel-body">
+                        <ul class="pic-num-list">
+                            <li>
+                                <div class="pic-num-left icon2"></div>
+                                <div class="pic-num-right">
+                                    <div class="pic-num-right-txt">登记单位数</div>
+                                    <span id="djdws" class="num"></span>&nbsp;&nbsp;个
+                                </div>
+                            </li>
+                        </ul>
+                    </div> -->
+                </li>
+                <!-- 证照目录 -->
+                <li class="panel pic-panel">
+                    <div class="panel-header">
+                        <span>证照目录</span>
+                        <a href="#" class="dialog" data-target="zzml">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                    	<div class="zzml-num-list" >
+                            <ul id="zzmlzs"></ul>
+                        </div>
+                        <div class="zzmlzs-item-chart">
+                            <ul>
+                                <li>
+                                    <div class="item-title">证照</div>
+                                    <div class="item-content" id="pic-type1"></div>
+                                    <div id="zzmlzz" class="item-num"></div>
+                                </li>
+                                <li>
+                                    <div class="item-title">批文</div>
+                                    <div class="item-content" id="pic-type2"></div>
+                                    <div id="zzmlpw" class="item-num"></div>
+                                </li>
+                                <li>
+                                    <div class="item-title">材料</div>
+                                    <div class="item-content" id="pic-type3"></div>
+                                    <div id="zzmlcl" class="item-num"></div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </li>
+                <!-- 证照数据和未签章数据 -->
+                <li class="panel population-service" style="flex: 2;">
+                    <div class="panel-header">
+                        <span>证照数据与未签章数据</span>
+                        <a href="#" class="dialog" data-target="zztj">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>
+                                <div class="department">
+                                    <span class="department-name">证照数据</span>
+                                    <div class="sub-name">
+                                    	<span id="zpmValidNum"></span>
+                                    </div>
+                                </div>
+                                <div class="zzsj-check-num">
+                                   	 	证照
+                                    <span id="zValidNum" class="num"></span>
+                                </div>
+                                <div class="zzsj-check-num">
+                                    	批文
+                                    <span id="pValidNum" class="num"></span>
+                                </div>
+                                <div class="zzsj-check-num">
+                                    	材料
+                                    <span id="mValidNum" class="num"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="department">
+                                    <span class="department-name spec">未签章数据</span>
+                                    <div class="sub-name">
+                                    	<span id="zpmUnsignNum"></span>
+                                    </div>
+                                </div>
+                                <div class="zzsj-check-num">
+                                    	证照
+                                    <span id="zUnsignNum" class="num"></span>
+                                </div>
+                                <div class="zzsj-check-num">
+                                    	批文
+                                    <span id="pUnsignNum" class="num"></span>
+                                </div>
+                                <div class="zzsj-check-num">
+                                    	材料
+                                    <span id="mUnsignNum" class="num"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!-- 证照模版统计 -->
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>证照模版统计</span>
+                    </div>
+                    <div class="panel-body">
+                    	<div class="zzmbtjazttj" id="zzmbtjazttj"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login-cont">
+            <div class="login-title">用户登录</div>
+            <div class="login-input">
+                <div class="input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="请输入密码" id="password">
+                </div>
+            </div>
+            <div class="login-btn" id="loginbtn">登录</div>
+            <div class="login-close">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--页面点击更多，显示弹出框-->
+<div class="mask-panel">
+    <!--证照目录-->
+    <div class="box" data-target="zzml">
+        <div class="zzml-header"><span>按目录统计</span></div>
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="download-content">
+            <a href="#">
+                <i class="fa fa-download"></i>
+                下载
+            </a>
+        </div>
+        <div>
+            <table id="zzmlTable" lay-filter="zzmlTable"></table>
+        </div>
+    </div>
+    <!--证照数据与未签章数据-->
+	<div class="box" data-target="zztj">
+        <div class="zztj-header"><span>证照统计</span></div>
+	    <div class="close-btn">
+	        <i class="fa fa-close"></i>
+	    </div>
+	    <div class="download-content">
+	        <a href="${ctx.contextPath}/libIndexController/downloadExcel">
+	            <i class="fa fa-download"></i>
+	            下载
+	        </a>
+	    </div>
+	    <div>
+			<table id="zztjTable" lay-filter="zztjTable"></table>
+		</div>
+	</div>
+
+</div>
+
+</body>
+<script src="${ctx.contextPath}/static/libs/vue.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/layui/layui.all.js" charset="utf-8"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/js/libIndex/libIndex.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.vticker.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script>
+    // 登录操作
+    $("#loginbtn").click(function () {
+        var login = ctx + "/userlogin";
+        $.ajax({
+            type: "GET",
+            async: true,
+            url: login,
+            data: {
+                "account":$("#username").val(),
+                "pwd":$("#password").val(),
+                "appCode":"INSPUR-DZZW-YTHZS"
+            },
+            success: function (result) {
+                if (result.resultUser.state == 200) {
+                    array = result.resultUser.menus;
+                    // spjid = result.resultUser.user.ID;
+                    // console.log(array)
+                    // 把获取到的菜单放到session里面
+                    sessionStorage.setItem("array", JSON.stringify(array));
+                    sessionStorage.setItem("username",result.resultUser.user.NAME);
+                    sessionStorage.setItem("user",result.resultUser.user.ID);
+                    window.location.href = 'egovIndex.html';
+                }else if(result.resultUser.state == "3" || result.resultUser.state == "2" ){
+                    console.log(result.resultUser.error);
+                }else {
+                    console.log(result.resultUser.state)
+                }
+            },
+            error: function (errorMsg) {
+
+            }
+        });
+    })
+</script>
+</html>

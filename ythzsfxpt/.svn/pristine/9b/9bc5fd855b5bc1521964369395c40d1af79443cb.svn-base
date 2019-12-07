@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.ywtb.ywtbMapper" >
+
+
+    <!-- 一网通办的办结数量 -->
+    <select id="ywtbbj" resultType="java.lang.Integer">
+        SELECT count(*) as total from APPROVE_BUSINESS_INDEX WHERE state = '99' and REGION_CODE= '370100000000' and TO_CHAR(FINISH_TIME,'yyyy-mm-dd') = #{Cdate}
+    </select>
+
+</mapper>

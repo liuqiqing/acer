@@ -1,0 +1,168 @@
+package com.inspur.utils;
+import java.awt.Color;
+import java.lang.reflect.Method;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFCellStyle;
+import org.apache.poi.xssf.usermodel.XSSFClientAnchor;
+import org.apache.poi.xssf.usermodel.XSSFColor;
+import org.apache.poi.xssf.usermodel.XSSFDrawing;
+import org.apache.poi.xssf.usermodel.XSSFFont;
+import org.apache.poi.xssf.usermodel.XSSFRichTextString;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExportExcelUtil<T> 
+{
+	/** 
+     *  
+     * @param title 
+     *            表格标题名 
+     * @param headers 
+     *            表格属性列名数组 （第一行标题）
+     * @param Col 
+     *            需要显示的表格属性列名数组 如果是javabean 必须和字段名字一直 如果为Map 必须为Map的key名字对应
+     * @param list 
+     *            需要显示的数据集合,集合泛型支持两种，1：符合javabean风格的类的对象 2：Map类型。此方法支持的 
+     *            javabean属性的数据类型有基本数据类型及String,Date,byte[](图片数据) 
+     * @param pattern 
+     *            如果有时间数据，设定输出格式。默认为"yyy-MM-dd" 
+     */  
+    public XSSFWorkbook exportExcel(String title, String[] headers,String[] Col,List<Map<String, Object>> list, String pattern) {
+        if(pattern == null || pattern.equals("")) pattern = "yyy-MM-dd";
+        XSSFWorkbook workbook = new XSSFWorkbook();
+        // 生成一个表格
+        XSSFSheet sheet = workbook.createSheet(title);
+        // 设置表格默认列宽度
+        sheet.setDefaultColumnWidth(30);
+        // 生成一个样式
+        XSSFCellStyle style = workbook.createCellStyle();
+        // 设置这些样式
+        style.setFillForegroundColor(new XSSFColor(Color.BLUE));
+        style.setFillPattern(XSSFCellStyle.SOLID_FOREGROUND);
+        style.setBorderBottom(XSSFCellStyle.BORDER_THIN);
+        style.setBorderLeft(XSSFCellStyle.BORDER_THIN);
+        style.setBorderRight(XSSFCellStyle.BORDER_THIN);
+        style.setBorderTop(XSSFCellStyle.BORDER_THIN);
+        style.setAlignment(XSSFCellStyle.ALIGN_CENTER);
+        // 生成一个字体
+        XSSFFont font = workbook.createFont();
+        font.setColor(new XSSFColor(Color.YELLOW));
+        font.setFontHeightInPoints((short) 12);
+        font.setBoldweight(XSSFFont.BOLDWEIGHT_BOLD);
+        // 把字体应用到当前的样式
+        style.setFont(font);
+        // 生成并设置另一个样式
+        XSSFCellStyle style2 = workbook.createCellStyle();
+        style2.setFillForegroundColor(new XSSFColor(Color.WHITE));
+        style2.setFillPattern(XSSFCellStyle.SOLID_FOREGROUND);
+        style2.setBorderBottom(XSSFCellStyle.BORDER_THIN);
+        style2.setBorderLeft(XSSFCellStyle.BORDER_THIN);
+        style2.setBorderRight(XSSFCellStyle.BORDER_THIN);
+        style2.setBorderTop(XSSFCellStyle.BORDER_THIN);
+        style2.setAlignment(XSSFCellStyle.ALIGN_CENTER);
+        style2.setVerticalAlignment(XSSFCellStyle.VERTICAL_CENTER);
+        // 生成另一个字体
+        XSSFFont font2 = workbook.createFont();
+        font2.setBoldweight(XSSFFont.BOLDWEIGHT_NORMAL);
+        // 把字体应用到当前的样式
+        style2.setFont(font2);
+        // 声明一个画图的顶级管理器
+        XSSFDrawing patriarch = sheet.createDrawingPatriarch();
+        // 产生表格标题行
+        XSSFRow row = sheet.createRow(0);
+        int Cell = 0;
+
+        for (short i = 0; i < headers.length; i++) {
+            XSSFCell cell = row.createCell(Cell);
+            cell.setCellStyle(style);
+            XSSFRichTextString text = new XSSFRichTextString(headers[i]);
+            cell.setCellValue(text);
+            Cell ++ ;
+        }
+        // 遍历集合数据，产生数据行
+        Iterator<T> it = (Iterator<T>) list.iterator();
+        int index = 0;
+        while (it.hasNext()) {
+            index++;
+            row = sheet.createRow(index);
+            T t = (T) it.next();
+            String[] fields = Col;
+            Cell = 0;
+            for (short i = 0; i < fields.length; i++) {
+                String fieldName = fields[i];
+                XSSFCell cell = row.createCell(Cell);
+                cell.setCellStyle(style2);
+                try {
+                    Object value = "";
+                    Class tCls = null;
+                    Map map = null;
+                    if(t instanceof Map){
+                        map = (Map)t;
+                        value = map.get(fieldName);
+                    } else {
+                        String getMethodName = "get"
+                                + fieldName.substring(0, 1).toUpperCase()
+                                + fieldName.substring(1);
+                        tCls = t.getClass();
+                        Method getMethod = tCls.getMethod(getMethodName,new Class[] {});
+                        value = getMethod.invoke(t, new Object[] {});
+                    }
+                    if(value == null ) value = "";
+                    // 判断值的类型后进行强制类型转换
+                    String textValue = null;
+                    if (value instanceof Date) {
+                        Date date = (Date) value;
+                        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+                        textValue = sdf.format(date);
+                    } else if (value instanceof byte[]) {
+                        // 有图片时，设置行高为60px;
+                        row.setHeightInPoints(60);
+                        // 设置图片所在列宽度为80px,注意这里单位的一个换算
+                        sheet.setColumnWidth(Cell, (short) (35.7 * 80));
+                        // sheet.autoSizeColumn(i);
+                        byte[] bsValue = (byte[]) value;
+                        XSSFClientAnchor anchor = new XSSFClientAnchor(0, 0,
+                                1023, 255, (short) 6, index, (short) 6, index);
+                        anchor.setAnchorType(2);
+                        patriarch.createPicture(anchor, workbook.addPicture(
+                                bsValue, XSSFWorkbook.PICTURE_TYPE_JPEG));
+                    } else {
+                        // 其它数据类型都当作字符串简单处理
+                        textValue = value.toString();
+                    }
+                    // 如果不是图片数据，就利用正则表达式判断textValue是否全部由数字组成
+                    if (textValue != null) {
+                        Pattern p = Pattern.compile("^//d+(//.//d+)?$");
+                        Matcher matcher = p.matcher(textValue);
+                        if (matcher.matches()) {
+                            // 是数字当作double处理
+                            cell.setCellValue(Double.parseDouble(textValue));
+                        } else {
+                            XSSFRichTextString richString = new XSSFRichTextString(
+                                    textValue);
+                            XSSFFont font3 = workbook.createFont();
+                            font3.setColor(new XSSFColor(Color.BLUE));
+                            richString.applyFont(font3);
+                            cell.setCellValue(richString);
+                        }
+                    }
+                    Cell ++ ;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return workbook;
+    }
+}

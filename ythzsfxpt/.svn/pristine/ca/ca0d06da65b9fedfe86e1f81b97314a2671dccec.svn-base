@@ -1,0 +1,517 @@
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@225f656c'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@7e152f6'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@5a345964'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@4c8ed1d9'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@28474d32'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@619e05c4'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@71ba27fd'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/tysl/tyslMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@7cc20e3d'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzzz/dzzzMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@3fec0a98'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\gdp\gdpMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@ebce2c'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/gop/gopMapper.xml]'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 167 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping - Detected 0 mappings in 'beanNameHandlerMapping'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates]] resolved to file path [C:\Users\11044\IdeaProjects\tjfx\target\classes\templates]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@682f3a4d'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@48e4bfc4'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@968680b'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@738c2a8d'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@56f5c1a9'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@3d785391'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@ac59ca'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/tysl/tyslMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@5d4b0d26'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzzz/dzzzMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@77abc767'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\gdp\gdpMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@2ae88811'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/gop/gopMapper.xml]'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 167 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping - Detected 0 mappings in 'beanNameHandlerMapping'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates]] resolved to file path [C:\Users\11044\IdeaProjects\tjfx\target\classes\templates]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@a59f38b'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@6159ff44'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@67725e15'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@47e4d23f'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@5dd9a930'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@47e586f9'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@6f141eab'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/tysl/tyslMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@3c1b28cf'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzzz/dzzzMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@6d3871ba'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\gdp\gdpMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@65634f86'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/gop/gopMapper.xml]'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 167 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping - Detected 0 mappings in 'beanNameHandlerMapping'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates]] resolved to file path [C:\Users\11044\IdeaProjects\tjfx\target\classes\templates]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8dec9c]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c8c23cb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@812753764 wrapping oracle.jdbc.driver.T4CConnection@7e65574a] will be managed by Spring
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1096482192 wrapping oracle.jdbc.driver.T4CConnection@2f5ba00c] will be managed by Spring
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-06(String)
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c8c23cb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c8c23cb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c8c23cb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8dec9c]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c8c23cb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8dec9c]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8dec9c]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d8dec9c]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776ae4eb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@de77c79]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1693084957 wrapping oracle.jdbc.driver.T4CConnection@2f5ba00c] will be managed by Spring
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-06(String)
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776ae4eb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776ae4eb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776ae4eb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@776ae4eb]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@543811160 wrapping oracle.jdbc.driver.T4CConnection@7e65574a] will be managed by Spring
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@de77c79]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@de77c79]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@de77c79]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@de77c79]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@5dbf042c'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@77f6aea5'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@4cb7eb59'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@10afd712'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@2c8da55e'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@640c91ba'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:23:29 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@1a6e4571'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@79388797'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@6da13a19'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@7db1891a'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@1ae23293'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@8dbeadf'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@6f695ada'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@761734ff'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/tysl/tyslMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@56a5343d'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzzz/dzzzMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@52e33400'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\gdp\gdpMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@3e221f64'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/gop/gopMapper.xml]'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 167 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping - Detected 0 mappings in 'beanNameHandlerMapping'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates]] resolved to file path [C:\Users\11044\IdeaProjects\tjfx\target\classes\templates]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@411bbad]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6243270a]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1891619509 wrapping oracle.jdbc.driver.T4CConnection@62b5e55e] will be managed by Spring
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-06(String)
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1965767433 wrapping oracle.jdbc.driver.T4CConnection@4d43849] will be managed by Spring
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@411bbad]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@411bbad]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@411bbad]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@411bbad]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6243270a]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6243270a]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6243270a]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6243270a]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb07212]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c813a89]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1179104437 wrapping oracle.jdbc.driver.T4CConnection@95cfee6] will be managed by Spring
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c813a89]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c813a89]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c813a89]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c813a89]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@908564487 wrapping oracle.jdbc.driver.T4CConnection@289108a7] will be managed by Spring
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-06(String)
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb07212]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb07212]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb07212]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bb07212]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}

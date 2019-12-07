@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="static/libs/normalize.css">
+    <link rel="stylesheet" href="static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/libLicense.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/login.css">
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="pos-a left-0 top-0 w-6 h-12 aside-left">
+            <ul class="flex-list vert-list">
+                <li class="panel economy-panel">
+                    <div class="panel-header blue">
+                        <span>证照颁发情况</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-head">
+                            <div class="head-part area">市直占比：</div>
+                            <div class="head-part num"><em class="num-thin" id="szzb"></em></div>
+
+                            <div class="head-part area"> 区县占比：</div>
+                            <div class="head-part num"><em class="num-thin" id="qxzb"></em></div>
+                        </div>
+                        <!-- 证照颁发情况柱形图 -->
+                        <div class="chart" id="zzbfqkzxt">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="panel gov-panel">
+                    <div class="panel-header yellow">
+                        <span>证照情况</span>
+                    </div>
+                    <div class="panel-body panel-padding">
+                        <ul class="flex-list hori-list">
+                            <li>
+                                <div class="gov-list">
+                                    <ul>
+                                        <li class="gradient-item">
+                                            <span>颁发单位总数</span>
+                                            <em class="num-thin" id="bfdwzs"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>个人证照总数</span>
+                                            <em class="num-thin" id="grzzzs"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>教师资格证</span>
+                                            <em class="num-thin" id="jszgz"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>旅行社经营许可</span>
+                                            <em class="num-thin" id="lxsjyxk"></em>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="gov-list">
+                                    <ul>
+                                        <li class="gradient-item">
+                                            <span>证照类型总数</span>
+                                            <em class="num-thin" id="zzlxzs"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>法人证照总数</span>
+                                            <em class="num-thin" id="frzzsl"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>残疾人证</span>
+                                            <em class="num-thin" id="cjrzs"></em>
+                                        </li>
+                                        <li class="gradient-item">
+                                            <span>法人证书</span>
+                                            <em class="num-thin" id="sydwfrzs"></em>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel travel-panel">
+                    <div class="panel-header green">
+                        <span>证照状态</span>
+                    </div>
+                    <div class="panel-body" id="zzztPie">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pos-a right-0 top-0 w-6 h-12 aside-right">
+            <ul class="flex-list vert-list">
+                <li class="panel operate-panel">
+                    <div class="panel-header blue">
+                        <span>济南市电子证照颁发总数</span>
+                    </div>
+                    <div class="panel-body panel-padding">
+                        <div class="dzzzbfzs-chart">
+                            <div id="dzzzbfzs-real-time"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel table-panel">
+                    <div class="panel-header blue">
+                        <span>市区证照情况</span>
+                    </div>
+                    <div class="panel-body panel-padding" id="dlysjyxkqk">
+
+                    </div>
+                </li>
+                <li class="panel operate-panel">
+                    <div class="panel-header blue">
+                        <span>部门证照数量</span>
+                    </div>
+                    <div class="panel-body panel-padding" id="bmzzsl">
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pos-a left-6 top-0 w-12 h-12 center-section">
+            <ul class="flex-list vert-list">
+                <li class="panel panel-hori">
+                    <div class="panel-header map">
+                        <!--<span>综合调度指挥中心</span>-->
+                    </div>
+                    <div class="panel-body">
+                        <div class="center-content">
+                            <div class="center-one-body nodisplay" style="background: red;"></div>
+                            <div class="center-two-body">
+                                <div class="center-map-bg"></div>
+                                <div class="center-map" id="center-map"></div>
+                            </div>
+                            <div class="center-three-body nodisplay" style="background: yellow;"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="index-bottom">
+                    <ul class="flex-list hori-list">
+                        <li class="panel service-panel">
+                            <div class="panel-header blue">
+                                <span>建设工程规划许可证情况</span>
+                            </div>
+                            <div class="panel-body" id="jsgcghxkzqk" style="width: 430px"></div>
+                        </li>
+                        <li class="panel">
+                            <div class="panel-header green">
+                                <span>济南市营业执照</span>
+                            </div>
+                            <div class="panel-body" id="qygrgsyyzz"></div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script src="static/libs/jquery.min.js"></script>
+<script src="static/libs/jquery.nicescroll.min.js"></script>
+<script src="static/libs/echarts.min.js"></script>
+<script src="static/libs/echarts-gl.min.js"></script>
+<script src="static/libs/echarts-wordcloud.js"></script>
+<script src="static/libs/echarts-liquidfill.js"></script>
+<script src="static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="static/js/theme.js"></script>
+<script src="static/js/jinan.js"></script>
+<script src="static/js/globleset.js"></script>
+<script src="static/js/libIndex/libLicense.js"></script>
+</html>

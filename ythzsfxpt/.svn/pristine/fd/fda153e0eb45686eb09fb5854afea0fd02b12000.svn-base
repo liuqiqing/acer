@@ -1,0 +1,20 @@
+package com.inspur.service;
+
+import java.util.List;
+import java.util.Map;
+
+public interface TyslService {
+    int getSum();
+
+    // 获取每天的一窗收件数量
+    List<Map<String, Object>> getycsjsl(String Cdate);
+
+    // 获取一窗收件变化趋势
+    public List<Map<String, Object>> getycsjqs();
+
+    // 获取一窗收件列表信息
+    public List<Map<String, Object>>  getycsjlb(String Cdate,int page);
+
+    // // 下载一窗事项列表
+    List<Map<String, Object>> downloadsxlb(String Cdate);
+}

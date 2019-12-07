@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="static/libs/normalize.css">
+    <link rel="stylesheet" href="static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/cityLevel.css">
+    <link rel="stylesheet" href="static/libs/jquery-datatables/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name"></span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-right-section">
+            <div class="four-checkbox" id="four-checkbox">
+                <!--checkbox按钮-->
+                <table class="checkTable">
+                    <tr>
+                        <td><input type="checkbox" value="1" checked><span>全程网办</span></td>
+                        <td><input type="checkbox" value="2" checked><span>在线预审</span></td>
+
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" value="3"><span>事项公开</span></td>
+                        <td><input type="checkbox" value="4" checked><span>在线申办</span></td>
+                        <td><input id="btn-input" class="btn-input" type="button" value="查询"
+                                   onclick="queryByConductDepth()"></td>
+                    </tr>
+                </table>
+                <div class="download-content">
+                    <a href="#" onclick="cityLevelDownload()">
+                        <i class="fa fa-download"></i>
+                        下载
+                    </a>
+                </div>
+            </div>
+            <div class="table-content">
+                <!-- 市本级事项情况分类数据表格 -->
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th colspan="3">分类</th>
+                        <th>依申请公开事项</th>
+                        <th id="conductDepthName">网办深度</th>
+                        <th>各分类网办率</th>
+                        <th>整体网办率</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="3">市本级事项情况</td>
+                        <td id="YSQGKSX"></td>
+                        <td id="YSQGKKWSBL"></td>
+                        <td id="SBJFLWBL"></td>
+                        <td id="SBJZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="9">事项性质</td>
+                        <td colspan="2">行政许可</td>
+                        <td id="XK"></td>
+                        <td id="XK_KWSBL"></td>
+                        <td id="XK_FLWBL"></td>
+                        <td id="XK_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政确认</td>
+                        <td id="QR"></td>
+                        <td id="QR_KWSBL"></td>
+                        <td id="QR_FLWBL"></td>
+                        <td id="QR_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">公共服务</td>
+                        <td id="GG"></td>
+                        <td id="GG_KWSBL"></td>
+                        <td id="GG_FLWBL"></td>
+                        <td id="GG_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政征收</td>
+                        <td id="ZS"></td>
+                        <td id="ZS_KWSBL"></td>
+                        <td id="ZS_FLWBL"></td>
+                        <td id="ZS_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政给付</td>
+                        <td id="JF"></td>
+                        <td id="JF_KWSBL"></td>
+                        <td id="JF_FLWBL"></td>
+                        <td id="JF_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政监督</td>
+                        <td id="JD"></td>
+                        <td id="JD_KWSBL"></td>
+                        <td id="JD_FLWBL"></td>
+                        <td id="JD_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政奖励</td>
+                        <td id="JL"></td>
+                        <td id="JL_KWSBL"></td>
+                        <td id="JL_FLWBL"></td>
+                        <td id="JL_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">行政裁决</td>
+                        <td id="CJ"></td>
+                        <td id="CJ_KWSBL"></td>
+                        <td id="CJ_FLWBL"></td>
+                        <td id="CJ_ZTWBL"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">其他权力</td>
+                        <td id="QT"></td>
+                        <td id="QT_KWSBL"></td>
+                        <td id="QT_FLWBL"></td>
+                        <td id="QT_ZTWBL"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div class="m-left-section">
+            <div class="info-section">
+                <span class="chart-name-all">济南市审批办件类型</span>
+                <div class="chart-content" id="chart1">
+                </div>
+            </div>
+            <div class="info-section r-40">
+                <span class="chart-name-all">济南市事项总数</span>
+                <!--<a href="#" class="dialog" data-target="sxzlbox">更多+</a>-->
+                <!--更多表格里的下载功能-->
+                <div class="chart2-num-list">
+                    <ul id="chart2-num-ul"></ul>
+                </div>
+                <div class="chart2-item-chart">
+                    <div class="card">
+                        <span>可网上办理事项</span><i id="xsblsx">0%</i>
+                    </div>
+                    <div id="card-type1"></div>
+
+                    <div class="card">
+                        <span>不可网上办理事项</span><i id="xxblsx">0%</i>
+                    </div>
+                    <div id="card-type2"></div>
+
+                    <!--<div class="card" >
+                        <span>线上线下皆可办理事项</span><i id="xsxxblsx">0%</i>
+                    </div>
+                    <div id="card-type3"></div>-->
+                </div>
+
+            </div>
+            <div class="info-section top-60">
+                <span class="chart-name-all">济南市事项性质</span>
+                <div class="chart-content" id="chart3">
+
+                </div>
+            </div>
+            <div class="info-section r-40 top-60">
+                <span class="chart-name-all">济南市部门受理办结排名</span>
+                <span name="acceptOption" class="depart-ranking-title active">受理</span>
+                <span name="handleOption" class="depart-ranking-title">办结</span>
+                <div class="chart-content" id="chart4">
+                </div>
+            </div>
+        </div>
+        <div class="m-bottom-section">
+            <div class="info-section chart5 chart6">
+                <div class="panel-header" id="ywblbhqs">
+                    <span class="chart-name-all">业务办理变化趋势</span>
+                    <ul>
+                        <li data-target="day" class="active">当日</li>
+                        <li data-target="month">当月</li>
+                        <li data-target="year" class="">当年</li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li>
+                            <div class="total-info">
+                                <div class="title">
+                                    <span>线上受理<em class="num" id="xsslzs">0</em>次</span>
+                                    <span>线上办结<em class="num" id="xsbjzs">0</em>次</span>
+                                </div>
+                                <div class="profession-chart" id="ywblbhqs-pro1"></div>
+                            </div>
+
+                            <div class="total-info">
+                                <div class="title">
+                                    <span>线下受理<em class="num" id="xxslzs">0</em>次</span>
+                                    <span>线下办结<em class="num" id="xxbjzs">0</em>次</span>
+                                </div>
+                                <div class="profession-chart" id="ywblbhqs-pro2"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="word-cloud-charts">
+                <div class="panel-header">
+                    <span class="chart-name-all">济南市事项前十名</span>
+                    <a name="toptentab" id="toptensl" class="depart-ranking-title active">受理</a>
+                    <a name="toptentab" id="toptenbj" class="depart-ranking-title">办结</a>
+                </div>
+                <div class="panel-body">
+                    <div class="topChart" id="top-ten">
+                    </div>
+                </div>
+            </div>
+            <div class="jnssxxzflbt">
+                <div class="panel-header">
+                    <span class="chart-name-all">济南市事项性质分类</span>
+                </div>
+                <div class="panel-body">
+                    <div class="jnssxxzflbtChart" id="jnssxxzflbt">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/vue.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-wordcloud.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/egovIndex/cityLevel.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery-datatables/jquery.dataTables.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/vue.min.js"></script>
+
+</html>

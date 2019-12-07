@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>一窗收件-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="static/libs/normalize.css">
+    <link rel="stylesheet" href="static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/ycResource.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/login.css">
+    <style>
+        .sjqk {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 35px
+        }
+
+        .panel-header ul li {
+            margin-left: 36px;
+            color: #ffffff;
+            font-size: 12px;
+            border: 1px solid #ffffff;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 4px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        ul li.active {
+            color: #0cdeff;
+            border: 1px solid #0cdeff;
+            height: 20px;
+            line-height: 20px;
+            padding: 0 4px;
+            border-radius: 4px;
+        }
+
+        .pjfx {
+            color: #ffffff;
+            height: 100px;
+            padding: 10px;
+            font-size: 15px;
+            display: flex;
+            flex-direction: row
+        }
+
+        .file {
+            background: url("static/img/shareIndex/file.png") center no-repeat;
+            width: 94px;
+            height: 72px;
+            margin-bottom: 20px;
+        }
+
+        .myd-pj {
+            height: 34px;
+            line-height: 34px;
+            font-size: 16px;
+            text-align: center;
+            border-bottom: 1px #00c6ff solid;
+            border-top: 1px #00c6ff solid;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div id="main" style="display: flex;flex-direction: row;flex-wrap: wrap;    margin: 20px">
+
+        <div class="m-left-section" style="height: 63%">
+            <!-- chart2 数据:资源类型统计 -->
+            <div class="info-section r-40" style="width: 97.7%;height: 300px;">
+                <ul class="flex-list vert-list">
+                    <li class="panel">
+                        <div class="panel-header">
+                            <span>当天一窗收件情况</span>
+                        </div>
+                        <div class="panel-body n-exchange">
+                            <ul style="display: flex; flex-direction: row; flex-wrap:wrap;">
+                                <li style="margin-left: 35px">
+                                    <div class="exchange"></div>
+                                    <div class="white">收件总数量</div>
+                                    <div class="amount"><span class="num" id="total_count"></span></div>
+                                </li>
+                                <li style="margin-left: 35px">
+                                    <div class="exchange"></div>
+                                    <div class="white">省收件数</div>
+                                    <div class="amount"><span class="num" id="sum_success_times"></span></div>
+                                </li>
+                                <li style="margin-left: 35px">
+                                    <div class="exchange"></div>
+                                    <div class="white">市收件数</div>
+                                    <div class="amount"><span class="num" id="sum_failed_times"></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="panel" style="margin-top: -20px">
+                        <div class="panel-header">
+                            <span>窗口统计情况</span>
+                        </div>
+                        <div class="panel-body n-exchange">
+                            <ul style="display: flex; flex-direction: row; flex-wrap:wrap;">
+                                <a href="#" style="width:248px;">
+                                    <li style="margin-left: 35px" class="cksum">
+                                        <div class="exchange"></div>
+                                        <div style="display: flex;flex-direction: column">
+                                            <div class="white">窗口总数量</div>
+                                            <div class="amount"><span class="num" id="cksum">122</span></div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#" onclick="getzbcksl(1)" style="width:248px;margin-left: 35px" class="dialog"
+                                   data-target="xyResourcebox">
+                                    <li style="margin-left: 35px" class="zbcks">
+                                        <div class="exchange"></div>
+                                        <div style="display: flex;flex-direction: column">
+                                            <div class="white">在办窗口数</div>
+                                            <div class="amount"><span class="num" id="zbcks">92</span></div>
+                                        </div>
+                                    </li>
+                                </a>
+                                <a href="#" onclick="getzbcksl(2)" style="width:248px;margin-left: 35px" class="dialog"
+                                   data-target="xyResourcebox">
+                                    <li style="margin-left: 35px">
+                                        <div class="exchange"></div>
+                                        <div style="display: flex;flex-direction: column">
+                                            <div class="white">空闲窗口数</div>
+                                            <div class="amount"><span class="num" id="kxcks">30</span></div>
+                                        </div>
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- chart3: 一窗收件每周变化趋势 -->
+            <div class="info-section top-60" id="chart3-info-div" style="height: 300px">
+                <li class="panel" style="height: 0px">
+                    <div class="panel-header">
+                        <span>一窗收件每周变化趋势</span>
+                    </div>
+                </li>
+                <div class="chart-content" id="chart3" style="height: 240px;margin-left: 10px"></div>
+            </div>
+        </div>
+        <div class="m-right-section" style="height: 63%">
+            <div class="table-content">
+                <div class="panel-header1">
+                    <div class="titlespan"><span>一窗系统收件事项排名：</span></div>
+                    <div class="download-content">
+                        <a href="#" class="download_a" onclick="qxZyQkDownload()">
+                            <i class="fa fa-download"></i> 下载
+                        </a>
+                    </div>
+
+                </div>
+                <!--  区县资源情况 -->
+                <table class="table" id="qxzyqkTable" style="width: 880px">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>事项名称</th>
+                        <th>
+                            <div class="order-btn">事项类型</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件区域</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">办理状态</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件时间</div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="body-lb">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="m-bottom-section" style="display: flex;flex-direction: row">
+            <!--chart5: 部门办件情况-->
+            <div class="info-section">
+                <div class="panel-header" id="bmbjqk" style="display: flex;flex-direction: row">
+                    <span style="color: #ffffff;font-size: 17px;border-bottom: 4px solid #0198df">各部门办件情况</span>
+                    <ul style="display: flex;flex-direction: row;margin-left:50px;">
+                        <li data-target="day" class="active">当日</li>
+                        <li data-target="month" class="">当月</li>
+                        <li data-target="year" class="">当年</li>
+                    </ul>
+                    <a href="#" class="dialog" data-target="cityzyProvidebox" style=" margin-left: 70px;color: #0198df">更多+</a>
+                </div>
+                <div class="chart-content" id="chart5" style="height: 230px;width: 480px"></div>
+            </div>
+            <!-- chart6:窗口人员办件情况 -->
+            <div class="info-section">
+                <div class="panel-header" id="ckbjqk" style="display: flex;flex-direction: row">
+                    <span style="color: #ffffff;font-size: 17px;border-bottom: 4px solid #0198df">各窗口人员办件情况</span>
+                    <ul style="display: flex;flex-direction: row;margin-left:50px;">
+                        <li data-target="day" class="active">当日</li>
+                        <li data-target="month" class="">当月</li>
+                        <li data-target="year" class="">当年</li>
+                    </ul>
+                    <a href="#" class="dialog" data-target="shqcityzybox"
+                       style=" margin-left:215px;color: #0198df">更多+</a>
+                </div>
+                <div class="chart-content" id="chart6" style="height: 230px;width:640px"></div>
+            </div>
+            <!-- chart7:评价排队情况-->
+            <div class="info-section">
+                <div class="panel-header" id="pjbjqk" style="display: flex;flex-direction: row">
+                    <span style="color: #ffffff;font-size: 17px;border-bottom: 4px solid #0198df">满意度评价</span>
+                    <a href="#" class="dialog" data-target="shqshejzybox"
+                       style=" margin-left: 410px;color: #0198df">更多+</a>
+                </div>
+                <div class="chart-content" style="height: 230px;width: 560px;display: flex;flex-direction: row">
+                    <div>
+                        <div class="pjfx">
+                            <div class="file"></div>
+                            <div style="display: flex;flex-direction: column">
+                                <div class="white" style="font-size: 16px">整体满意度</div>
+                                <div class="myd-pj"><span class="num" id="ztmyd">0</span></div>
+                            </div>
+                        </div>
+                        <div class="pjfx">
+                            <div class="file"></div>
+                            <div id="myd-ts" style="display: flex;flex-direction: column">
+                                <div class="white" style="font-size: 16px">相比上月提升</div>
+                                <div class="myd-pj"><span class="num">0</span></div>
+                            </div>
+                            <div id="myd-xj" style="display: flex;flex-direction: column;display: none">
+                                <div class="white" style="font-size: 16px">相比上月下降</div>
+                                <div class="myd-pj"><span class="num" style="color: red">0</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chart7" style="color: #ffffff;width: 350px;height: 230px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--  弹出框:开始  -->
+        <!-- 满意度评价：弹出框 -->
+        <div class="mask-panel">
+            <div class="box shqshejzybox" data-target="shqshejzybox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>满意度评价详细情况：</span>
+                        <div class="download-content">
+                            <!--                            <a href="#" class="download_a" onclick="shQShjZyDownload()">-->
+                            <!--                                <i class="fa fa-download"></i> 下载-->
+                            <!--                            </a>-->
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div style="display: flex;flex-direction: row">
+                            <div id="chart8" style="padding: 10px;width: 520px;height: 320px">短信评价</div>
+                            <div id="chart9" style="padding: 10px;width: 520px;height: 320px">网上评价</div>
+                        </div>
+
+                        <!--                        <div>部门满意度评价</div>-->
+                    </div>
+                </div>
+            </div>
+            <!--各窗口人员办件情况:弹出框  -->
+            <div class="box shqcityzybox" data-target="shqcityzybox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>各窗口人员办件情况：</span>
+                        <div class="download-content">
+                            <!--                            <a href="#" class="download_a" onclick="shqCityzyDownload()">-->
+                            <!--                                <i class="fa fa-download"></i> 下载-->
+                            <!--                            </a>-->
+                        </div>
+                    </div>
+
+                    <div class="panel-header1" id="shqcityzy_propTab">
+                         <ul>
+                             <li data-target="dt" class="active">当天</li>
+                             <li data-target="dy">当月</li>
+                             <li data-target="dn">当年</li>
+                         </ul>
+                    </div>
+                    <div class="panel-body">
+                        <table id="shqcityResourceProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th id="bmCsss">窗口人员</th>
+                                <th>办件数量</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+<!--                        <table id="shqcityResourceProp" lay-filter="shqcityResourceProp"></table>-->
+                    </div>
+                </div>
+            </div>
+            <!--各部门办件情况:弹出框  -->
+            <div class="box cityzyProvidebox" data-target="cityzyProvidebox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>各部门办件情况：</span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="cityzyProvideDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+                    <div class="panel-header1" id="cityzyProvide_propTab">
+                        <ul>
+                            <li data-target="dt" class="active">当天</li>
+                            <li data-target="dy">当月</li>
+                            <li data-target="dn">当年</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <table id="cityzyProvideProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th id="bmCss">部门名称</th>
+                                <th>办件数量</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--空闲窗口数量:弹出框  -->
+            <div class="box xyResourcebox" data-target="xyResourcebox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span id="cksl"></span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="xyResourceDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="panel-header1" id="xyResource_propTab">
+                    </div>
+                    <div class="panel-body">
+                        <table id="xyResourceProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="width:40%;">窗口名称</th>
+                                <th id="thName">库表数（张）</th>
+                                <th id="shjLNum">数据量(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <table id="xyResourceTotalProp" style="display:none;">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="width:40%;">部门名称</th>
+                                <th></th>
+                                <th>库表（张）</th>
+                                <th>接口（个）</th>
+                                <th>文件（类）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  弹出框:结束  -->
+</div>
+
+</body>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/layui/layui.all.js" charset="utf-8"></script>
+<script src="static/libs/echarts.min.js"></script>
+<script src="static/libs/echarts-wordcloud.js"></script>
+<script src="static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="static/js/ycResource.js"></script>
+</html>

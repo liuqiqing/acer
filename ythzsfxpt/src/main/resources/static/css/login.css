@@ -1,0 +1,85 @@
+.login-box {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+  color: #ffffff;
+}
+.login-box i {
+  padding: 0 13px;
+  font-size: 20px;
+}
+.login-box span {
+  cursor: pointer;
+}
+#login {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  color: #ffffff;
+}
+#login .login-cont {
+  width: 512px;
+  height: 552px;
+  background: url("../img/common/login-bg.png") center no-repeat;
+  margin: 200px auto;
+  position: relative;
+}
+#login .login-cont .login-title {
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+  padding-top: 17px;
+}
+#login .login-cont .login-input {
+  padding-top: 45px;
+}
+#login .login-cont .login-input .input {
+  width: 256px;
+  height: 56px;
+  line-height: 56px;
+  background: #1a1a1a;
+  border: 1px solid #018cff;
+  border-radius: 5px;
+  margin: 45px auto;
+}
+#login .login-cont .login-input .input i {
+  font-size: 16px;
+  padding: 0 20px;
+  border-right: 1px solid #018cff;
+}
+#login .login-cont .login-input .input input {
+  width: 190px;
+  color: #ffffff;
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  padding: 0 15px;
+}
+#login .login-cont .login-input .input:hover {
+  box-shadow: 0 0 15px 1px #018cff inset;
+}
+#login .login-cont .login-btn {
+  width: 182px;
+  height: 50px;
+  border: 1px solid #018cff;
+  border-radius: 5px;
+  margin: 75px auto;
+  text-align: center;
+  line-height: 50px;
+  font-size: 16px;
+  letter-spacing: 5px;
+  box-shadow: 0 0 15px 1px #018cff inset;
+  cursor: pointer;
+}
+#login .login-cont .login-close {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-size: 24px;
+  cursor: pointer;
+}

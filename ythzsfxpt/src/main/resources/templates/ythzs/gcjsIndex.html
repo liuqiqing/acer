@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="static/libs/normalize.css">
+    <link rel="stylesheet" href="static/libs/font-awesome/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="static/css/common.css">-->
+    <link rel="stylesheet" href="static/css/gcjsIndex.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name"></span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="pos-a left-0 top-0 w-6 h-12 aside-left">
+            <ul class="flex-list vert-list">
+                <li class="panel economy-panel">
+                    <div class="panel-header blue">
+                        <span id="dynamic_qqxsx_title">全区县项目</span>
+                        <i>（单位 个）</i>
+                    </div>
+                    <div class="panel-body">
+                        <div class="list-head">
+                            <div class="head-part area" id="item-total-title">项目总数</div>
+                            <div class="head-part num"><em class="num-thin" id="item-total-num"></em></div>
+                        </div>
+                        <div class="list-body">
+                            <ul>
+                                <li>
+                                    <div class="head-part area">
+                                        <div class="icon-container ic-1"></div>
+                                        市本级项目数
+                                    </div>
+                                    <div class="head-part num"><em class="num-thin" id="jnssum"></em></div>
+                                </li>
+                                <li>
+                                    <div class="head-part area">
+                                        <div class="icon-container ic-1"></div>
+                                        区县级项目数
+                                    </div>
+                                    <div class="head-part num"><em class="num-thin" id="qxsuum"></em></div>
+                                </li>
+                                <li>
+                                    <div class="head-part area">
+                                        <div class="icon-container ic-1"></div>
+                                        公共服务类建设项目
+                                    </div>
+                                    <div class="head-part num"><em class="num-thin" id="xsblsx"></em></div>
+                                </li>
+                                <li>
+                                    <div class="head-part area">
+                                        <div class="icon-container ic-2"></div>
+                                        社会投资建设项目
+                                    </div>
+                                    <div class="head-part num"><em class="num-thin" id="xxblsx"></em></div>
+                                </li>
+                                <li>
+                                    <div class="head-part area">
+                                        <div class="icon-container ic-5"></div>
+                                        总投资额（万元）
+                                    </div>
+                                    <div class="head-part num"><em class="num-thin" id="ysqsx"></em></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel gov-panel">
+                    <div class="panel-header yellow">
+                        <span id="dynamic_qqxshxxzh_title">申报情况统计</span>
+                    </div>
+                    <div class="panel-body panel-padding">
+                        <ul class="flex-list hori-list">
+                            <li>
+                                <div class="chart-content" id="chart3"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel travel-panel" class="panela">
+                    <div class="panel-header green">
+                        <span id="qqxshxxzhNum_Online_title">项目列表展示</span>
+                    </div>
+                    <div class="panel-body panel-padding" id="qqxshxxzhNum_div">
+                        <table class="trip-table">
+                            <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th >项目名称</th>
+                                <th>申报日期</th>
+                            </tr>
+                            </thead>
+                            <tbody id="sxxzsyjwsbls_tBody">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="pos-a right-0 top-0 w-6 h-12 aside-right">
+            <ul class="flex-list vert-list">
+                <li class="panel table-panel">
+                    <div class="panel-header blue">
+                        <span id="qqxyshqgksxzl_title">部门收件、受理等情况数据总览</span>
+                    </div>
+                    <div class="table-content">
+                        <div class="four-checkbox" id="four-checkbox">
+                            <!--checkbox按钮-->
+                            <table class="checkTable">
+                                <tr>
+                                    <td colspan="2" >业务状态统计：</td>
+<!--                                    <td><a href="#" id="more" class="dialog" data-target="bmyjpmbox">更多+</a></td>-->
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="searchCheckbox" id="check1"
+                                               value="1"><span>立项用地规划许可</span></td>
+                                    <td><input type="radio" name="searchCheckbox" id="check2"
+                                               value="2"><span>工程建设许可</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="searchCheckbox" id="check3"
+                                               value="3"><span>施工许可</span></td>
+                                    <td><input type="radio" name="searchCheckbox" id="check4"
+                                               value="4"><span>竣工验收</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="radio" name="searchCheckbox" id="check5"
+                                               value="5"><span>并行办理</span></td>
+                                    <td><input id="btn-input" class="btn-input" type="button" value="查询"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th colspan="4" id="ywzt_title"></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                               <td style="height: 300px" id="ywzttj">
+
+                               </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li class="panel travel-panel">
+                    <div class="panel-header green">
+                        <span id="qqxbmsl_title">每月联办业务受理数</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="chart-content" id="chart4"></div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="pos-a left-6 top-0 w-12 h-12 center-section">
+            <ul class="flex-list vert-list">
+                <li class="panel panel-hori">
+                    <div class="panel-header">
+                        <span>工程建设项目综合展示</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="center-content">
+                            <div class="center-one-body nodisplay" style="background: red;"></div>
+<!--                            <div class="qqx_search"><a href="countyLevel.html"><span>全区县数据</span></a></div>-->
+                            <div class="center-two-body">
+                                <div class="center-case">
+                                    <div class="case-title">各区县项目数</div>
+                                    <div class="case-list">
+                                        <ul class="gradient-item" id="ysqkgkwsblsxtj">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="center-map-bg"></div>
+                                <div class="center-map" id="center-map" style="height:100%;width:100%;">
+
+                                </div>
+                            </div>
+                            <div class="center-three-body nodisplay" style="background: yellow;"></div>
+                        </div>
+                    </div>
+                </li>
+                <li class="index-bottom">
+                    <ul class="flex-list hori-list">
+                        <li class="panel travel-panel">
+                            <div class="panel-header green">
+                                <span id="qxxywblbhqsh_title">项目展示预览</span>
+                            </div>
+                            <div class="panel-body">
+<!--                                <div class="panel-header1" id="ywblbhqs">-->
+<!--                                    <ul>-->
+<!--                                        <li data-target="day" class="active">当日</li>-->
+<!--                                        <li data-target="month">当月</li>-->
+<!--                                        <li data-target="year" class="">当年</li>-->
+<!--                                    </ul>-->
+<!--                                </div>-->
+                                <div class="panel-body2">
+                                    <ul>
+                                        <li>
+                                            <div class="total-info">
+                                                <div class="profession-chart" id="ywblbhqs-pro1"></div>
+                                            </div>
+                                            <div class="total-info">
+                                                <div class="profession-chart" id="ywblbhqs-pro2"></div>
+                                            </div>
+                                            <div class="total-info">
+                                                <div class="profession-chart" id="ywblbhqs-pro3"></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--  弹出框  -->
+        <div class="mask-panel">
+            <div class="box bmyjpmbox" data-target="bmyjpmbox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content" id="table_content_prop">
+                    <div class="checkbox">
+                        <!--checkbox按钮-->
+                        <table class="checkTable">
+                            <tr>
+                                <td>网办深度：</td>
+                                <td><input type="checkbox" name="moreCheckbox" id="check_1"
+                                           value="1"><span>全程网办</span>
+                                </td>
+                                <td><input type="checkbox" name="moreCheckbox" id="check_2"
+                                           value="2"><span>在线预审</span>
+                                </td>
+                                <td><input type="checkbox" name="moreCheckbox" id="check_3"
+                                           value="3"><span>事项公开</span>
+                                </td>
+                                <td><input type="checkbox" name="moreCheckbox" id="check_4"
+                                           value="4"><span>在线申办</span>
+                                </td>
+                                <td><input id="btn_input_1" class="btn-input" type="button" value="查询"></td>
+                            </tr>
+                        </table>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="countyLevelDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+
+                    </div>
+                    <ul class="ul_table">
+                        <li class="li_qxx">
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">全区县依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_qx">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="qxsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">历城区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_lchq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="lchqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 历下区依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">历下区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_lxq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="lxqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 市中区依申请公开事项-->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">市中区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_shzq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="shzqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 高新区依申请公开事项-->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">高新区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_gxq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="gxqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!--天桥区依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">天桥区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_tqq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="tqqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 槐荫区依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">槐荫区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_hyq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="hyqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!--  章丘区依申请公开事项  -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">章丘区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_zhqq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="zhqqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 长清区依申请公开事项-->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">长清区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_chqq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="chqqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 济阳区依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">济阳区依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_jyq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="jyqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 商河区依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">商河县依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_shhq">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="shhqsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                        <!-- 平阴县依申请公开事项 -->
+                        <li>
+                            <table class="dataTable">
+                                <thead>
+                                <tr>
+                                    <th colspan="6">平阴县依申请公开事项</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">分类</th>
+                                    <th>事项总数</th>
+                                    <th id="th_title_pyx">可网上办理数
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>各分类网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                    <th>整体网办率
+                                        <div class="order-btn"></div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody id="pyxsxAddTr">
+
+                                </tbody>
+                            </table>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</body>
+
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-gl.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-wordcloud.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-liquidfill.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/theme.js"></script>
+<script src="${ctx.contextPath}/static/js/jinan.js"></script>
+<script src="${ctx.contextPath}/static/js/egovIndex/gcjsIndex.js"></script>
+
+</html>

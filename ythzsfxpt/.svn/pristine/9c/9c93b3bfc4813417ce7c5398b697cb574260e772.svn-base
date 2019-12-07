@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>共享交换首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/shareIndex.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/login.css">
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="m-canvas">
+        <!--底层三层背景-->
+        <div class="bg-content">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+        </div>
+        <!--部门共享数据-图-->
+        <div class="share-data-content">
+            <div class="share-data-one">
+                <div class="share-data-text1 text1">部门共享数据</div>
+                <div class="share-data-text2 text2">各部门</div>
+            </div>
+            <div class="share-data-two">
+                <div class="share-data-text1 text3">应用支撑库</div>
+                <div class="share-data-text1 text4">前置库</div>
+                <div class="share-data-text1 text5">原始库</div>
+                <div class="share-data-text1 text6">中心库</div>
+            </div>
+            <div class="share-data-three">
+                <div class="share-data-text1 text7">service平台</div>
+                <div class="share-data-text1 text8">BSP平台</div>
+                <div class="share-data-text1 text9">share平台</div>
+                <div class="share-data-text1 text10">console平台</div>
+            </div>
+            <div class="share-data-four">
+                <div class="share-data-text3 text11">共享交换平台维护人员及各部门用户群体</div>
+            </div>
+        </div>
+        <!--部门共享数据-线-->
+        <div class="share-data-line">
+            <div class="share-data-line1"></div>
+            <div class="share-data-line2"></div>
+            <div class="share-data-line3"></div>
+            <div class="share-data-line4"></div>
+            <div class="share-data-line5"></div>
+            <div class="share-data-line6"></div>
+            <div class="share-data-bigarrow"></div>
+        </div>
+        <!--部门共享数据-箭头-->
+        <div class="share-data-arrow">
+            <!--各部门到前置库-->
+            <div class="flow-arrow fa1"></div>
+            <!--原始库到前置库-->
+            <div class="flow-arrow fa2"></div>
+            <!--应用支撑库到service平台-->
+            <div class="flow-arrow fa3"></div>
+            <!--应用支撑库到BSP平台-->
+            <div class="flow-arrow fa4"></div>
+            <!--应用支撑库到share平台-->
+            <div class="flow-arrow fa5"></div>
+            <!--应用支撑库到console平台-->
+            <div class="flow-arrow fa6"></div>
+            <!--service平台到应用支撑库-->
+            <div class="flow-arrow fa7"></div>
+            <!--BSP平台到应用支撑库-->
+            <div class="flow-arrow fa8"></div>
+            <!--share平台到应用支撑库-->
+            <div class="flow-arrow fa9"></div>
+            <!--console平台到应用支撑库-->
+            <div class="flow-arrow fa10"></div>
+            <!--原始库到share平台-->
+            <div class="flow-arrow fa11"></div>
+            <!--原始库到console平台-->
+            <div class="flow-arrow fa12"></div>
+            <!--中心库到share平台-->
+            <div class="flow-arrow fa13"></div>
+            <!--中心库到console平台-->
+            <div class="flow-arrow fa14"></div>
+            <!--share平台到原始库-->
+            <div class="flow-arrow fa15"></div>
+            <!--share平台到中心库-->
+            <div class="flow-arrow fa16"></div>
+            <!--console平台到原始库-->
+            <div class="flow-arrow fa17"></div>
+            <!--console平台到中心库-->
+            <div class="flow-arrow fa18"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-left-section">
+            <ul class="flex-list vert-list">
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>数据交换量情况</span>
+                    </div>
+                    <div class="panel-body n-exchange">
+                        <ul>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">总数量</div>
+                                <div class="amount"><span class="num" id="total_count"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">成&nbsp&nbsp&nbsp&nbsp功</div>
+                                <div class="amount"><span class="num" id="sum_success_times"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">失&nbsp&nbsp&nbsp&nbsp败</div>
+                                <div class="amount"><span class="num" id="sum_failed_times"></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel" style="margin-top: -20px">
+                    <div class="panel-header">
+                        <span>共享度排名</span>
+                    </div>
+                    <div class="panel-body s-ranking">
+                        <div class="s-title">
+                            <span style="width: 20%">排名</span>
+                            <span style="width: 50%">部门名称</span>
+                            <span style="width: 30%;margin-left: 20%">共享度</span></div>
+                        <ul>
+                            <li>
+                                <div style="width: 70px">1</div>
+                                <div style="width: 100px" id="share_org_no1"></div>
+                                <div style="width: 110px" id="share_org_no1_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">2</div>
+                                <div style="width: 100px" id="share_org_no2"></div>
+                                <div style="width: 110px" id="share_org_no2_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">3</div>
+                                <div style="width: 100px" id="share_org_no3"></div>
+                                <div style="width: 110px" id="share_org_no3_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">4</div>
+                                <div style="width: 100px" id="share_org_no4"></div>
+                                <div style="width: 110px" id="share_org_no4_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">5</div>
+                                <div style="width: 100px" id="share_org_no5"></div>
+                                <div style="width: 110px" id="share_org_no5_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">6</div>
+                                <div style="width: 100px" id="share_org_no6"></div>
+                                <div style="width: 110px" id="share_org_no6_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">7</div>
+                                <div style="width: 100px" id="share_org_no7"></div>
+                                <div style="width: 110px" id="share_org_no7_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">8</div>
+                                <div style="width: 100px" id="share_org_no8"></div>
+                                <div style="width: 110px" id="share_org_no8_percent">100</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right-section">
+            <ul class="flex-list vert-list">
+                <li class="panel" style="flex: 2">
+                    <div class="panel-header">
+                        <span>数据目录总数</span>
+                    </div>
+                    <div class="panel-body menu-sum">
+                        <div class="m-title">
+                            <ul>
+                                <li style="width: 130px;margin-left: -120px" id="total_cata_count">123</li>
+                                <li style="font-size: 18px">个</li>
+                            </ul>
+                        </div>
+                        <div id="menu-chart"></div>
+                        <div class="file-g"></div>
+                        <div class="m-sum">
+                            <ul>
+                                <li>
+                                    <div class="book"></div>
+                                    <div style="margin-bottom: 10px">库表</div>
+                                    <div><span class="s-num" id="count_db_table"></span> 个</div>
+                                </li>
+                                <li>
+                                    <div class="interface"></div>
+                                    <div style="margin-bottom: 10px">接口</div>
+                                    <div><span class="s-num" id="total_service"></span> 个</div>
+                                </li>
+                                <li>
+                                    <div class="file"></div>
+                                    <div style="margin-bottom: 10px">文件</div>
+                                    <div><span class="s-num" id="count_file"></span> 个</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel" style="flex: 1.5 ;margin-top: 0">
+                    <div class="panel-header">
+                        <span>数据提供单位数</span>
+                    </div>
+                    <div class="panel-body n-department">
+                        <div style="height: 48px ;margin-top: 10px ;padding-left: 45px">
+                            <ul>
+                                <li id="total_org"></li>
+                                <li style="font-size: 18px">个</li>
+                            </ul>
+                        </div>
+                        <div class="n-chart">
+                            <div id="real-time"></div>
+                            <div id="n-real-time"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-bottom-section">
+            <ul class="flex-list hori-list">
+                <li class="panel hot-ranking">
+                    <div class="panel-header">
+                        <span>热门资源排名</span>
+                        <a href="#">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <table>
+                            <colgroup>
+                                <col width="60px">
+                                <col width="200px">
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th>排名</th>
+                                <th>资源名称</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="hot-ranking-num">「1」</td>
+                                <td>
+                                    <div class="hot-ranking-name" title="" id="hotSource_no1"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot-ranking-num">「2」</td>
+                                <td>
+                                    <div class="hot-ranking-name" title="" id="hotSource_no2"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot-ranking-num">「3」</td>
+                                <td>
+                                    <div class="hot-ranking-name" title="" id="hotSource_no3"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot-ranking-num">「4」</td>
+                                <td>
+                                    <div class="hot-ranking-name" title="" id="hotSource_no4"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="hot-ranking-num">「5」</td>
+                                <td>
+                                    <div class="hot-ranking-name" title="" id="hotSource_no5"></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </li>
+                <li class="panel share-resource">
+                    <div class="panel-header">
+                        <span>共享资源利用情况</span>
+                    </div>
+                    <div class="panel-body" id="shareChart">
+                    </div>
+                </li>
+                <!--                 <li class="panel data-monitor"> -->
+                <!--                     <div class="panel-header"> -->
+                <!--                         <span>数据调用监控</span> -->
+                <!--                         <a href="#">更多+</a> -->
+                <!--                     </div> -->
+                <!--                     <div class="panel-body"> -->
+                <!--                         <div class="data-monitor-scroll"> -->
+                <!--                             <ul> -->
+                <!--                                 <li> -->
+                <!--                                     <div class="data-date">2018-09-01</div> -->
+                <!--                                     <div class="data-detail"> -->
+                <!--                                         <a href="#"> -->
+                <!--                                             <div class="depart-container">人社厅</div> -->
+                <!--                                             <div class="connect">调用了</div> -->
+                <!--                                             <div class="depart-container">发改委</div> -->
+                <!--                                             <div class="depart-info">济南市高级会计人员</div> -->
+                <!--                                         </a> -->
+                <!--                                     </div> -->
+                <!--                                 </li> -->
+                <!--                                 <li> -->
+                <!--                                     <div class="data-date">2018-08-24</div> -->
+                <!--                                     <div class="data-detail"> -->
+                <!--                                         <a href="#"> -->
+                <!--                                             <div class="depart-container">公安局</div> -->
+                <!--                                             <div class="connect">调用了</div> -->
+                <!--                                             <div class="depart-container">教育局</div> -->
+                <!--                                             <div class="depart-info">船舶国籍证书核发</div> -->
+                <!--                                         </a> -->
+                <!--                                     </div> -->
+                <!--                                 </li> -->
+                <!--                                 <li> -->
+                <!--                                     <div class="data-date">2018-08-16</div> -->
+                <!--                                     <div class="data-detail"> -->
+                <!--                                         <a href="#"> -->
+                <!--                                             <div class="depart-container">教育局</div> -->
+                <!--                                             <div class="connect">调用了</div> -->
+                <!--                                             <div class="depart-container">人社局</div> -->
+                <!--                                             <div class="depart-info">济南市博物馆信息</div> -->
+                <!--                                         </a> -->
+                <!--                                     </div> -->
+                <!--                                 </li> -->
+                <!--                                 <li> -->
+                <!--                                     <div class="data-date">2018-08-11</div> -->
+                <!--                                     <div class="data-detail"> -->
+                <!--                                         <a href="#"> -->
+                <!--                                             <div class="depart-container">发改委</div> -->
+                <!--                                             <div class="connect">调用了</div> -->
+                <!--                                             <div class="depart-container">住建厅</div> -->
+                <!--                                             <div class="depart-info">城市管理局临时办法</div> -->
+                <!--                                         </a> -->
+                <!--                                     </div> -->
+                <!--                                 </li> -->
+                <!--                                 <li> -->
+                <!--                                     <div class="data-date">2018-08-01</div> -->
+                <!--                                     <div class="data-detail"> -->
+                <!--                                         <a href="#"> -->
+                <!--                                             <div class="depart-container">住建厅</div> -->
+                <!--                                             <div class="connect">调用了</div> -->
+                <!--                                             <div class="depart-container">公安局</div> -->
+                <!--                                             <div class="depart-info">济南市校外托管场所</div> -->
+                <!--                                         </a> -->
+                <!--                                     </div> -->
+                <!--                                 </li> -->
+                <!--                             </ul> -->
+                <!--                         </div> -->
+                <!--                     </div> -->
+                <!--                 </li> -->
+                <li class="panel bottom-side-panel">
+                    <div class="panel-header">
+                        <span>共享资源部门排名</span>
+                        <a href="#">更多+</a>
+                    </div>
+                    <div class="panel-body" id="share-ranking-chart">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login-cont">
+            <div class="login-title">用户登录</div>
+            <div class="login-input">
+                <div class="input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="请输入密码" id="password">
+                </div>
+            </div>
+            <div class="login-btn" id="loginbtn">登录</div>
+            <div class="login-close">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/js/shareIndex.js"></script>
+<!--<script src="${ctx.contextPath}/static/libs/jquery.vticker.min.js"></script>-->
+<!-- <script src="${ctx.contextPath}/static/js/index/shareIndex.js"></script> -->
+<script src="${ctx.contextPath}/static/js/shareIndex/shareIndex.js"></script>
+<script>
+    // 登录操作
+    $("#loginbtn").click(function () {
+        var login = ctx + "/userlogin";
+        $.ajax({
+            type: "GET",
+            async: true,
+            url: login,
+            data: {
+                "account":$("#username").val(),
+                "pwd":$("#password").val(),
+                "appCode":"INSPUR-DZZW-YTHZS"
+            },
+            success: function (result) {
+                if (result.resultUser.state == 200) {
+                    array = result.resultUser.menus;
+                    // console.log(array)
+                    // 把获取到的菜单放到session里面
+                    sessionStorage.setItem("array", JSON.stringify(array));
+                    sessionStorage.setItem("username",result.resultUser.user.NAME);
+                    sessionStorage.setItem("user",result.resultUser.user.ID);
+                    window.location.href = 'egovIndex.html';
+                }else if(result.resultUser.state == "3" || result.resultUser.state == "2" ){
+                    console.log(result.resultUser.error);
+                }else {
+                    console.log(result.resultUser.state)
+                }
+            },
+            error: function (errorMsg) {
+
+            }
+        });
+    })
+</script>
+</html>

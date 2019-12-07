@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.sxgl.sxglMapper">
+
+    <!-- 市直部门事项个数 柱状图 -->
+    <select id="szbmsxgszzt" resultType="java.util.LinkedHashMap">
+        SELECT T.ORG_NAME, count(T.ORG_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE LIKE '370100%'
+        AND T.TYPE IN (${sxlx})
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(T.create_time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        group by T.ORG_NAME
+        ORDER BY count(T.ORG_NAME) desc
+    </select>
+
+    <!-- 市直部门事项个数 柱状图 详情表格 -->
+    <select id="szbmsxgszztxqbg" resultType="java.util.LinkedHashMap">
+        select ROWNUM ORDER_NUM, A.*
+        from (SELECT T.Region_Name, T.ORG_NAME, count(T.ORG_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE LIKE '370100%'
+        AND T.TYPE IN (${sxType})
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(T.create_time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        group by T.ORG_NAME,T.Region_Name
+        ORDER BY count(T.ORG_NAME) desc) A
+        <where>
+            <if test="orgName != null">
+                A.ORG_NAME like '%${orgName}%'
+            </if>
+        </where>
+    </select>
+
+    <!-- 市直部门事项个数 饼状图 -->
+    <select id="szbmsxgsbzt" resultType="java.lang.Integer">
+        select count(1) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370100000000')
+        and T.type in (${sxlx})
+        and T.Is_Online in (${isOnline})
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(T.create_time, 'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+    </select>
+
+    <!-- 市直部门事项个数 饼状图 详情表格 -->
+    <select id="szbmsxgsbztxqbg" resultType="java.util.LinkedHashMap">
+        select rownum ORDER_NUM, A.*
+        from (select T.REGION_NAME, T.ORG_NAME, COUNT(T.ORG_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370100000000')
+        and T.type in (${sxType})
+        and T.Is_Online in (${isOnline})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY T.REGION_NAME, T.ORG_NAME
+        ORDER BY COUNT(T.ORG_NAME) DESC) A
+        <where>
+            <if test="orgName != null">
+                A.ORG_NAME like '%${orgName}%'
+            </if>
+        </where>
+
+    </select>
+
+    <!-- 区县部门事项个数 柱状图 -->
+    <select id="qxbmsxgszzt" resultType="java.util.LinkedHashMap">
+        select T.REGION_NAME, COUNT(T.REGION_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        and T.type in (${sxlx})
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(T.create_time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY T.REGION_NAME
+        ORDER BY COUNT(T.REGION_NAME) DESC
+    </select>
+
+    <!-- 区县部门事项个数 柱状图 详情表格 -->
+    <select id="qxbmsxgszztxqbg" resultType="java.util.LinkedHashMap">
+        select rownum, A.*
+        from (select T.REGION_NAME, T.Org_Name,COUNT(T.Org_Name) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        and T.type in (${sxType})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY T.REGION_NAME,T.Org_Name
+        ORDER BY COUNT(T.ORG_NAME) DESC) A
+        <where>
+            <if test="orgName != null">
+                A.ORG_NAME like '%${orgName}%'
+            </if>
+        </where>
+    </select>
+
+    <!-- 区县部门事项个数 饼状图 -->
+    <select id="qxbmsxgsbzt" resultType="java.lang.Integer">
+        select count(1) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        and T.type in (${sxlx})
+        and T.Is_Online in (${isOnline})
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(T.create_time, 'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+    </select>
+
+    <!-- 区县部门事项个数 饼状图 详情表格 -->
+    <select id="qxbmsxgsbztxqbg" resultType="java.util.LinkedHashMap">
+        select rownum ORDER_NUM,A.* from (select T.REGION_NAME, T.Org_Name,COUNT(T.Org_Name) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE in ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        and T.type in (${sxType})
+        and T.Is_Online in (${isOnline})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        group by T.REGION_NAME, T.Org_Name
+        order by COUNT(T.Org_Name) desc) A
+        <where>
+            <if test="orgName != null">
+                A.ORG_NAME like '%${orgName}%'
+            </if>
+        </where>
+    </select>
+
+    <!-- 事项总览页面新增事项性质柱形图 -->
+    <select id="sxxzChart" resultType="java.util.LinkedHashMap">
+        SELECT TYPE, COUNT(*) SXSL
+        FROM PROJECT_ITEM A
+        WHERE A.TYPE IN (${sxlx})
+        AND STATE = '5'
+        AND A.STATUS = '5'
+        AND A.PROPERTY = '0'
+        <if test="startTime !='' and startTime != null and endTime != '' and endTime != null">
+            and to_char(A.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY TYPE
+        ORDER BY COUNT(*) DESC
+    </select>
+
+    <!-- 市直部门事项个数柱状图表格下载 -->
+    <select id="szbmsxgs" resultType="java.util.LinkedHashMap">
+        select rownum ORDER_NUM,A.* from (select T.REGION_NAME, T.Org_Name,COUNT(T.Org_Name) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND INSTR(T.REGION_CODE, '370100') > 0
+        and T.type in (${sxType})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        group by T.REGION_NAME, T.Org_Name
+        order by COUNT(T.Org_Name) desc) A
+    </select>
+
+    <!-- 市直部门事项个数 饼状图 表格下载 -->
+    <select id="szbmsxgsbztDownload" resultType="java.util.LinkedHashMap">
+        select rownum ORDER_NUM,A.* from (select T.REGION_NAME, T.Org_Name,COUNT(T.Org_Name) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.Property = '0'
+        and T.STATE = '5'
+        AND T.STATUS = '5'
+        AND INSTR(T.REGION_CODE, '370100') > 0
+        and T.type in (${sxType})
+        AND T.IS_ONLINE IN (${isOnline})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        group by T.REGION_NAME, T.Org_Name
+        order by COUNT(T.Org_Name) desc) A
+    </select>
+
+    <!-- 区县部门事项个数 柱状图 表格下载aaa -->
+    <select id="qxbmsxgs" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,A.* FROM (SELECT T.REGION_NAME, T.ORG_NAME,COUNT(T.ORG_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.PROPERTY = '0'
+        AND T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE IN ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        AND T.TYPE IN (${sxType})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY T.REGION_NAME, T.ORG_NAME
+        ORDER BY COUNT(T.ORG_NAME) DESC) A
+    </select>
+
+
+    <!-- 区县部门事项个数 饼状图 表格下载 -->
+    <select id="qxbmsxgsbztDownload" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM ORDER_NUM,A.* FROM (SELECT T.REGION_NAME, T.ORG_NAME,COUNT(T.ORG_NAME) SL
+        FROM PROJECT_ITEM T
+        INNER JOIN PROJECT_ITEM_EXT E
+        ON E.ITEM_ID = T.ID
+        INNER JOIN PROJECT_FOLDER F
+        ON F.CODE = T.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT O
+        ON O.ITEM_CODE = T.CODE
+        AND O.ITEM_VERSION = T.VERSION
+        WHERE T.PROPERTY = '0'
+        AND T.STATE = '5'
+        AND T.STATUS = '5'
+        AND T.REGION_CODE IN ('370181000000',
+        '370126000000',
+        '370105000000',
+        '370112000000',
+        '370103000000',
+        '370125000000',
+        '370124000000',
+        '370113000000',
+        '370104000000',
+        '370102000000',
+        '370190000000')
+        AND T.TYPE IN (${sxType})
+        AND T.IS_ONLINE IN (${isOnline})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(T.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        GROUP BY T.REGION_NAME, T.ORG_NAME
+        ORDER BY COUNT(T.ORG_NAME) DESC) A
+    </select>
+
+    <!-- 事项总览更多页面 新增 事项性质柱形图 详情表格 -->
+    <select id="sxxzchartxqbg" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM ORDER_NUM,
+        A.REGION_NAME,
+        A.ORG_NAME,
+        C.NAME MAIN_ITEM_NAME,
+        A.NAME ITEM_NAME,
+        A.TYPE ITEM_TYPE,
+        D.CONDUCT_DEPTH CONDUCT_DEPTH,
+        B.SUB_TYPE SUB_TYPE
+        FROM PROJECT_ITEM A
+        INNER JOIN PROJECT_ITEM_EXT B
+        ON A.ID = B.ITEM_ID
+        INNER JOIN PROJECT_FOLDER C
+        ON C.CODE = A.FOLDER_CODE
+        LEFT JOIN BASE_ONLINECONDUCT D
+        ON A.CODE = D.ITEM_CODE
+        AND A.VERSION = D.ITEM_VERSION
+        WHERE A.STATE = '5'
+        AND A.STATUS = '5'
+        AND A.PROPERTY = '0'
+        AND A.TYPE IN (${sxType})
+        <if test="startTime != '' and startTime !=null and endTime != '' and endTime != null">
+            and to_char(A.Create_Time,'yyyy-mm-dd') between #{startTime} and #{endTime}
+        </if>
+        <if test="orgName != null">
+            AND A.ORG_NAME LIKE '%${orgName}%'
+        </if>
+
+    </select>
+
+    <!-- 可网上办理数量  conduct_depth”是网办深度或审批深度：“1”是全程网办（0跑腿）；“2”是在线预审（只跑1次）；“3”是事项公开，“4”是在线申办。-->
+    <select id="kwsblsl" resultType="java.lang.Integer">
+        select count(i.ID) as sum from PROJECT_ITEM i,project_item_ext a, BASE_ONLINECONDUCT o  where i.ID = a.item_id and INSTR (i.REGION_CODE, '370100') > 0 and i.state='5'
+        and i.status='5'  and i.PROPERTY = '0'   and a.sub_type != '2'
+        and i.type ='XK'
+        and i.code=o.item_code and i.version=o.item_version
+        and o.conduct_depth in('1','4')
+    </select>
+    <!--    conduct_depth”是网办深度或审批深度：“1”是全程网办（0跑腿）；“2”是在线预审（只跑1次）；“3”是事项公开，“4”是在线申办。-->
+    <select id="kwsbl" resultType="java.lang.Integer">
+        select count(i.ID) as sum from PROJECT_ITEM i,project_item_ext a, BASE_ONLINECONDUCT o  where i.ID = a.item_id and INSTR (i.REGION_CODE, '370100') > 0 and i.state='5'
+        and i.status='5'  and i.PROPERTY = '0'   and a.sub_type != '2'
+        and i.type ='XK'
+        and i.code=o.item_code and i.version=o.item_version
+        and o.conduct_depth in('1','2','3','4')
+    </select>
+    <!--    网上申报地址。只查已发布的。-->
+    <select id="getwbsd" resultType="java.util.LinkedHashMap">
+        select  i.id,i.REGION_CODE,i.REGION_NAME,E.INNER_CODE,i.ORG_CODE,i.ORG_NAME,i.NAME SXNAME,i.HANDLE_NAME HANDLE_NAME,i.is_online,o.online_handle_type online_handle_type,conduct_depth,
+        case when conduct_depth is null then '事项公开(未变更)'
+        when (IS_ONLINE!='0' and conduct_depth='1') then '全程网办'
+        when (IS_ONLINE!='0' and conduct_depth='2') then '在线预审'
+        when (is_online='0' or conduct_depth='3') then '事项公开'
+        when (IS_ONLINE!='0' and conduct_depth='4') then '在线申办'
+        when (IS_ONLINE!='0' and conduct_depth='5') then '全程网办（未变更）'
+        when (IS_ONLINE!='0' and conduct_depth='6') then '在线预审（未变更）'
+        when (is_online='0' or conduct_depth='7') then '事项公开（未变更）'
+        else conduct_depth end conduct_depth,
+        adr.online_address online_address
+        from project_item i INNER JOIN PROJECT_ITEM_EXT E ON I.ID=E.ITEM_ID
+        left join base_onlineconduct o on o.item_code=i.code and o.item_version=i.version
+        left join PROJECT_ONLINE_ADDRESS adr on adr.ONLINE_ID = o.ID and adr.ONLINE_TYPE='1'
+        where  i.PROPERTY='0'  and i.STATE='5' and i.STATUS='5'
+        --and i.TYPE='XK'  and i.REGION_CODE like '37%'
+        and adr.online_address is not null
+        order by i.REGION_CODE,i.ORG_CODE asc
+    </select>
+
+
+</mapper>

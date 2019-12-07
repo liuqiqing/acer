@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>事项统计详细三级页面</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/egovIndex.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/layui/css/layui.css">
+</head>
+<body>
+	<input id="contextPath" value="${ctx.contextPath}" type="hidden">
+	<div>
+		<table id="sxtjxxTable" lay-filter="sxtjxxTable"></table>
+	</div>
+	
+</body>
+
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/layui/layui.all.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-wordcloud.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<script type="text/javascript">
+	var ctx = $("#contextPath").val();
+	//没有取到值
+	var orgCode = "${pageParamMap.orgCode}";
+	var orgName = "${pageParamMap.orgName}";
+	var itemName = "${pageParamMap.itemName}";
+	var selectType = "${pageParamMap.selectType}";
+	
+	var urlPath = ctx + "/egovIndexController/sxtjxxTableData?orgCode="+orgCode
+					  +"&orgName="+orgName
+					  +"&itemName="+itemName
+					  +"&selectType="+selectType+"";
+	//请求后台数据
+	var table = layui.table;
+	//执行渲染
+	table.render({
+	   elem: '#sxtjxxTable'
+	   ,height: '550'
+	   ,url: urlPath
+	   ,cols:[[ //标题栏
+	        {field:'ORG_NAME', title: '受理单位',align:'center'}
+	        ,{field:'ITEM_NAME', title: '事项名称',align:'center'}
+	        ,{field:'APPLY_SUBJECT', title: '业务名称',align:'center'}
+	    ]]
+	   ,page: true
+	   ,limit: 10
+	   ,limits: [10]
+	});
+</script>
+</html>

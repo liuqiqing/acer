@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.tysl.TyslMapper">
+    <!-- 测试 -->
+    <select id="getSum" resultType="java.lang.Integer">
+        SELECT  COUNT (1) AS  SUM FROM ACCEPT_BUSINESS_EXTEND
+    </select>
+    <!-- 一窗收件数  -->
+    <select id="getycsjsl" resultType="java.util.LinkedHashMap">
+        SELECT count(STATE) sum,STATE  FROM ACCEPT_BUSINESS_INDEX
+        WHERE REGION_CODE = '370100000000' and TO_CHAR(RECEIVE_TIME,'yyyy-mm-dd') = #{Cdate} GROUP BY STATE
+    </select>
+    <!-- 一窗收件数变化趋势  -->
+    <select id="getycsjqs" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,sum,time from(
+        SELECT
+        COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum,
+        TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time
+        FROM
+        ACCEPT_BUSINESS_INDEX
+        WHERE
+        REGION_CODE = '370100000000'
+        GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <![CDATA[<= ]]> 7 AND  TIME IS NOT NULL
+    </select>
+    <!-- 一窗收件事项排名  -->
+    <select id="getycsjlb" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.* from
+        (SELECT RECEIVE_NUMBER,ITEM_NAME,REGION_NAME,REGION_CODE,TO_CHAR(RECEIVE_TIME,'yyyy-mm-dd hh24:mi:ss') RECEIVE_TIME,
+        case when TYPE = 'XK' then '行政许可'
+        when TYPE = 'ZS' then '行政征收'
+        when TYPE = 'QR' then '行政确认'
+        when TYPE = 'JF' then '行政给付'
+        when TYPE = 'JL' then '行政奖励'
+        when TYPE = 'CJ' then '行政裁决'
+        when TYPE = 'QT' then '其他事项'
+        when TYPE = 'GG' then '公共服务'
+        when TYPE = 'JD' then '行政监督'
+        when TYPE = 'CF' then '行政处罚'
+        when TYPE = 'QL' then '其他权力'
+        end TYPE,
+        case
+        when STATE = '00' THEN '草稿'
+        when STATE = '01' then '办理中'
+        when STATE = '02' then '不予受理'
+        when STATE = '03' then '预审撤销'
+        when STATE = '11' then '待预审'
+        when STATE = '12' then '预审通过'
+        when STATE = '13' then '删除预审'
+        when STATE = '14' THEN '外网预审驳回'
+        when STATE = '15' then '受理通过'
+        when STATE = '16' then '预审业务撤销'
+        when STATE = '21' then '补齐补正'
+        when STATE = '23' then '挂起'
+        when STATE = '24' THEN '收费挂起'
+        when STATE = '25' THEN '挂起审核状态'
+        when STATE = '26' THEN '回退'
+        when STATE = '90' THEN ''
+        when STATE = '94' THEN '待办结签收'
+        when STATE = '95' THEN '待办结'
+        when STATE = '96' then '退件'
+        when STATE = '97' then '作废'
+        when STATE = '98' then '不予许可'
+        when STATE = '99' then '准予许可'
+        when STATE = '100' THEN '已出件'
+        end STATE
+        from ACCEPT_BUSINESS_INDEX
+        WHERE REGION_CODE = '370100000000' and TO_CHAR(RECEIVE_TIME,'yyyy-mm-dd') = #{Cdate,jdbcType=VARCHAR}
+        ORDER BY RECEIVE_TIME desc) y WHERE ROWNUM <![CDATA[<= ]]> #{page}
+    </select>
+    <!-- 一窗收件事项排名  -->
+    <select id="downloadsxlb" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.* from
+        (SELECT ITEM_NAME,
+        case when TYPE = 'XK' then '行政许可'
+        when TYPE = 'ZS' then '行政征收'
+        when TYPE = 'QR' then '行政确认'
+        when TYPE = 'JF' then '行政给付'
+        when TYPE = 'JL' then '行政奖励'
+        when TYPE = 'CJ' then '行政裁决'
+        when TYPE = 'QT' then '其他事项'
+        when TYPE = 'GG' then '公共服务'
+        when TYPE = 'JD' then '行政监督'
+        when TYPE = 'CF' then '行政处罚'
+        when TYPE = 'QL' then '其他权力'
+        end TYPE,
+        case
+        when STATE = '00' THEN '草稿'
+        when STATE = '01' then '办理中'
+        when STATE = '02' then '不予受理'
+        when STATE = '03' then '预审撤销'
+        when STATE = '11' then '待预审'
+        when STATE = '12' then '预审通过'
+        when STATE = '13' then '删除预审'
+        when STATE = '14' THEN '外网预审驳回'
+        when STATE = '15' then '受理通过'
+        when STATE = '16' then '预审业务撤销'
+        when STATE = '21' then '补齐补正'
+        when STATE = '23' then '挂起'
+        when STATE = '24' THEN '收费挂起'
+        when STATE = '25' THEN '挂起审核状态'
+        when STATE = '26' THEN '回退'
+        when STATE = '90' THEN ''
+        when STATE = '94' THEN '待办结签收'
+        when STATE = '95' THEN '待办结'
+        when STATE = '96' then '退件'
+        when STATE = '97' then '作废'
+        when STATE = '98' then '不予许可'
+        when STATE = '99' then '准予许可'
+        when STATE = '100' THEN '已出件'
+        end STATE,REGION_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd hh24:mi:ss') SUBMIT_TIME
+        from ACCEPT_BUSINESS_INDEX
+        WHERE REGION_CODE = '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = #{Cdate} ORDER BY SUBMIT_TIME desc) y
+    </select>
+
+    <!-- 各业务处室一窗办理数量排名  -->
+    <select id="getbmblsl" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.sum,y.ORG_NAME from
+        (SELECT count(ORG_NAME) sum,ORG_NAME from ACCEPT_BUSINESS_INDEX
+        WHERE REGION_CODE = '370100000000'
+        <if test="year !='' and year != null">
+            and to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            and to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            and to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        GROUP BY ORG_NAME ORDER BY sum desc) y
+        <if test="page !='' and page != null">
+            WHERE ROWNUM <![CDATA[<= ]]> #{page}
+        </if>
+    </select>
+
+    <!-- 下载各业务处室一窗办理数量 -->
+    <select id="downloadbmblsl" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.ORG_NAME,y.sum from
+        (SELECT count(ORG_NAME) sum,ORG_NAME from ACCEPT_BUSINESS_INDEX
+        WHERE REGION_CODE = '370100000000'
+        <if test="year !='' and year != null">
+            and to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null ">
+            and to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            and to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        GROUP BY ORG_NAME ORDER BY sum desc) y
+        <if test="page !='' and page != null">
+            WHERE ROWNUM <![CDATA[<= ]]> #{page}
+        </if>
+    </select>
+
+    <!--  获取窗口人员办件情况  -->
+    <select id="getckrybjqk" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.NUM,y.HANDLE_USER_NAME from
+        (SELECT COUNT (*) NUM,
+        HANDLE_USER_NAME
+        FROM
+        ACCEPT_BUSINESS_INDEX i
+        INNER JOIN ACCEPT_AREA_TREE A ON i.ORG_CODE = A .CODE
+        WHERE
+        HANDLE_USER_NAME is not null
+        and i.REGION_CODE = '370100000000'
+        <if test="year !='' and year != null">
+            and to_char(RECEIVE_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            and to_char(RECEIVE_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            and to_char(RECEIVE_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        GROUP BY
+        HANDLE_USER_NAME
+        order by NUM desc) y
+        <if test="page !='' and page != null">
+            WHERE ROWNUM <![CDATA[<= ]]> #{page}
+        </if>
+    </select>
+
+    <!-- 在办窗口查询-->
+    <select id="getckxxqk" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.CODE,y.SUM from
+        (SELECT WIN.WINDOW_SHOW_CODE AS CODE,
+        COUNT( WIN.WINDOW_SHOW_CODE ) AS SUM
+        FROM
+        ACCEPT_WINDOWS WIN
+        LEFT JOIN ACCEPT_BUSINESS_INDEX IND ON IND.WINDOW_ID = WIN.WINDOW_ID
+        WHERE
+        <if test="year !='' and year != null">
+            to_char(IND.SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(IND.SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(IND.SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        GROUP BY
+        WIN.WINDOW_SHOW_CODE
+        order by SUM desc) y
+        <if test="page !='' and page != null">
+            where ROWNUM <![CDATA[<= ]]> #{page}
+        </if>
+    </select>
+
+
+    <!--下载在办窗口 -->
+    <select id="downloadzbck" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.CODE,y.SUM from
+        (SELECT WIN.WINDOW_SHOW_CODE AS CODE,
+        COUNT( WIN.WINDOW_SHOW_CODE ) AS SUM
+        FROM
+        ACCEPT_WINDOWS WIN
+        LEFT JOIN ACCEPT_BUSINESS_INDEX IND ON IND.WINDOW_ID = WIN.WINDOW_ID
+        WHERE
+        <if test="year !='' and year != null">
+            to_char(IND.SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(IND.SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(IND.SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        GROUP BY
+        WIN.WINDOW_SHOW_CODE
+        order by SUM desc) y
+
+    </select>
+
+
+    <!--本日办结数-->
+    <select id="brbjsum" resultType="int">
+        select count(1) from ACCEPT_BUSINESS_INDEX
+        where STATE='99' and region_code='370100000000' AND TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = #{Cdate}
+
+    </select>
+
+    <!--本日受理数-->
+    <select id="brslsum" resultType="int">
+        select count(1) from ACCEPT_BUSINESS_INDEX
+        WHERE TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = #{Cdate} and region_code='370100000000'
+    </select>
+    <!--本日办结列表-->
+    <select id="getbrbjlb" resultType="java.util.LinkedHashMap">
+
+        select   ROWNUM, ITEM_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd hh24:mi:ss') SUBMIT_TIME,
+        case
+        when STATE = '99' then '准予许可'
+        end STATE ,WINDOW_SHOW_CODE
+        from ACCEPT_BUSINESS_INDEX
+        where STATE='99' and region_code='370100000000'
+        and
+        <if test="year !='' and year != null">
+            to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+    </select>
+
+
+
+    <!--本日受理列表-->
+    <select id="getbrsllb" resultType="java.util.LinkedHashMap">
+
+        select   ROWNUM, ITEM_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd hh24:mi:ss') SUBMIT_TIME,
+        case
+
+        when STATE = '00' THEN '草稿'
+        when STATE = '01' then '办理中'
+        when STATE = '02' then '不予受理'
+        when STATE = '03' then '预审撤销'
+        when STATE = '11' then '待预审'
+        when STATE = '12' then '预审通过'
+        when STATE = '13' then '删除预审'
+        when STATE = '14' THEN '外网预审驳回'
+        when STATE = '15' then '受理通过'
+        when STATE = '16' then '预审业务撤销'
+        when STATE = '21' then '补齐补正'
+        when STATE = '23' then '挂起'
+        when STATE = '24' THEN '收费挂起'
+        when STATE = '25' THEN '挂起审核状态'
+        when STATE = '26' THEN '回退'
+        when STATE = '90' THEN ''
+        when STATE = '94' THEN '待办结签收'
+        when STATE = '95' THEN '待办结'
+        when STATE = '96' then '退件'
+        when STATE = '97' then '作废'
+        when STATE = '98' then '不予许可'
+        when STATE = '99' then '准予许可'
+        when STATE = '100' THEN '已出件'
+
+        end STATE ,WINDOW_SHOW_CODE
+        from ACCEPT_BUSINESS_INDEX
+        where  region_code='370100000000'
+        and
+        <if test="year !='' and year != null">
+            to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+
+    </select>
+
+
+    <!--下载本日办结列表-->
+    <select id="downloadbrbjlb" resultType="java.util.LinkedHashMap">
+
+        select   ROWNUM, ITEM_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd hh24:mi:ss') SUBMIT_TIME,
+        case
+
+        when STATE = '99' then '准予许可'
+
+        end STATE ,WINDOW_SHOW_CODE
+        from ACCEPT_BUSINESS_INDEX
+        where STATE='99' and region_code='370100000000'
+        and
+        <if test="year !='' and year != null">
+            to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+
+    </select>
+
+
+
+    <!--下载本日受理列表-->
+    <select id="downloadbrsllb" resultType="java.util.LinkedHashMap">
+
+        select   ROWNUM, ITEM_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd hh24:mi:ss') SUBMIT_TIME,
+        case
+
+        when STATE = '00' THEN '草稿'
+        when STATE = '01' then '办理中'
+        when STATE = '02' then '不予受理'
+        when STATE = '03' then '预审撤销'
+        when STATE = '11' then '待预审'
+        when STATE = '12' then '预审通过'
+        when STATE = '13' then '删除预审'
+        when STATE = '14' THEN '外网预审驳回'
+        when STATE = '15' then '受理通过'
+        when STATE = '16' then '预审业务撤销'
+        when STATE = '21' then '补齐补正'
+        when STATE = '23' then '挂起'
+        when STATE = '24' THEN '收费挂起'
+        when STATE = '25' THEN '挂起审核状态'
+        when STATE = '26' THEN '回退'
+        when STATE = '90' THEN ''
+        when STATE = '94' THEN '待办结签收'
+        when STATE = '95' THEN '待办结'
+        when STATE = '96' then '退件'
+        when STATE = '97' then '作废'
+        when STATE = '98' then '不予许可'
+        when STATE = '99' then '准予许可'
+        when STATE = '100' THEN '已出件'
+
+        end STATE ,WINDOW_SHOW_CODE
+        from ACCEPT_BUSINESS_INDEX
+        where  region_code='370100000000'
+        and
+        <if test="year !='' and year != null">
+            to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+
+    </select>
+
+
+    <!--空闲窗口列表-->
+    <select id="getkxcklb" resultType="java.util.LinkedHashMap">
+
+        SELECT  REGION_NAME,
+        WINDOW_SHOW_CODE,
+        to_char ( sysdate, 'mi' ) - to_char ( SUBMIT_TIME, 'mi' ) + ( to_char ( sysdate, 'hh24' ) - to_char ( SUBMIT_TIME, 'hh24' ) ) * 60 AS SS
+        FROM
+        ACCEPT_BUSINESS_INDEX
+        WHERE
+        STATE = '15'
+        and WINDOW_SHOW_CODE != ' '   AND
+        <if test="year !='' and year != null">
+            to_char(SUBMIT_TIME,'yyyy') = #{year}
+        </if>
+        <if test="month !='' and month != null">
+            to_char(SUBMIT_TIME,'yyyy-mm') = #{month}
+        </if>
+        <if test="day !='' and day != null">
+            to_char(SUBMIT_TIME,'yyyy-mm-dd') = #{day}
+        </if>
+        order by ss asc
+    </select>
+
+</mapper>

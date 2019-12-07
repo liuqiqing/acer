@@ -1,0 +1,30 @@
+package com.inspur.dao.tysl;
+
+import java.util.List;
+import java.util.Map;
+
+public interface TyslMapper {
+
+    int getSum();
+
+    // 获取每天的一窗收件数量
+    List<Map<String, Object>> getycsjsl(String Cdate);
+
+    // 获取一窗收件变化趋势
+    public List<Map<String, Object>> getycsjqs();
+
+    // 获取一窗收件列表信息
+    public List<Map<String, Object>>  getycsjlb(String Cdate,int page);
+
+    //  下载一窗事项列表
+    List<Map<String, Object>> downloadsxlb(String Cdate);
+
+    //  各业务处室一窗办理次数排名
+    List<Map<String, Object>> getbmblsl(String year,String month,String day,String page);
+
+    //  下载各业务处室一窗办理数量
+    List<Map<String, Object>> downloadbmblsl(String year,String month,String day,String page);
+
+    // 获取窗口人员办件情况
+    List<Map<String, Object>> getckrybjqk(String year,String month,String day,String page);
+}

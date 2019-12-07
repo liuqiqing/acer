@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/text.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/shuping.css">
+
+</head>
+<body>
+<input id="contextPath" value="${ctx.contextPath}" type="hidden">
+<div id="app">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main">山东省济南市行政审批服务大厅</div>
+        </a>
+    </div>
+    <div id="main" style="display: flex;flex-direction: column">
+
+        <div class="m-left-section" style="height: 600px;">
+            <ul class="flex-list vert-list">
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>当天一窗系统收件情况</span>
+                    </div>
+                    <div class="panel-body n-exchange">
+                        <ul>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">当天收件总数</div>
+                                <div class="amount"><span class="num" id="total_count"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">省里收件数</div>
+                                <div class="amount"><span class="num" id="sum_success_times"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">市里收件数</div>
+                                <div class="amount"><span class="num" id="sum_failed_times"></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right-section">
+            <div class="table-content">
+                <div class="panel-header1">
+                    <div class="titlespan"><span>一窗系统收件事项排名：</span></div>
+                    <div class="download-content">
+                        <a href="#" class="download_a" onclick="qxZyQkDownload()">
+                            <i class="fa fa-download"></i> 下载
+                        </a>
+                    </div>
+
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>事项名称</th>
+                        <th>
+                            <div class="order-btn">事项类型</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件区域</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">办理状态</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件时间</div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="body-lb" style="font-size: 16px">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="bottom-main">
+            <div class="yxslbhqh">
+                <div id="chart3" style="width: 980px;margin-right:20px;height: 500px;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/vue.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/js/ycIndex.js"></script>
+</html>

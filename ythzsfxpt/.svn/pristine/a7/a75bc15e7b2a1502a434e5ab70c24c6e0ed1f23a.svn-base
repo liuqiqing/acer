@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/bootstrap-datetimepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/egovIndex.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/layui/css/thirdPage.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/login.css">
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div class="m-canvas">
+        <!--底层三层背景-->
+        <div class="content-bg">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+        </div>
+        <!--中部主题内容-->
+        <div class="content-data">
+            <!--政务服务数据-->
+            <div class="government-content">
+                <div class="text-align1 label1">省前置库</div>
+                <div class="text-align1 label2">济南市前置库</div>
+                <div class="text-align2 label1">省级数据</div>
+                <div class="text-align2 label2">市级数据</div>
+                <div class="text-align3 label1">各部门前置库</div>
+                <div class="arrow fa1"></div>
+            </div>
+            <!--业务系统数据库-->
+            <div class="business-s-d">
+                <div class="text-align4 label1">统一编码</div>
+                <div class="text-align4 label2">链条</div>
+                <div class="text-align4 label3">审批</div>
+                <div class="text-align4 label4">门户</div>
+                <div class="text-align4 label5">事项管理</div>
+                <div class="text-align4 label6">综合受理</div>
+                <div class="text-align4 label7">电子监察</div>
+                <div class="text-align5 label1">业务系统数据库</div>
+                <div class="text-align5 label2">支撑系统数据库</div>
+                <div class="text-align6 label1">中心前置库</div>
+                <div class="text-align6 label2">大厅前置库</div>
+                <div class="text-align6 label3">省数据库</div>
+                <div class="text-align6 label4">大汉数据库</div>
+                <div class="text-align6 label5">网办数据库</div>
+                <div class="text-align6 label6">省级前置库</div>
+                <div class="text-align6 label7">一网通办前置库</div>
+                <div class="text-align6 label8">网盘</div>
+                <div class="text-align6 label9">流程</div>
+                <div class="text-align6 label10">统一编码</div>
+                <div class="text-align6 label11">BSP</div>
+                <div class="text-align6 label12">表单</div>
+                <div class="text-align6 label13">调度</div>
+                <div class="arrow fa1"></div>
+                <div class="arrow fa2"></div>
+                <div class="arrow fa3"></div>
+                <div class="arrow fa4"></div>
+                <div class="arrow fa5"></div>
+                <div class="arrow fa6"></div>
+                <div class="arrow fa7"></div>
+                <div class="arrow fa8"></div>
+                <div class="arrow fa9"></div>
+            </div>
+            <!--业务系统-->
+            <div class="business-s">
+                <div class="text-align7 label1">门户</div>
+                <div class="text-align7 label2">电子证照</div>
+                <div class="text-align7 label3">事项管理</div>
+                <div class="text-align7 label4">综合受理</div>
+                <div class="text-align7 label5">电子监察</div>
+                <div class="text-align7 label6">政务服务网</div>
+                <div class="text-align7 label7">网办系统</div>
+                <div class="text-align7 label8">审批</div>
+                <div class="text-align7 label9">链条办理</div>
+                <div class="text-align8 label1">业务系统</div>
+                <div class="text-align8 label2">支撑系统</div>
+                <div class="text-align9 label1">网盘</div>
+                <div class="text-align9 label2">流程</div>
+                <div class="text-align9 label3">统一编码</div>
+                <div class="text-align9 label4">BSP</div>
+                <div class="text-align9 label5">表单</div>
+                <div class="text-align9 label6">调度</div>
+                <div class="arrow fa1"></div>
+                <div class="arrow fa2"></div>
+                <div class="arrow fa3"></div>
+                <div class="arrow fa4"></div>
+                <div class="arrow fa5"></div>
+                <div class="arrow fa6"></div>
+                <div class="arrow fa7"></div>
+                <div class="arrow fa8"></div>
+                <div class="arrow fa9"></div>
+            </div>
+            <!--维护人员及办理人员-->
+            <div class="maintainer"></div>
+        </div>
+        <!--中部直线部分-->
+        <div class="content-line">
+            <!--政务服务数据到业务系统数据库直线-->
+            <div class="government-business-line">
+                <div class="arrow fa1"></div>
+                <div class="arrow fa2"></div>
+            </div>
+            <!--支撑系统数据库到支撑系统直线-->
+            <div class="arrow-data-system-line">
+                <div class="arrow fa1"></div>
+                <div class="arrow fa2"></div>
+                <div class="arrow fa3"></div>
+            </div>
+        </div>
+        <!--中部大箭头部分-->
+        <div class="content-arrow">
+            <!--业务系统到维护人大箭头-->
+            <div class="arrow-bus-main"></div>
+            <!--支撑系统数据库到支撑系统大箭头-->
+            <div class="arrow-data-system"></div>
+            <!--业务系统数据库到业务系统大箭头-->
+            <div class="arrow-sdata-system"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-left-section">
+            <ul class="flex-list vert-list">
+                <li class="panel item-list" style="flex: 2;">
+                    <div class="panel-header">
+                        <span>事项总览</span>
+                        <a href="#" class="dialog" data-target="sxzlbox">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="num-list">
+                            <ul></ul>
+                        </div>
+                        <div class="item-chart">
+                            <div class="card"><span>可网上办理事项</span><i id="xsblsl">0%</i></div>
+                            <div id="card-type1"></div>
+                            <div class="card"><span>不可网上办理事项</span><i id="xxblsl">0%</i></div>
+                            <div id="card-type2"></div>
+                        </div>
+                        <div class="pie-chart">
+                            <div class="chart" id="pieChart"></div>
+                            <div class="pic">
+                                <div>事项</div>
+                                <div>级别</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel item-prop">
+                    <div class="panel-header">
+                        <span>事项性质与办件量</span>
+                        <a href="#" class="dialog" data-target="sxxzbox">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="prop-chart" id="prop-chart">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right-section">
+            <ul class="flex-list vert-list">
+                <li class="panel depart-warning-ranking" style="flex: 2;">
+                    <div class="panel-header">
+                        <span>部门预警排名</span>
+                        <a href="#" class="dialog" data-target="bmyjpmbox">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="depart-warning-card redCard">
+                            <span>红牌<em class="num" id="bmyjhongpai">0</em>张</span>
+                        </div>
+                        <table id="hongpaitable">
+                            <tr>
+                                <th>排名</th>
+                                <th>部门名称</th>
+                                <th>超时</th>
+                                <th>预警数</th>
+                            </tr>
+                        </table>
+                        <div class="depart-warning-card yellowCard">
+                            <span>黄牌<em class="num" id="bmyjhuangpai">0</em>张</span>
+                        </div>
+                        <table id="huangpaitable">
+                            <tr>
+                                <th>排名</th>
+                                <th>部门名称</th>
+                                <th>超时</th>
+                                <th>预警数</th>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li class="panel depart-accept-ranking">
+                    <div class="panel-header">
+                        <span>部门受理办结排名</span>
+                        <a href="#" id="bmslbjpm" class="dialog" data-target="bmslbjbox">更多+</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="depart-ranking-title">
+                            <span name="acceptOption" class="active">受理</span>
+                            <span name="handleOption">办结</span>
+                        </div>
+                        <div class="depart-ranking-content" id="depart-ranking-chart"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-bottom-section">
+            <ul class="flex-list hori-list">
+                <li class="panel profession-list" style="flex: 2">
+                    <div class="panel-header">
+                        <span>业务办理变化趋势</span>
+                        <a href="#" class="dialog" data-target="trend_box">更多+</a>
+                        <ul>
+                            <li data-target="day" class="active">当日</li>
+                            <li data-target="month">当月</li>
+                            <li data-target="year" class="">当年</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>
+                                <div class="total-info">
+                                    <div class="title">
+                                        <span>线上受理<em class="num" id="xsslzs">0</em>次</span>
+                                        <span>线上办结<em class="num" id="xsbjzs">0</em>次</span>
+                                    </div>
+                                    <div class="profession-chart" id="pro1"></div>
+                                </div>
+
+                                <div class="total-info">
+                                    <div class="title">
+                                        <span>线下受理<em class="num" id="xxslzs">0</em>次</span>
+                                        <span>线下办结<em class="num" id="xxbjzs">0</em>次</span>
+                                    </div>
+                                    <div class="profession-chart" id="pro2"></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel top-ten">
+                    <div class="panel-header">
+                        <span>事项前十名</span>
+                        <a href="#" id="toptengd" class="dialog" data-target="sxsltoptenbox">更多+</a>
+                        <a name="toptentab" id="toptenbj">办结</a>
+                        <a name="toptentab" id="toptensl" class="toptenactive">受理</a>
+                    </div>
+                    <div class="panel-body">
+                        <div class="topChart" id="top-ten">
+
+                        </div>
+                    </div>
+                </li>
+                <!-- <li class="panel handle-top-ten">
+                    <div class="panel-header">
+                        <span>事项办结前十名</span>
+                        <a href="#">更多+</a>
+                    </div>
+                    <div class="panel-body" id="handle-top-ten">
+
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login-cont">
+            <div class="login-title">用户登录</div>
+            <div class="login-input">
+                <div class="input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="请输入密码" id="password">
+                </div>
+            </div>
+            <div class="login-btn" id="loginbtn">登录</div>
+            <div class="login-close">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  弹出框  -->
+<div class="mask-panel">
+    <div class="box" data-target="sxzlbox">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="panel-header">
+            <a id="qbsx" class="sxlx"><span>全部事项</span></a>
+            <a id="zwfwsx" class="sxlx"><span>政务服务事项</span></a>
+            <a id="ysqsx" class="sxlx"><span>依申请事项</span></a>
+            <a id="sdsx" class="sxlx"><span>试点事项</span></a>
+            <!-- 日期选择 -->
+            <div id="chaxun">
+                <div class="layui-inline" id="startDiv">
+                    <input type="text" placeholder="开始时间" class="layui-input" id="start-time">
+                </div>
+                <div class="layui-inline" id="endDiv">
+                    <input type="text" placeholder="结束时间" class="layui-input" id="end-time">
+                </div>
+                <div class="layui-input-inline " style="height: 24px;margin-right: 10px">
+                    <button class="layui-btn layui-btn-sm layui-btn-radius" id="searchCreateTime" data-type="reload">
+                        <i class="layui-icon" style="font-size: 20px; "></i> 查询
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="chart-content">
+            <ul>
+                <li>
+                    <div class="filter-name" id="szbmsxgsdiv">市直部门事项</div>
+                    <div class="chart" id="szbmsxgs"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="szbmwbsddiv">市直部门事项是否可网办</div>
+                    <div class="chart" id="szbmwbsd"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="qxbmsxgsdiv">区县级事项</div>
+                    <div class="chart" id="qxbmsxgs"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="qxbmwbsddiv">区县级事项是否可网办</div>
+                    <div class="chart" id="qxbmwbsd"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="sxxz-div">事项性质</div>
+                    <div class="chart sxxz" id="sxxz-chart"></div>
+                </li>
+            </ul>
+        </div>
+        <!--<div style="width: 80%;padding-top: 10px;">
+            <table style="width: 80%;color:#ffffff;font-size:12px;">
+               <thead>
+                 <th>总数</th>
+                 <th>线上数量</th>
+                 <th>线下数量</th>
+                 <th>上网率</th>
+               </thead>
+               <tr>
+                 <td id='tdsxzs' align="center"></td>
+                 <td id='tdxssl' align="center"></td>
+                 <td id='tdxxsl' align="center"></td>
+                 <td id='tdswl' align="center"></td>
+               </tr>
+            </table>
+        </div>-->
+        <div class="download-content">
+            <input type="hidden" id="downloadValue" value=""/>
+
+            <div class="layui-input-inline" style="margin-top: 5px;margin-right: 3px">
+                <input type="text" style="height: 34px;" id="searContent" name="searContent" autocomplete="off"
+                       placeholder="单位名称" class="layui-input">
+            </div>
+            <div class="layui-input-inline " style="height: 24px;margin-right: 10px">
+                <button class="layui-btn layui-btn-sm layui-btn-radius" id="searchOrgName" data-type="reload">
+                    <i class="layui-icon" style="font-size: 20px; "></i> 搜索
+                </button>
+            </div>
+
+            <a href="#" id="egovIndexSXZLDownload">
+                <i class="fa fa-download"></i>
+                下载
+            </a>
+        </div>
+        <div class="table-content">
+            <table class="layui-hide" id="dataGrid" lay-filter="dataGrid"></table>
+        </div>
+    </div>
+
+    <div class="box" data-target="sxxzbox">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="chart-content">
+            <ul>
+                <li>
+                    <div class="filter-name" id="sxxzdrsldiv">当日业务数量</div>
+                    <div class="depart-ranking-title">
+                        <span name="acceptOption" class="active" id="sxxzdrxsywsl">线上</span>
+                        <span name="handleOption" id="sxxzdrxxywsl">线下</span>
+                    </div>
+                    <div class="chart" id="sxxzdrsl"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="sxxzdysldiv">当月业务数量</div>
+                    <div class="depart-ranking-title">
+                        <span name="acceptOption" class="active" id="sxxzdyxsywsl">线上</span>
+                        <span name="handleOption" id="sxxzdyxxywsl">线下</span>
+                    </div>
+                    <div class="chart" id="sxxzdysl"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="sxxzdnsldiv">当年业务数量</div>
+                    <div class="depart-ranking-title">
+                        <span name="acceptOption" class="active" id="sxxzdnxsywsl">线上</span>
+                        <span name="handleOption" id="sxxzdnxxywsl">线下</span>
+                    </div>
+                    <div class="chart" id="sxxzdnsl"></div>
+                </li>
+                <li>
+                    <div class="filter-name" id="sxxzzsldiv">总业务数量</div>
+                    <div class="depart-ranking-title">
+                        <span name="acceptOption" class="active" id="sxxzxszywsl">线上</span>
+                        <span name="handleOption" id="sxxzxxzywsl">线下</span>
+                    </div>
+                    <div class="chart" id="sxxzzsl"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="sxxz-download-content">
+            <a href="${ctx.contextPath}/egovIndexController/sxxzDownload">
+                <i class="fa fa-download"></i>
+                下载
+            </a>
+        </div>
+        <!--<div class="search-content">
+            <div class="filter">
+                <select class="select-filter">
+                    <option value="">请选择筛选条件</option>
+                    <option value="1">当日</option>
+                    <option value="2">当月</option>
+                    <option value="3">当年</option>
+                </select>
+                <span>查询条件：</span>
+                <input type="text" value="" class="search-info" placeholder="请输入查询条件">
+                <span>条件日期：</span>
+                <input type="text" class="m-input " id="start_time"placeholder="开始日期"/>
+                <span>至</span>
+                <input type="text" class="m-input" id="end_time" placeholder="截至日期"/>
+                <a href="#" class="search-btn">
+                    <i class="fa fa-search" id="sxxzywslcxsubmit"></i>
+                </a>
+            </div>
+        </div>-->
+        <!--<div>
+            <table id="sxxzMorePageTable" lay-filter="sxxzMorePageTable"></table>
+        </div>-->
+
+        <div class="sxxzbox-table-content">
+            <div>
+                <span class="bjl">办件量(去掉数据交换)</span>
+            </div>
+            <table class="sxxzbox-table">
+                <thead>
+                <tr>
+                    <th>分类</th>
+                    <th>线上数</th>
+                    <th>线下数</th>
+                    <th>线上线下总数</th>
+                    <th>上网率</th>
+                </tr>
+                </thead>
+                <tbody id="sxxzbox-tbody">
+
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="box bmyjpmbox" data-target="bmyjpmbox">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="content">
+            <a href="#" class="root">部门预警</a>
+            <a href="#" class="second po1">占比分析</a>
+            <a href="#" class="second po2">业务排名分析</a>
+            <a href="#" class="second po3">趋势分析</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=svpf/statistics/bmyczb.html"
+               target="_blank" class="third po1">部门异常占比分析</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=svpf/statistics/bmywzb.html"
+               target="_blank" class="third po2">部门业务占比分析</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=svpf/statistics/yczb.html"
+               target="_blank" class="third po3">异常占比分析</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=svpf/statistics/businessranking.html"
+               target="_blank" class="third r-info po4">部门业务量排名</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=svpf/statistics/depAbnormalproportion.html"
+               target="_blank" class="third r-info po5">部门异常占业务量比重</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po6">业务量趋势</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po7">异常业务量趋势</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po8">异常占比趋势</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po9">趋势总览</a> -->
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po10">五类重点业务趋势纵览</a>
+            <a href="http://172.20.0.3:8080/csso?user=admin&password=c4ca4238a0b923820dcc509a6f75849b&url=integrated/analysis/trend.html"
+               target="_blank" class="third ver po11">十类重点部门趋势纵览</a>
+        </div>
+    </div>
+
+    <div class="box" data-target="sxsltoptenbox">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="chart-content">
+            <ul>
+                <li class="today">
+                    <div class="filter-name">事项受理办结今日</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionToday" name="acceptOptionToday" class="active">受理</span>
+                        <span class="handleOptionToday" name="handleOptionToday">办结</span>
+                    </div>
+                    <div class="chart" id="mask-today"></div>
+                </li>
+                <li class="thisMonth">
+                    <div class="filter-name">事项受理办结本月</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionMonth" name="acceptOptionMonth" class="active">受理</span>
+                        <span class="handleOptionMonth" name="handleOptionMonth">办结</span>
+                    </div>
+                    <div class="chart" id="mask-thisMonth"></div>
+                </li>
+                <li class="thisYear">
+                    <div class="filter-name">事项受理办结本年</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionYear" name="acceptOptionYear" class="active">受理</span>
+                        <span class="handleOptionYear" name="handleOptionYear">办结</span>
+                    </div>
+                    <div class="chart" id="mask-thisYear"></div>
+                </li>
+                <li class="all">
+                    <div class="filter-name">事项受理办结全部</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionAll" name="acceptOptionAll" class="active">受理</span>
+                        <span class="handleOptionAll" name="handleOptionAll">办结</span>
+                    </div>
+                    <div class="chart" id="mask-all"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="download-content">
+            <a href="${ctx.contextPath}/egovIndexController/egovIdnexSXQSMDownload">
+                <i class="fa fa-download"></i>
+                下载
+            </a>
+        </div>
+        <!-- 事项受理办结数据表格 author zxp -->
+        <div>
+            <table id="sxslbjTable" lay-filter="sxslbjTable"></table>
+        </div>
+    </div>
+    <!-- 部门受理办结弹出框start	author zxp -->
+    <div class="box" data-target="bmslbjbox">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="chart-content">
+            <ul>
+                <li class="bmslbj-today">
+                    <div class="filter-name">部门受理办结今日</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionToday" name="acceptOptionToday" class="active">受理</span>
+                        <span class="handleOptionToday" name="handleOptionToday">办结</span>
+                    </div>
+                    <div class="chart" id="bmslbj-mask-today"></div>
+                </li>
+                <li class="bmslbj-thisMonth">
+                    <div class="filter-name">部门受理办结本月</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionMonth" name="acceptOptionMonth" class="active">受理</span>
+                        <span class="handleOptionMonth" name="handleOptionMonth">办结</span>
+                    </div>
+                    <div class="chart" id="bmslbj-mask-thisMonth"></div>
+                </li>
+                <li class="bmslbj-thisYear">
+                    <div class="filter-name">部门受理办结本年</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionYear" name="acceptOptionYear" class="active">受理</span>
+                        <span class="handleOptionYear" name="handleOptionYear">办结</span>
+                    </div>
+                    <div class="chart" id="bmslbj-mask-thisYear"></div>
+                </li>
+                <li class="bmslbj-all">
+                    <div class="filter-name">部门受理办结全部</div>
+                    <div class="depart-ranking-title">
+                        <span class="acceptOptionAll" name="acceptOptionAll" class="active">受理</span>
+                        <span class="handleOptionAll" name="handleOptionAll">办结</span>
+                    </div>
+                    <div class="chart" id="bmslbj-mask-all"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="download-content">
+            <a href="${ctx.contextPath}/egovIndexController/egovIdnexSXQSMDownload">
+                <i class="fa fa-download"></i>
+                下载
+            </a>
+        </div>
+        <!-- 部门受理办结数据表格	author zxp -->
+        <div>
+            <table id="bmslbjTable" lay-filter="bmslbjTable"></table>
+        </div>
+    </div>
+    <!-- 部门受理办结弹出框end	author zxp -->
+
+    <!-- start：xlm业务办理变化趋势详情-->
+    <div class="box" data-target="trend_box">
+        <div class="close-btn">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="right-content" style="width: 35%;  float: left;">
+            <div class="layui-input-inline" style="margin-top: 5px;margin-right: 3px">
+                <input type="text" style="height: 34px;" id="searchOrgName2" name="searContent" autocomplete="off"
+                       placeholder="单位名称" class="layui-input">
+            </div>
+            <div class="layui-input-inline " style="height: 24px;margin-right: 10px">
+                <button class="layui-btn layui-btn-sm layui-btn-radius" id="search2" data-type="reload">
+                    <i class="layui-icon" style="font-size: 20px; "></i> 搜索
+                </button>
+            </div>
+            <div class="table-content">
+                <table class="table active" id="table_org_list" lay-filter="table_org_list">
+                </table>
+            </div>
+        </div>
+        <div class="right-content" style="width: 60%;  float: right;">
+            <div class="table-content">
+                <div class="chart-content">
+                    <ul class="">
+                        <li style="width: 100%">
+                            <div class="filter-name" id="org_name"
+                                 style="text-align: center;color: red;font-size: 24px;width: 100%">全部部门
+                            </div>
+                        </li>
+                        <li style="width: 100%">
+                            <div class="filter-name" style="width: 20%;float: left">按日统计</div>
+                            <div class="filter-name" style="width: 40%;float: left">线上</div>
+                            <div class="filter-name" style="width: 40%;float: left">线下</div>
+                        </li>
+                        <li style="width: 100%">
+                            <div id="pro_day_online" style="width: 45%;  height: 150px;float: left;"></div>
+                            <div id="pro_day_offline" style="width: 45%;  height: 150px;float: left;"></div>
+                        </li>
+                        <li style="width: 100%">
+                            <div class="filter-name" style="width: 20%;float: left">按月统计</div>
+                            <div class="filter-name" style="width: 40%;float: left">线上</div>
+                            <div class="filter-name" style="width: 40%;float: left">线下</div>
+                        </li>
+                        <li style="width: 100%">
+                            <div class="chart" id="pro_month_online"
+                                 style="width: 45%;  height: 150px;float: left;"></div>
+                            <div class="chart" id="pro_month_offline"
+                                 style="width: 45%;  height: 150px;float: left;"></div>
+                        </li>
+                        <li style="width: 100%">
+                            <div class="filter-name" style="width: 20%;float: left">按年统计</div>
+                            <div class="filter-name" style="width: 40%;float: left">线上</div>
+                            <div class="filter-name" style="width: 40%;float: left">线下</div>
+                        </li>
+                        <li style="width: 100%">
+                            <div class="chart" id="pro_year_online"
+                                 style="width: 45%;  height: 150px;float: left;"></div>
+                            <div class="chart" id="pro_year_offline"
+                                 style="width: 45%;  height: 150px;float: left;"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end：xlm业务办理变化趋势详情-->
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/layui/layui.all.js" charset="utf-8"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-wordcloud.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/egovIndex/egovIndex.js"></script>
+<script>
+    // 登录操作
+    $("#loginbtn").click(function () {
+        var login = ctx + "/userlogin";
+        $.ajax({
+            type: "GET",
+            async: true,
+            url: login,
+            data: {
+                "account": $("#username").val(),
+                "pwd": $("#password").val(),
+                "appCode": "INSPUR-DZZW-YTHZS"
+            },
+            success: function (result) {
+                if (result.resultUser.state == 200) {
+                    array = result.resultUser.menus;
+                    // spjid = result.resultUser.user.ID;
+                    // console.log(array)
+                    // 把获取到的菜单放到session里面
+                    sessionStorage.setItem("array", JSON.stringify(array));
+                    sessionStorage.setItem("username", result.resultUser.user.NAME);
+                    sessionStorage.setItem("user", result.resultUser.user.ID);
+                    window.location.href = 'egovIndex.html';
+                } else if (result.resultUser.state == "3" || result.resultUser.state == "2") {
+                    console.log(result.resultUser.error);
+                } else {
+                    console.log(result.resultUser.state)
+                }
+            },
+            error: function (errorMsg) {
+
+            }
+        });
+    })
+</script>
+</html>

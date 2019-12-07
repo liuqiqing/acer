@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.dtgl.DtglMapper">
+    <!-- 获取短信评价的信息 scoreType 1是满意2是基本满意3是不满意-->
+    <select id="getdxpjxx" resultType="java.util.LinkedHashMap">
+        SELECT count(reply) sum,case
+            when reply = '1' then '满意'
+            when reply = '2' then '基本满意'
+            when reply = '3' then '不满意'
+            end as msg
+        from msgqueue WHERE reply in ('1','2','3') and date_format(createDate,'%Y-%m') = #{Cdate}
+        GROUP BY reply
+    </select>
+
+    <!-- 获取短信评价的信息 scoreType 1是满意2是基本满意3是不满意-->
+    <select id="getmsgxx" resultType="java.util.LinkedHashMap">
+        SELECT reply,userArg FROM msgqueue WHERE reply in ('1','2','3') and date_format(createDate,'%Y-%m') = #{Cdate}
+    </select>
+
+
+</mapper>

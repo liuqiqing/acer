@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>一窗收件-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="static/libs/normalize.css">
+    <link rel="stylesheet" href="static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="static/css/common.css">
+    <link rel="stylesheet" href="static/css/ycResource.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/login.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-right-section" style="height: 100%">
+            <div class="table-content">
+                <div class="panel-header1">
+                    <div class="titlespan"><span>一窗系统收件事项排名：</span></div>
+                    <div class="download-content">
+                        <a href="#" class="download_a" onclick="qxZyQkDownload()">
+                            <i class="fa fa-download"></i> 下载
+                        </a>
+                    </div>
+
+                </div>
+                <!--  区县资源情况 -->
+                <table class="table" id="qxzyqkTable">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>事项名称</th>
+                        <th>
+                            <div class="order-btn">事项类型</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件区域</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">办理状态</div>
+                        </th>
+                        <th>
+                            <div class="order-btn">收件时间</div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="body-lb">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="m-left-section">
+            <!-- chart2 数据:资源类型统计 -->
+            <div class="info-section r-40" style="width: 97.7%">
+                <ul class="flex-list vert-list">
+                    <li class="panel">
+                        <div class="panel-header">
+                            <span>当天一窗收件情况</span>
+                        </div>
+                        <div class="panel-body n-exchange">
+                            <ul style="display: flex;flex-direction: row;margin-left: 35px">
+                                <li style="margin-top: 35px;">
+                                    <div class="exchange"></div>
+                                    <div class="white">收件总数量</div>
+                                    <div class="amount"><span class="num" id="total_count"></span></div>
+                                </li>
+                                <li style="margin-top: 35px;">
+                                    <div class="exchange"></div>
+                                    <div class="white">省里收件数</div>
+                                    <div class="amount"><span class="num" id="sum_success_times"></span></div>
+                                </li>
+                                <li style="margin-top: 35px;">
+                                    <div class="exchange"></div>
+                                    <div class="white">市里收件数</div>
+                                    <div class="amount"><span class="num" id="sum_failed_times"></span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- chart3: 一窗收件每周变化趋势 -->
+            <div class="info-section top-60" id="chart3-info-div" style="height: 600px">
+<!--                <div class="panel-header" style="position: relative;top: 0%;width:10%;float: right">-->
+<!--                    <a href="#" class="dialog" data-target="xyResourcebox" style="width:100%;color: #0198df;">更多+</a>-->
+<!--                </div>-->
+                <div class="chart-content" id="chart3"  style="height: 500px;margin-top: 50px;margin-left: 20px">
+
+                </div>
+                <!--    <div class="xyResourceMore"><a href="#" class="dialog" data-target="xyResourcebox">更多+</a></div> -->
+
+            </div>
+        </div>
+        <div class="m-bottom-section">
+        </div>
+        <!--  弹出框:开始  -->
+        <!-- 省级资源申请情况：弹出框 -->
+        <div class="mask-panel">
+            <div class="box shqshejzybox" data-target="shqshejzybox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>申请省级资源情况：</span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="shQShjZyDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <table id="shqshjResourceProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>部门名称</th>
+                                <th>申请接口数（个）</th>
+                                <th>累计接口调用（次）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--申请市级资源情况:弹出框  -->
+            <div class="box shqcityzybox" data-target="shqcityzybox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>申请市级资源情况：</span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="shqCityzyDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="panel-header1" id="shqcityzy_propTab">
+                        <ul>
+                            <li data-target="apply" class="active">申请资源数</li>
+                            <li data-target="jkDy">申请接口数</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <table id="shqcityResourceProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th>部门名称</th>
+                                <th id="applyZyTh">申请资源数（项）</th>
+                                <th>申请数（次）</th>
+                                <th>通过数（次）</th>
+                                <th>驳回数（次）</th>
+                                <th id="applyJkTh" style="display:none;">累计调用（次）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--市级资源提供响应情况:弹出框  -->
+            <div class="box cityzyProvidebox" data-target="cityzyProvidebox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>市级资源提供响应情况：</span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="cityzyProvideDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="panel-header1" id="cityzyProvide_propTab">
+                        <ul>
+                            <li data-target="apply" class="active">资源</li>
+                            <li data-target="jkDy">接口</li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <table id="cityzyProvideProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th id="bmCss">部门名称</th>
+                                <th>被申请数（项）</th>
+                                <th>被申请次数（次）</th>
+                                <th>被申请通过次数（次）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!--现有资源:弹出框  -->
+            <div class="box xyResourcebox" data-target="xyResourcebox">
+                <div class="close-btn">
+                    <i class="fa fa-close"></i>
+                </div>
+                <div class="table-content">
+                    <div class="panel-header">
+                        <span>市级部门现有资源统计：</span>
+                        <div class="download-content">
+                            <a href="#" class="download_a" onclick="xyResourceDownload()">
+                                <i class="fa fa-download"></i> 下载
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="panel-header1" id="xyResource_propTab">
+                        <ul>
+                            <li data-target="zy" class="active">资源总数</li>
+                            <li data-target="kb">库表数</li>
+                            <li data-target="jk">接口</li>
+                            <li data-target="wj">文件</li>
+
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <table id="xyResourceProp">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="width:40%;">部门名称</th>
+                                <th id="thName">库表数（张）</th>
+                                <th id="shjLNum">数据量(个)</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                        <table id="xyResourceTotalProp" style="display:none;">
+                            <thead>
+                            <tr>
+                                <th>序号</th>
+                                <th style="width:40%;">部门名称</th>
+                                <th>&nbsp;&nbsp;&nbsp;资源&nbsp;&nbsp;&nbsp;</th>
+                                <th>库表（张）</th>
+                                <th>接口（个）</th>
+                                <th>文件（类）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  弹出框:结束  -->
+</div>
+
+</body>
+<script src="static/libs/jquery.min.js"></script>
+<script src="static/libs/jquery.nicescroll.min.js"></script>
+<script src="static/libs/echarts.min.js"></script>
+<script src="static/libs/echarts-wordcloud.js"></script>
+<script src="static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="static/js/ycResource.js"></script>
+</html>

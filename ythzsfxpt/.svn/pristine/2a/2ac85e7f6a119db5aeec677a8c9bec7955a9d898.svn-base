@@ -1,0 +1,542 @@
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'blspMapper' and 'com.inspur.dao.blsp.BlspMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzjcMapper' and 'com.inspur.dao.dzjc.dzjcMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'dzzzMapper' and 'com.inspur.dao.dzzz.dzzzMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gdpMapper' and 'com.inspur.dao.gdp.gdpMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'gopMapper' and 'com.inspur.dao.gop.gopMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'pdjhMapper' and 'com.inspur.dao.pdjh.PdjhMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'spyhMapper' and 'com.inspur.dao.spyh.spyhMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'sxglMapper' and 'com.inspur.dao.sxgl.sxglMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'tyslMapper' and 'com.inspur.dao.tysl.TyslMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'ywtbMapper' and 'com.inspur.dao.ywtb.ywtbMapper' mapperInterface
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\blsp\BlspMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzjc\dzjcMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\dzzz\dzzzMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gdp\gdpMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\gop\gopMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\pdjh\PdjhMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\spyh\spyhMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\sxgl\sxglMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\tysl\TyslMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\11044\IdeaProjects\tjfx\target\classes\com\inspur\dao\ywtb\ywtbMapper.class]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.web.context.ContextLoader - Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@21555c55'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/blsp/BlspMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@2f897e2f'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\sxgl\sxglMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@39affa61'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/spyh/spyhMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@49bc983c'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/ywtb/ywtbMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@23efc131'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzjc/dzjcMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@64c807bd'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/pdjh/pdjhMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@55ed483'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/tysl/tyslMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@423b7d47'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/dzzz/dzzzMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@5f09fba6'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\11044\IdeaProjects\tjfx\target\classes\mybatis\mapper\gdp\gdpMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Registered plugin: 'com.github.pagehelper.PageInterceptor@7c772d23'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'class path resource [mybatis/mapper/gop/gopMapper.xml]'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 167 mappings in 'requestMappingHandlerMapping'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.h.BeanNameUrlHandlerMapping - Detected 0 mappings in 'beanNameHandlerMapping'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /static/**] in 'resourceHandlerMapping'
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+[DEBUG] 2019-11-05 09:39:21 [restartedMain] o.s.w.s.v.f.FreeMarkerConfigurer - Template loader path [class path resource [templates]] resolved to file path [C:\Users\11044\IdeaProjects\tjfx\target\classes\templates]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b836612]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4987ada9]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@206981499 wrapping oracle.jdbc.driver.T4CConnection@6ad88a13] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@783056260 wrapping oracle.jdbc.driver.T4CConnection@13897e0e] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4987ada9]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4987ada9]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4987ada9]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4987ada9]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b836612]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b836612]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b836612]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b836612]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c6a4d20]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@654404eb]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@318594222 wrapping oracle.jdbc.driver.T4CConnection@6ad88a13] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c6a4d20]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c6a4d20]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c6a4d20]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2c6a4d20]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@596263477 wrapping oracle.jdbc.driver.T4CConnection@13897e0e] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@654404eb]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@654404eb]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@654404eb]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@654404eb]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/index', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/index.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5bc078]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1529384452 wrapping oracle.jdbc.driver.T4CConnection@472e9b7b] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - ==>  Preparing: SELECT count(*) as sums from APPROVE_BUSINESS_INDEX WHERE state = '99' and REGION_CODE= '370100000000' and TO_CHAR(FINISH_TIME,'yyyy-mm-dd') = ? 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@379ac2ad]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65f5e810]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1064029586 wrapping oracle.jdbc.driver.T4CConnection@4e189938] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@379ac2ad]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@379ac2ad]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@379ac2ad]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@379ac2ad]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2115242859 wrapping oracle.jdbc.driver.T4CConnection@44e0f248] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65f5e810]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65f5e810]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65f5e810]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65f5e810]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5bc078]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5bc078]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5bc078]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e5bc078]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b6a141]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2096421049 wrapping oracle.jdbc.driver.T4CConnection@472e9b7b] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - ==>  Preparing: SELECT count(*) as sum from APPROVE_BUSINESS_INDEX WHERE state = '01' and REGION_CODE= '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b6a141]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b6a141]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b6a141]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65b6a141]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b455df4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@121b4cf4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@765117912 wrapping oracle.jdbc.driver.T4CConnection@55510f81] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b455df4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b455df4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b455df4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6b455df4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@422696216 wrapping oracle.jdbc.driver.T4CConnection@b4fdccf] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@121b4cf4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@121b4cf4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@121b4cf4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@121b4cf4]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/index', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/index.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a104d43]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1774724633 wrapping oracle.jdbc.driver.T4CConnection@2dda127e] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - ==>  Preparing: SELECT count(*) as sums from APPROVE_BUSINESS_INDEX WHERE state = '99' and REGION_CODE= '370100000000' and TO_CHAR(FINISH_TIME,'yyyy-mm-dd') = ? 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spbj - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a104d43]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a104d43]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a104d43]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a104d43]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31ea1436]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1385867123 wrapping oracle.jdbc.driver.T4CConnection@2dda127e] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - ==>  Preparing: SELECT count(*) as sum from APPROVE_BUSINESS_INDEX WHERE state = '01' and REGION_CODE= '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] com.inspur.dao.spyh.spyhMapper.spsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31ea1436]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31ea1436]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31ea1436]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31ea1436]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbbd563]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47eb495]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1251922131 wrapping oracle.jdbc.driver.T4CConnection@3984f911] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47eb495]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47eb495]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47eb495]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@47eb495]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@174109388 wrapping oracle.jdbc.driver.T4CConnection@337c9261] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbbd563]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbbd563]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbbd563]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fbbd563]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.freemarker.FreeMarkerView - View name '/ythzs/ycResource', model {}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.v.freemarker.FreeMarkerView - Rendering [/ythzs/ycResource.html]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5521b4f1]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f274b3b]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@731458357 wrapping oracle.jdbc.driver.T4CConnection@20f3303] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@472947275 wrapping oracle.jdbc.driver.T4CConnection@228f5a0f] will be managed by Spring
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==>  Preparing: SELECT COUNT (1) AS SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') = ? and REGION_CODE = '370100000000' and state in ('01','21') 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==>  Preparing: SELECT ROWNUM,sum,time from( SELECT COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum, TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time FROM ACCEPT_BUSINESS_INDEX WHERE REGION_CODE = '370100000000' AND state IN ( '01', '21' ) GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <= 7 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - ==> Parameters: 2019-11-05(String)
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - ==> Parameters: 
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] c.i.dao.tysl.TyslMapper.getycsjsl - <==      Total: 1
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5521b4f1]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5521b4f1]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5521b4f1]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5521b4f1]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] c.i.dao.tysl.TyslMapper.getycsjqs - <==      Total: 7
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f274b3b]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f274b3b]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f274b3b]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2f274b3b]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}
+[DEBUG] 2019-11-05 09:39:21 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - Completed 200 OK, headers={masked}

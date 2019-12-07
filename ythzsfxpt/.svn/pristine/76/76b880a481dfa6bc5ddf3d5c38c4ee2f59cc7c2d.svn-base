@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.blsp.BlspMapper">
+    <!-- 市直部门事项个数 柱状图 -->
+    <select id="getSum" resultType="java.lang.Integer">
+        SELECT  COUNT (1) AS  SUM FROM SPGL_BUSINESS_INDEX
+    </select>
+
+    <!-- 获取投资总金额 -->
+    <select id="getzjsum" resultType="java.util.LinkedHashMap">
+        SELECT PROJECT_ID，TOTAL_INVESTMENT from PARALLEL_PROJECT where parent_id='0'
+    </select>
+
+    <!-- 获取项目总数(市本级和区县) parent_id='0' 不统计子项的项目  -->
+    <select id="getprojectsum" resultType="java.lang.Integer">
+        select count(project_id) sum from PARALLEL_PROJECT where parent_id='0'
+    </select>
+
+    <!-- 获取项目总数(市本级)  -->
+    <select id="getjnssum" resultType="java.lang.Integer">
+       select count(project_id) sum from PARALLEL_PROJECT where parent_id='0' and REGION = '370100000000'
+    </select>
+
+    <!-- 获取项目总数(区县级) -->
+    <select id="getqxsum" resultType="java.lang.Integer">
+        SELECT count(project_id) sum from PARALLEL_PROJECT WHERE REGION in ('370181000000',
+        '370105000000','370126000000','370103000000', '370190000000','370124000000','370125000000','370112000000',
+        '370102000000', '370113000000','370104000000','370116000000','370117000000') and parent_id='0'
+    </select>
+
+    <!-- 公共服务类建设项目 -->
+    <select id="getggjs" resultType="java.lang.Integer">
+        SELECT count(1) as ggjs from PARALLEL_PROJECT WHERE  REGION = '370100000000' and INVESTMENT_SOURCE= '0' and parent_id='0'
+    </select>
+
+    <!-- 社会投资建设项目-->
+    <select id="getshtz" resultType="java.lang.Integer">
+        SELECT count(1) as shtz from PARALLEL_PROJECT WHERE  REGION = '370100000000' and INVESTMENT_SOURCE= '1' and parent_id='0'
+    </select>
+
+    <!-- 项目类别-->
+    <select id="getxmlb" resultType="java.util.LinkedHashMap">
+        SELECT
+            count( 1 ) sum,
+            CASE
+            	WHEN PROJECT_CATEGORY = '01' THEN '政府投资建筑工程'
+            	WHEN PROJECT_CATEGORY = '03' THEN '社会投资民用建设工程'
+            	WHEN PROJECT_CATEGORY = '06' THEN '社会投资工业仓储建筑工程'
+            	WHEN PROJECT_CATEGORY = '10' THEN '通用类项目'
+            	WHEN PROJECT_CATEGORY = '05' THEN '社会投资带方案出让土地的建筑工程'
+            	WHEN PROJECT_CATEGORY = '04' THEN '社会投资带方案出让土地的工业仓储建筑工程'
+            	END PROJECT_CATEGORY
+            FROM
+            	PARALLEL_PROJECT
+            WHERE
+            	REGION = '370100000000'
+            GROUP BY
+            PROJECT_CATEGORY
+    </select>
+
+    <!-- 项目类型-->
+    <select id="getxmlx" resultType="java.util.LinkedHashMap">
+            SELECT
+            	count( 1 ) sum,
+            CASE
+            	WHEN PROJECT_TYPE = 'A00001' THEN '审批类项目'
+            	WHEN PROJECT_TYPE = 'A00002' THEN '核准类项目'
+            	WHEN PROJECT_TYPE = 'A00003' THEN '备案类项目'
+            	END PROJECT_TYPE
+            FROM
+            	PARALLEL_PROJECT
+            WHERE
+            	REGION = '370100000000'
+            GROUP BY
+            PROJECT_TYPE
+    </select>
+
+    <!-- 各区县项目数量-->
+    <select id="getqhxmsl" resultType="java.util.LinkedHashMap">
+        SELECT
+            	 count(PROJECT_ID) sum,region,
+            CASE
+                WHEN region = '370100000000' THEN '市本级'
+            	WHEN region = '370181000000' THEN '章丘区'
+            	WHEN region = '370105000000' THEN '天桥区'
+            	WHEN region = '370126000000' THEN '商河县'
+            	WHEN region = '370103000000' THEN '市中区'
+            	WHEN region = '370190000000' THEN '高新区'
+            	WHEN region = '370124000000' THEN '平阴县'
+            	WHEN region = '370125000000' THEN '济阳县'
+            	WHEN region = '370112000000' THEN '历城区'
+            	WHEN region = '370102000000' THEN '历下区'
+            	WHEN region = '370113000000' THEN '长清区'
+            	WHEN region = '370104000000' THEN '槐荫区'
+            	WHEN region = '370116000000' THEN '莱芜区'
+            	WHEN region = '370117000000' THEN '钢城区'
+            	END regionname
+        FROM
+            PARALLEL_PROJECT where parent_id='0'
+        GROUP BY region order by sum desc
+    </select>
+
+    <!-- 项目金额分布情况-->
+    <select id="getxmzjfb" resultType="java.util.LinkedHashMap">
+        SELECT count(1) total,total_amount from
+            (SELECT
+                  	 PROJECT_ID sum,TOTAL_INVESTMENT,
+                  CASE
+                    WHEN TOTAL_INVESTMENT BETWEEN 0 AND 5000 THEN '5000万以下'
+                  	WHEN TOTAL_INVESTMENT BETWEEN 5000 AND 10000 THEN '5000万-1亿'
+                  	WHEN TOTAL_INVESTMENT BETWEEN 10000 AND 50000THEN '1亿-5亿'
+                  	WHEN TOTAL_INVESTMENT BETWEEN 50000 AND 100000 THEN '5亿-10亿'
+                  	WHEN TOTAL_INVESTMENT > 100000  THEN '>=10亿'
+                  	END total_amount
+              FROM
+        PARALLEL_PROJECT where parent_id='0')  GROUP BY total_amount
+    </select>
+
+    <!-- 项目申报情况统计  -->
+    <select id="getsbqktj" resultType="java.util.LinkedHashMap">
+        SELECT count(PB.BIZ_STATE) sum,PB.BIZ_STATE
+        FROM PARALLEL_BIZ_BASE PB
+        left join PARALLEL_PROJECT PT
+        ON PB.PROJECT_ID=PT.PROJECT_ID
+        GROUP BY PB.BIZ_STATE
+    </select>
+
+    <!-- 业务状态统计  -->
+    <select id="getywzttj" resultType="java.util.LinkedHashMap">
+        SELECT sum,
+            CASE
+            	WHEN state = '01' THEN '立项申请'
+	            WHEN state = '02' THEN '受理'
+	            WHEN state = '03' THEN '不予受理'
+	            WHEN state = '04' THEN '补齐补正'
+	            WHEN state = '07' THEN '挂起'
+	            WHEN state = '99' THEN '办结'
+	            WHEN state = '96' THEN '退件'
+	            WHEN state = '97' THEN '作废'
+            	END state
+        from
+        (SELECT count(PB.BIZ_STATE) sum,PB.BIZ_STATE state
+        FROM PARALLEL_BIZ_BASE PB
+        left join PARALLEL_PROJECT PT
+        ON PB.PROJECT_ID=PT.PROJECT_ID  WHERE PB.STAGE_ID = #{stageid}
+        GROUP BY PB.BIZ_STATE )
+    </select>
+
+    <!-- 每月联办业务受理数  -->
+    <select id="getlbywsls" resultType="java.util.LinkedHashMap">
+        SELECT
+        	count( APPLY_TIME ) sum,
+        	APPLY_TIME
+        FROM
+        	( SELECT to_char ( APPLY_TIME, 'yyyy-mm' ) APPLY_TIME FROM PARALLEL_BIZ_BASE PB
+        	LEFT JOIN PARALLEL_PROJECT PT
+        	ON PB.PROJECT_ID = PT.PROJECT_ID )
+        GROUP BY
+	APPLY_TIME
+    </select>
+
+    <!-- 项目排名  -->
+    <select id="getproject" resultType="java.util.LinkedHashMap">
+        SELECT
+           ROWNUM,
+           PROJECT_ID,
+           PROJECT_NAME,
+           to_char ( APPLY_DATE, 'yyyy' ) APPLY_DATE
+        FROM
+            PARALLEL_PROJECT
+        WHERE
+            PARENT_ID = '0'
+        AND ROWNUM <![CDATA[<= ]]> 10
+    </select>
+</mapper>

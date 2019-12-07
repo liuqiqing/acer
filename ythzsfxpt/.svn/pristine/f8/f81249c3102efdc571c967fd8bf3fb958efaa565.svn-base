@@ -1,0 +1,46 @@
+package com.inspur.service.impl;
+
+import com.inspur.dao.tysl.TyslMapper;
+import com.inspur.service.TyslService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
+
+@Service
+@Transactional
+public class TyslServiceImpl implements TyslService {
+    @Autowired
+    private TyslMapper tyslMapper;
+
+    @Override
+    public int getSum() {
+        return tyslMapper.getSum();
+    }
+
+
+    // 获取每天的一窗收件数量
+    @Override
+    public List<Map<String, Object>> getycsjsl(String Cdate) {
+        return tyslMapper.getycsjsl(Cdate);
+    }
+
+    // 获取一窗收件变化趋势
+    @Override
+    public List<Map<String, Object>> getycsjqs() {
+        return tyslMapper.getycsjqs();
+    }
+    // 获取一窗收件事项列表
+    @Override
+    public List<Map<String, Object>> getycsjlb(String Cdate,int page) {
+        return tyslMapper.getycsjlb(Cdate,page);
+    }
+
+    // 下载一窗收件事项列表
+    @Override
+    public List<Map<String, Object>> downloadsxlb(String Cdate) {
+        return tyslMapper.downloadsxlb(Cdate);
+    }
+}

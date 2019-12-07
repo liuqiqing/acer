@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="${ctx.contextPath}/static/css/text.css">-->
+<!--    <link rel="stylesheet" href="${ctx.contextPath}/static/css/shuping.css">-->
+    <link rel="stylesheet" href="static/css/common.css">
+<!--        <link rel="stylesheet" href="${ctx.contextPath}/static/css/shuping.css">-->
+</head>
+<body>
+<input id="contextPath" value="${ctx.contextPath}" type="hidden">
+<div id="app">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main">山东省济南市行政审批服务大厅</div>
+        </a>
+    </div>
+    <div id="main">
+        <div class="m-left-section">
+            <ul class="flex-list vert-list">
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>一窗系统收件情况</span>
+                    </div>
+                    <div class="panel-body n-exchange">
+                        <ul>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">当天收件总数</div>
+                                <div class="amount"><span class="num" id="total_count"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">省&nbsp&nbsp&nbsp&nbsp里</div>
+                                <div class="amount"><span class="num" id="sum_success_times"></span></div>
+                            </li>
+                            <li>
+                                <div class="exchange"></div>
+                                <div class="white">市&nbsp&nbsp&nbsp&nbsp里</div>
+                                <div class="amount"><span class="num" id="sum_failed_times"></span></div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel" style="margin-top: -20px">
+                    <div class="panel-header">
+                        <span>共享度排名</span>
+                    </div>
+                    <div class="panel-body s-ranking">
+                        <div class="s-title">
+                            <span style="width: 20%">排名</span>
+                            <span style="width: 50%">部门名称</span>
+                            <span style="width: 30%;margin-left: 20%">共享度</span></div>
+                        <ul>
+                            <li>
+                                <div style="width: 70px">1</div>
+                                <div style="width: 100px" id="share_org_no1"></div>
+                                <div style="width: 110px" id="share_org_no1_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">2</div>
+                                <div style="width: 100px" id="share_org_no2"></div>
+                                <div style="width: 110px" id="share_org_no2_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">3</div>
+                                <div style="width: 100px" id="share_org_no3"></div>
+                                <div style="width: 110px" id="share_org_no3_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">4</div>
+                                <div style="width: 100px" id="share_org_no4"></div>
+                                <div style="width: 110px" id="share_org_no4_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">5</div>
+                                <div style="width: 100px" id="share_org_no5"></div>
+                                <div style="width: 110px" id="share_org_no5_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">6</div>
+                                <div style="width: 100px" id="share_org_no6"></div>
+                                <div style="width: 110px" id="share_org_no6_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">7</div>
+                                <div style="width: 100px" id="share_org_no7"></div>
+                                <div style="width: 110px" id="share_org_no7_percent">100</div>
+                            </li>
+                            <li>
+                                <div style="width: 70px">8</div>
+                                <div style="width: 100px" id="share_org_no8"></div>
+                                <div style="width: 110px" id="share_org_no8_percent">100</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-right-section">
+            <div class="table-content">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>事项名称</th>
+                        <th>部门名称
+                            <div class="order-btn"></div>
+                        </th>
+                        <th>办理次数
+                            <div class="order-btn"></div>
+                        </th>
+                    </tr>
+                    </thead>
+<!--                    <tbody id="strlist">-->
+
+<!--                    </tbody>-->
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/vue.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+</html>

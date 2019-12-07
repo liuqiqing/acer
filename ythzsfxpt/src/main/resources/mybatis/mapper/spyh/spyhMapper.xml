@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.spyh.spyhMapper">
+
+    <select id="getOrgList" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM ID, T.*
+        FROM (SELECT I.ORG_NAME ORG_NAME, I.ORG_CODE ORG_CODE
+        FROM APPROVE_BUSINESS_INDEX I
+        GROUP BY ORG_CODE, ORG_NAME) T
+        <where>
+            <if test="orgName != null">
+                AND T.ORG_NAME LIKE '%${orgName}%'
+            </if>
+        </where>
+    </select>
+
+
+    <!-- 自然人、法人、项目办件量 -->
+    <select id="bjlTableData" resultType="java.lang.Integer">
+        SELECT COUNT(1)
+        FROM APPROVE_BUSINESS_INDEX A
+        <if test="tableName != null">
+            INNER JOIN ${tableName} B
+            ON A.BUSINESS_OBJECT_CODE = B.SEQ_ID
+        </if>
+        WHERE A.SUBMIT_TIME IS NOT NULL
+        AND A.TYPE IN ('XK', 'ZS', 'QR', 'JF', 'JL', 'CJ', 'QT', 'GG', 'JD')
+        AND A.APPLY_FROM != '04'
+        <if test="applyFrom != null">
+            AND A.APPLY_FROM NOT IN(${applyFrom})
+        </if>
+    </select>
+
+    <!-- 办结量   -->
+    <select id="ybjsl" resultType="java.lang.Integer">
+      SELECT COUNT(1) as sum from APPROVE_BUSINESS_INDEX where state = '99' and REGION_CODE = '370100000000' and ORG_CODE = '370100555'
+    </select>
+    <!-- 退件量   -->
+    <select id="tjsl" resultType="java.lang.Integer">
+       SELECT COUNT(1) as sum from APPROVE_BUSINESS_INDEX where state = '96'and REGION_CODE = '370100000000' and ORG_CODE = '370100555'
+    </select>
+    <!-- 网上申报量  APPLY_FROM = '01'  -->
+    <select id="wssbl" resultType="java.lang.Integer">
+       SELECT count(1) as sum FROM APPROVE_BUSINESS_INDEX WHERE APPLY_FROM = '01' and REGION_CODE = '370100000000' and ORG_CODE = '370100555'
+    </select>
+
+    <!-- 一窗受理量  APPLY_FROM = '07'  -->
+    <select id="ycsll" resultType="java.lang.Integer">
+       SELECT count(1) as sum FROM APPROVE_BUSINESS_INDEX WHERE APPLY_FROM = '07' and REGION_CODE = '370100000000' and ORG_CODE = '370100555'
+    </select>
+    <!-- 济南市事项办结前十  -->
+    <select id="sxbjqs" resultType="java.util.LinkedHashMap">
+        select rownum,t.bj bj,t.item_name itemname,t.ORG_NAME orgname from (select count(*) bj,item_name,ORG_NAME from
+        APPROVE_BUSINESS_INDEX where state = '99' and REGION_CODE = '370100000000' group by item_name,ORG_NAME order by bj desc) t where rownum<![CDATA[<= ]]> 15
+    </select>
+
+    <!-- 当天的审批的办结数量 -->
+    <select id="spbj" resultType="java.lang.Integer">
+        SELECT count(*) as sums from APPROVE_BUSINESS_INDEX WHERE state = '99' and REGION_CODE= '370100000000' and TO_CHAR(FINISH_TIME,'yyyy-mm-dd') = #{Cdate}
+    </select>
+
+    <!-- 当天的审批的受理数量   -->
+    <select id="spsl" resultType="java.lang.Integer">
+         SELECT count(*) as sum from APPROVE_BUSINESS_INDEX WHERE  REGION_CODE= '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') =  #{Cdate}
+    </select>
+    <!--今日网上申报数-->
+    <select id="jrwssbsum" resultType="int">
+        SELECT count(1) as sum FROM APPROVE_BUSINESS_INDEX
+        WHERE APPLY_FROM = '01' and REGION_CODE = '370100000000' and TO_CHAR(FINISH_TIME,'yyyy-mm-dd')=#{Cdate}
+    </select>
+    <!--今日网上收件数-->
+    <select id="jrwssjsum" resultType="int">
+    SELECT count(1) as sum FROM APPROVE_BUSINESS_INDEX
+    WHERE APPLY_FROM = '01' and REGION_CODE = '370100000000' and TO_CHAR(submit_TIME,'yyyy-mm-dd')=#{Cdate}
+    </select>
+</mapper>

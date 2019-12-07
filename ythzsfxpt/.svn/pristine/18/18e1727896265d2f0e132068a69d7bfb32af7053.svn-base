@@ -1,0 +1,454 @@
+.m-left-section {
+  float: right;
+  margin-right: 2.107%;
+  width: 47%;
+}
+.m-left-section .info-section {
+  float: right;
+  width: 46.668%;
+  height: 280px;
+  border: 16px solid transparent;
+  border-image: url("../img/example/section-bg.png") 16 16 fill;
+}
+.m-left-section .info-section.r-40 {
+  /*margin-right: 4.445%;*/
+}
+.m-left-section .info-section.top-60 {
+  margin-top: 60px;
+}
+.m-left-section .n-exchange {
+    vertical-align: center;
+}
+.m-left-section .n-exchange ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.m-left-section .n-exchange ul li {
+    flex: 1;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+}
+.m-left-section .n-exchange ul li .exchange {
+    float: left;
+    background: url("../img/shareIndex/book.png") center no-repeat;
+    width: 63px;
+    height: 72px;
+}
+.m-left-section .n-exchange ul li .white {
+    float: left;
+    margin-left: 10px;
+    line-height: 72px;
+}
+.m-left-section .n-exchange ul li .amount {
+    float: left;
+    width: 150px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    margin-left: 10px;
+    margin-top: 18px;
+    border-bottom: 1px #00c6ff solid;
+    border-top: 1px #00c6ff solid;
+    border-left: none;
+    border-right: none;
+}
+.m-left-section .n-exchange ul li .amount span {
+    font-size: 24px;
+}
+.m-right-section {
+  float: right;
+  margin-right: 2.107%;
+  width: 47%;
+  height: 62.5%;
+}
+.m-right-section .table-content {
+  height: 100%;
+  overflow: hidden;
+}
+.m-right-section .table-content .table {
+  /*width: 100%;*/
+  border: none;
+  font-size:17px;
+  border-collapse: collapse;
+}
+.m-right-section .table-content .table thead {
+  color: #fff;
+  background-color: rgba(8, 16, 138, 0.15);
+  box-shadow: inset 0 0 10px 3px rgba(6, 102, 232, 0.35);
+}
+.m-right-section .table-content .table thead th,
+.m-right-section .table-content .table thead td {
+  padding: 2.23% 0.9%;
+  text-align: center;
+}
+.m-right-section .table-content .table tbody {
+  color: #fff;
+}
+.m-right-section .table-content .table tbody tr:nth-child(odd) {
+  background-color: rgba(23, 64, 136, 0.2);
+}
+.m-right-section .table-content .table tbody tr.fail {
+  color: #cd530c;
+}
+.m-right-section .table-content .table tbody th,
+.m-right-section .table-content .table tbody td {
+  padding: 2% 1%;
+  text-align: center;
+  line-height: 1.5;
+}
+.m-right-section .table-content .table tbody th span,
+.m-right-section .table-content .table tbody td span {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.m-bottom-section {
+  float: right;
+  margin-right: 3.161%;
+  margin-top: 2.12%;
+  width: 94.804%;
+  }
+.m-bottom-section .info-section {
+  float: right;
+  width: 35%;
+  height: 280px;
+  border: 16px solid transparent;
+  border-image: url("../img/example/section-bg.png") 16 16 fill;
+}
+#info-selectiong-bottom{
+	width: 25.556%;
+}
+.m-bottom-section .info-section.r-40 {
+  margin-right: 2.223%;
+}
+.m-bottom-section .info-section.top-60 {
+  margin-top: 60px;
+}
+.chart-content {
+  width: 100%;
+  height: 100%;
+}
+/*开发中修改的css*/
+#chart3-info-div {
+	 margin-top: 4.445%;
+    float: right;
+    width: 97.78%;
+    height: 300px;
+    border: 16px solid transparent;
+    border-image: url(../img/example/section-bg.png) 16 16 fill;
+}
+.m-left-section .info-section.top-60 .xyResourceMore{
+    position: relative;
+    width: 60px;
+    height: 30px;
+    top: -270px;
+    float: right;
+
+}
+.m-left-section .info-section.top-60 .xyResourceMore a{
+	height:30px;
+	line-height:30px;
+	width:100%;
+	font-size: 14px;
+    color: #0198df;
+	float:right;
+}
+
+/*申请省级资源情况 css*/
+.m-bottom-section .info-section .panel-header {
+    position: relative;
+    width: 100%;
+    height: 16%;
+    line-height: 100%;
+}
+.m-bottom-section .info-section .panel-header a{
+  	height: 75.68%;
+    line-height: 100%;
+    width: 15%;
+    font-size: 14px;
+    color: #0198df;
+    float: right;
+    display: block;
+}
+.m-bottom-section .info-section .panel-header1 {
+    width: 100%;
+    height: 16%;
+    font-size: 12px;
+}
+.m-bottom-section .info-section .panel-header1 ul {
+	width:100%;
+	height:30px;
+	padding-left:140px;
+}
+.m-bottom-section .info-section .panel-header1 ul li {
+  margin-left: 10px;
+  height:30px;
+  line-height:30px;
+  float: left;
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+  font-size: 12px; 
+-webkit-transform: scale(0.9); 
+transform: scale(0.9); //所需文字像素通过缩放实现
+}
+.m-bottom-section .info-section .panel-header1 ul li.active {
+  color: #0cdeff;
+  border: 1px solid #0cdeff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+.m-bottom-section .info-section span {
+    display: inline-block;
+    padding-left: 5.842%;
+    font-size: 18px;
+    color: #dff2fd;
+    background: url(../img/common/paneltitle.png) no-repeat 5px center;
+}
+.m-bottom-section .info-section > a {
+    float: right;
+    font-size: 14px;
+    color: #0198df;
+}
+.m-bottom-section .info-section .panel-body {
+	height:84%;
+	width:100%;
+}
+.m-bottom-section .info-section .panel-body table {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.m-bottom-section .info-section .panel-body table thead tr th {
+	border-bottom: 1px solid #00c6ff;
+	border-top: 1px solid #00c6ff;
+	color: #00c6ff;
+	line-height: 2;
+	}
+	
+.m-bottom-section .info-section .panel-body table tbody .shqshjResourceBM{
+	text-align: left;
+}
+.m-bottom-section .info-section .panel-body table tbody tr td {
+  line-height: 30px;
+}
+
+.m-bottom-section .info-section .panel-body table tbody tr:nth-child(odd) td {
+  background: rgba(9, 22, 45, 0.6);
+}
+/*申请省级资源情况弹出框*/
+.mask-panel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.94);
+  opacity: 0;
+  z-index: -99;
+  transition: 0.5s;
+  height: 1080px;
+}
+.mask-panel.active {
+  opacity: 1;
+  z-index: 99;
+}
+.mask-panel .box {
+  display: none;
+  position: relative;
+  width: 1400px;
+  height: 830px;
+  margin: 100px auto;
+  border: 1px solid #0d57ab;
+  background-color: rgba(13, 87, 171, 0.56);
+  padding: 50px;
+}
+.mask-panel .box.active {
+  display: block;
+}
+.mask-panel .box .close-btn {
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  right: 20px;
+  text-align: center;
+  line-height: 20px;
+  top: 11px;
+  border-radius: 50%;
+  border: 3px solid #0096ff;
+  cursor: pointer;
+  font-size: 16px;
+  color: #0096ff;
+}
+/*弹出框内容title*/
+.mask-panel .table-content{
+	height:100%;
+	width:100%;
+	overflow:auto;
+}
+.mask-panel .table-content .panel-header{
+	width: 100%;
+    height: 8%;
+    
+}
+.mask-panel .table-content .panel-header span{
+	line-height: 40px;
+	font-size:18px;
+	color:white;
+}
+/*滚动条样式*/
+.mask-panel .table-content::-webkit-scrollbar { /*滚动条整体样式*/
+	width: 4px; /*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.mask-panel .table-content::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	background: rgba(7, 181, 221, 0.81);
+}
+
+.mask-panel .table-content::-webkit-scrollbar-track { /*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	background: rgba(0, 0, 0, 0.1);
+}
+/*下载超链接*/
+.mask-panel .table-content .panel-header .download-content{
+	height:8%;
+	width:10%;
+	float:right;
+}
+.mask-panel .table-content .panel-header .download-content a{
+	height:50px;
+	line-height:50px;
+	width:60px;
+	font-size: 18px;
+    color: white;
+}
+/*tab css*/
+.mask-panel .table-content .panel-header1{
+    width: 100%;
+    height: 10%;
+    font-size: 12px;
+}
+.mask-panel .table-content .panel-header1 ul {
+	width:100%;
+	height:30px;
+	padding-left:38%;
+}
+.mask-panel .table-content .panel-header1 ul li {
+  margin-left: 50px;
+  height:30px;
+  line-height:30px;
+  float: left;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px; 
+/* -webkit-transform: scale(0.9); 
+transform: scale(0.9); //所需文字像素通过缩放实现 */
+}
+.mask-panel .table-content .panel-header1 ul li.active {
+  color: #0cdeff;
+  border: 1px solid #0cdeff;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 8px;
+  border-radius: 5px;
+}
+
+/*弹出框表格内容*/
+.mask-panel .table-content .panel-body {
+	height:80%;
+	width:80%;
+	margin: 0 auto;
+}
+.mask-panel .table-content .panel-body table {
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid white;
+}
+.mask-panel .table-content .panel-body  table thead tr th {
+	/* border-bottom: 1px solid #00c6ff;
+	border-top: 1px solid white; */
+	color: #00c6ff;
+	line-height: 32px;
+	font-size: 20px;
+	}
+	
+.mask-panel .table-content .panel-body table tbody .shqshjResourceBM{
+	text-align: left;
+	width:34%;
+}
+.mask-panel .table-content .panel-body table tbody tr td {
+  line-height: 32px;
+  border: 1px solid white;
+}
+/*各区县资源使用情况*/
+.m-right-section .table-content .panel-header1{
+	height: 6.67%;
+	width: 100%;
+	}
+.m-right-section .table-content .panel-header1 .titlespan {
+	height: 100%;
+	width: 90%;
+	font-size:20px;
+	color: white;
+	float: left;
+	
+}
+.m-right-section .table-content .panel-header1 .titlespan span{
+	height: 100%;
+	width: 90%;
+	font-size:20px;
+	color: white;
+	float: left;
+}
+.m-right-section .table-content .panel-header1 .download-content {
+	height: 100%;
+	width: 10%;
+	font-size:20px;
+	float: left;
+}
+.m-right-section .table-content .panel-header1 .download-content .download_a{
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+/*现有资源弹出框*/
+.bmNameLeft{
+	text-align:left;
+}
+
+@media screen and (min-width: 4000px) {
+  .m-left-section {
+    width: 2000px;
+  }
+  .m-left-section .info-section {
+    width: 900px;
+  }
+  /*.m-right-section {*/
+  /*  width: 2000px;*/
+  /*}*/
+  .m-bottom-section {
+    width: 4040px;
+  }
+  .m-bottom-section .info-section {
+    width: 900px;
+  }
+}
+/*# sourceMappingURL=example.css.map */

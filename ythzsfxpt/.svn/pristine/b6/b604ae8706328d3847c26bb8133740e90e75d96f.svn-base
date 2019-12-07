@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.pdjh.PdjhMapper">
+    <!-- 查询当天所有的叫号数量-->
+    <select id="getSum" resultType="java.lang.Integer" parameterType="java.lang.String">
+        SELECT  COUNT (1) AS  SUM FROM Gkjl where Cdate = #{Cdate}
+    </select>
+
+    <!-- 查询当天所有的叫号数量（正在处理、已放弃、等待、处理完毕）-->
+    <select id="getpdjhsl" resultType="java.util.LinkedHashMap">
+        SELECT  COUNT (Cstate) sum,Cstate FROM Gkjl where Cdate = #{Cdate} group by Cstate
+    </select>
+    <!-- 查询排队叫号每天处理业务前10的窗口-->
+    <select id="getckqs" resultType="java.util.LinkedHashMap">
+        SELECT top 10 count(Cwno) sum,Cwno from Gkjl WHERE Cdate = #{Cdate} and Cstate like '处理完毕' GROUP BY Cwno order by sum desc
+    </select>
+
+    <!-- 查询排队等候时间 a：1-5分钟，b:5-10分钟，c:10-15分钟，d:15-20分钟，e：20-25分钟，f:25-30  g：30分钟以上 -->
+    <select id="getpddhsj" resultType="java.util.LinkedHashMap">
+        Select time,
+               case
+               when time between 0 and 5  then 'a'
+               when time between 5 and 10  then 'b'
+               when time between 10 and 15 then 'c'
+               when time between 15 and 20  then 'd'
+               when time between 20 and 25  then 'e'
+               when time between 25 and 30  then 'f'
+               when time >30 then 'g'
+               end as msg
+               from (SELECT
+               	DATEDIFF( MINUTE, Ctime, Btime ) time
+               FROM
+               	Gkjl
+               WHERE
+               	Cdate = #{Cdate}
+               	AND Cstate = '处理完毕'
+               	AND DATEDIFF( MINUTE, Ctime, Btime ) > 0
+               ) t ORDER BY time
+    </select>
+    <!-- 分组查询排队叫号时间的数量    -->
+    <select id="getsjsum" resultType="java.util.LinkedHashMap">
+        SELECT count(msg) total ,msg from
+        (SELECT TIME,
+        CASE
+        	WHEN TIME between 0 and 5  THEN 'a'
+            WHEN TIME between 5 and 10  THEN 'b'
+            WHEN TIME between 10 and 15 THEN 'c'
+            WHEN TIME between 15 and 20 THEN 'd'
+            WHEN TIME between 20 and 25 THEN 'e'
+            WHEN TIME between 25 and 30 THEN 'f'
+            when time >30 then 'g'
+           END AS msg
+        FROM
+        	(
+        	SELECT
+        		DATEDIFF( MINUTE, Ctime, Btime ) TIME
+        	FROM
+        		Gkjl
+        	WHERE
+        		Cdate = #{Cdate}
+        		AND Cstate = '处理完毕'
+        		AND DATEDIFF( MINUTE, Ctime, Btime ) > 0
+        	) t ) d GROUP BY msg
+    </select>
+
+</mapper>

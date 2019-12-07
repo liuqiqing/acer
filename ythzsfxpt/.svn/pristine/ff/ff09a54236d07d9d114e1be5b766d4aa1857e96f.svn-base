@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.inspur.dao.tysl.TyslMapper" >
+    <!-- 测试 -->
+    <select id="getSum" resultType="java.lang.Integer">
+        SELECT  COUNT (1) AS  SUM FROM ACCEPT_BUSINESS_EXTEND
+    </select>
+    <!-- 一窗收件数 state 01正常和21补齐补正  -->
+    <select id="getycsjsl" resultType="java.lang.Integer">
+        SELECT  COUNT (1) AS  SUM FROM ACCEPT_BUSINESS_INDEX where TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') =  #{Cdate} and REGION_CODE = '370100000000'
+        and  state in ('01','21')
+    </select>
+    <!-- 一窗收件数变化趋势  -->
+    <select id="getycsjqs" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,sum,time from(
+        SELECT
+        COUNT(TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' )) sum,
+        TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) time
+        FROM
+        ACCEPT_BUSINESS_INDEX
+        WHERE
+        REGION_CODE = '370100000000'
+        AND state IN ( '01', '21' )
+        GROUP BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) ORDER BY TO_CHAR ( SUBMIT_TIME, 'yyyy-mm-dd' ) desc ) WHERE ROWNUM <![CDATA[<= ]]> 7
+    </select>
+    <!-- 一窗收件事项排名  -->
+    <select id="getycsjlb" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,RECEIVE_NUMBER,ITEM_NAME,REGION_NAME,REGION_CODE,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') SUBMIT_TIME,
+          case when TYPE = 'XK' then '行政许可'
+          when TYPE = 'XK' then '全程网办'
+          when TYPE = 'ZS' then '行政征收'
+          when TYPE = 'QR' then '行政确认'
+          when TYPE = 'JF' then '行政给付'
+          when TYPE = 'JL' then '行政奖励'
+          when TYPE = 'CJ' then '行政裁决'
+          when TYPE = 'QT' then '其他事项'
+		  when TYPE = 'GG' then '公共服务'
+		  when TYPE = 'JD' then '行政监督'
+		  when TYPE = 'CF' then '行政处罚'
+          end TYPE
+          from ACCEPT_BUSINESS_INDEX
+        WHERE STATE in ('01','21') and REGION_CODE = '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') =  #{Cdate} and ROWNUM <![CDATA[<= ]]> 13
+          ORDER BY SUBMIT_TIME desc
+    </select>
+    <!-- 一窗收件事项排名  -->
+    <select id="downloadsxlb" resultType="java.util.LinkedHashMap">
+        SELECT ROWNUM,y.* from
+        (SELECT ITEM_NAME,
+        case when TYPE = 'XK' then '行政许可'
+        when TYPE = 'XK' then '全程网办'
+        when TYPE = 'ZS' then '行政征收'
+        when TYPE = 'QR' then '行政确认'
+        when TYPE = 'JF' then '行政给付'
+        when TYPE = 'JL' then '行政奖励'
+        when TYPE = 'CJ' then '行政裁决'
+        when TYPE = 'QT' then '其他事项'
+		when TYPE = 'GG' then '公共服务'
+		when TYPE = 'JD' then '行政监督'
+		when TYPE = 'CF' then '行政处罚'
+        end TYPE,REGION_NAME,TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') SUBMIT_TIME
+        from ACCEPT_BUSINESS_INDEX
+        WHERE STATE in ('01','21') and REGION_CODE = '370100000000' and TO_CHAR(SUBMIT_TIME,'yyyy-mm-dd') =  #{Cdate} ORDER BY SUBMIT_TIME desc) y
+    </select>
+</mapper>

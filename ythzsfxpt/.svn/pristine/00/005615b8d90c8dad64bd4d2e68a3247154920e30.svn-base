@@ -1,0 +1,48 @@
+package com.inspur.service.impl;
+
+import com.inspur.dao.pdjh.PdjhMapper;
+import com.inspur.service.PdjhService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
+
+@Service
+@Transactional
+public class PdjhServiceImpl implements PdjhService  {
+
+
+    @Autowired
+    private PdjhMapper pdjhMapper;
+    // 查询当天所有的叫号数量(不分组)
+    @Override
+    public int getSum(String Cdate) {
+        return pdjhMapper.getSum(Cdate);
+    }
+
+    // 查询当天所有的叫号数量（正在处理、已放弃、等待、处理完毕）
+    @Override
+    public List<Map<String, Object>> getpdjhsl(String Cdate) {
+        return pdjhMapper.getpdjhsl(Cdate);
+    }
+
+    // 排队叫号每天处理业务前10的窗口
+    @Override
+    public List<Map<String, Object>> getckqs(String Cdate) {
+        return pdjhMapper.getckqs(Cdate);
+    }
+
+    //  每天排队等候的时间(平均)
+    @Override
+    public List<Map<String, Object>> getpddhsj(String Cdate) {
+        return pdjhMapper.getpddhsj(Cdate);
+    }
+
+    @Override
+    public List<Map<String, Object>> getsjsum(String Cdate) {
+        return pdjhMapper.getsjsum(Cdate);
+    }
+
+}

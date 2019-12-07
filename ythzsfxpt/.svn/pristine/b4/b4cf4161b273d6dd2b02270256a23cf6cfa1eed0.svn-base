@@ -1,0 +1,105 @@
+.m-left-section{
+  float: right;
+  margin-right: 40px;
+  width: 1080px;
+  .info-section{
+    float: right;
+    width: 340px;
+    height: 280px;
+    border: 16px solid transparent;
+    border-image: url("../img/example/section-bg.png") 16 16 fill ;
+    &.r-20{
+      margin-right: 20px;
+    }
+    &.r-40{
+      margin-right: 40px;
+    }
+    &.top-60{
+      margin-top: 60px;
+    }
+  }
+}
+.m-right-section{
+  float: right;
+  margin-right: 40px;
+  width: 700px;
+  height: 600px;
+  .table-content{
+    height: 600px;overflow: hidden;
+    .table {
+      width: 100%;
+      border: none;
+      border-collapse: collapse;
+      thead {
+        color: #fff;
+        background-color: rgba(8, 16, 138, 0.15);
+        box-shadow: inset 0 0 10px 3px rgba(6, 102, 232, 0.35);
+        th, td {
+          padding: 20px 8px;
+          text-align: center;
+        }
+      }
+      tbody {
+        color: #fff;
+        tr:nth-child(odd) {
+          background-color: rgba(23, 64, 136, .2);
+        }
+        tr.fail {
+          color: #cd530c;
+        }
+        th, td {
+          padding: 5px 8px;
+          text-align: center;
+          line-height: 1.5;
+          span {
+            display: block;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+  }
+}
+.m-bottom-section{
+  float: right;
+  margin-right: 60px;
+  margin-top: 60px;
+  width: 1800px;
+  .info-section{
+    float: right;
+    width: 340px;
+    height: 280px;
+    border: 16px solid transparent;
+    border-image: url("../img/example/section-bg.png") 16 16 fill ;
+    &.r-20{
+      margin-right: 20px;
+    }
+    &.top-60{
+      margin-top: 60px;
+    }
+  }
+}
+.chart-content{
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 4000px) {
+  .m-left-section{
+    width: 2000px;
+    .info-section{
+      width: 900px;
+    }
+  }
+  .m-right-section{
+    width: 2000px;
+  }
+  .m-bottom-section{
+    width: 4040px;
+    .info-section{
+      width: 900px;
+    }
+  }
+}

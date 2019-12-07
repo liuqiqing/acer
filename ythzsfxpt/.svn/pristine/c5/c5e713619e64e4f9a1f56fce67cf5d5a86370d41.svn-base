@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/index.css">
+
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name">登录</span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+        </div>
+    </div>
+    <div class="m-canvas">
+        <!--底层三层背景-->
+        <div class="bg-content">
+            <div class="bg1"></div>
+            <div class="bg2"></div>
+            <div class="bg3"></div>
+        </div>
+        <!--政务服务数据模块-->
+        <div class="zhengwu-content">
+            <div class="light-wall"></div>
+            <div class="layer1">
+                <div class="label-type-one label1">济南市前置库</div>
+                <div class="label-type-one label2">省前置库</div>
+                <div class="label-type-two label1">省级数据</div>
+                <div class="label-type-two label2">市级数据</div>
+                <div class="label-type-three label1">各部门前置库</div>
+                <div class="flow-arrow fa1"></div>
+            </div>
+            <div class="layer2">
+                <div class="line"></div>
+                <!--省级数据到大厅前置库-->
+                <div class="flow-arrow fa1"></div>
+                <!--市级数据到大厅前置库-->
+                <div class="flow-arrow fa2"></div>
+                <!--大厅前置库到审批-->
+                <div class="flow-arrow fa3"></div>
+                <!--大厅前置库到一网通办-->
+                <div class="flow-arrow fa4"></div>
+                <!--链条到审批-->
+                <div class="flow-arrow fa5"></div>
+                <!--审批到中心前置库-->
+                <div class="flow-arrow fa6"></div>
+                <!--审批到网办数据库-->
+                <div class="flow-arrow fa7"></div>
+                <!--中心前置库到大汉数据库-->
+                <div class="flow-arrow fa8"></div>
+                <!--中心前置库到电子监察库-->
+                <div class="flow-arrow fa9"></div>
+                <!--中心前置库到省数据库-->
+                <div class="flow-arrow fa10"></div>
+                <!--审批到一网通办前置库-->
+                <div class="flow-arrow fa11"></div>
+                <div class="label-type-four label1">统一编码</div>
+                <div class="label-type-four label2">链条</div>
+                <div class="label-type-four label3">审批</div>
+                <div class="label-type-four label4">门户</div>
+                <div class="label-type-four label5">事项管理</div>
+                <div class="label-type-four label6">综合受理</div>
+                <div class="label-type-four label7">电子监察</div>
+                <div class="label-type-five label1">业务系统数据库</div>
+                <div class="label-type-five label2">支撑系统数据库</div>
+                <div class="label-type-six label1">网盘</div>
+                <div class="label-type-six label2">流程</div>
+                <div class="label-type-six label3">统一编码</div>
+                <div class="label-type-six label4">BSP</div>
+                <div class="label-type-six label5">表单</div>
+                <div class="label-type-six label6">调度</div>
+                <div class="label-type-six label7">大厅前置库</div>
+                <div class="label-type-six label8">中心前置库</div>
+                <div class="label-type-six label9">一网通办前置库</div>
+                <div class="label-type-six label10">省数据库</div>
+                <div class="label-type-six label11">大汉数据库</div>
+                <div class="label-type-six label12">网办数据库</div>
+                <div class="label-type-six label13">省级前置库</div>
+            </div>
+            <div class="layer3">
+                <!--政务服务网到网办系统-->
+                <div class="flow-arrow fa1"></div>
+                <!--支撑系统到业务系统-->
+                <div class="flow-arrow fa2"></div>
+                <!--事项管理到电子证照-->
+                <div class="flow-arrow fa3"></div>
+                <!--事项管理到审批-->
+                <div class="flow-arrow fa4"></div>
+                <!--事项管理到综合受理-->
+                <div class="flow-arrow fa5"></div>
+                <!--事项管理到链条办理-->
+                <div class="flow-arrow fa6"></div>
+                <!--审批到链条办理-->
+                <div class="flow-arrow fa7"></div>
+                <!--链条办理到政务服务网-->
+                <div class="flow-arrow fa8"></div>
+                <!--审批到综合受理-->
+                <div class="flow-arrow fa9"></div>
+                <div class="label-type-seven label1">电子监察</div>
+                <div class="label-type-seven label2">政务服务网</div>
+                <div class="label-type-seven label3">网办系统</div>
+                <div class="label-type-seven label4">审批</div>
+                <div class="label-type-seven label5">链条办理</div>
+                <div class="label-type-seven label6">门户</div>
+                <div class="label-type-seven label7">电子证照</div>
+                <div class="label-type-seven label8">事项管理</div>
+                <div class="label-type-seven label9">综合受理</div>
+                <div class="label-type-eight label1">业务系统</div>
+                <div class="label-type-eight label2">支撑系统</div>
+                <div class="label-type-nine label1">网盘</div>
+                <div class="label-type-nine label2">流程</div>
+                <div class="label-type-nine label3">统一编码</div>
+                <div class="label-type-nine label4">BSP</div>
+                <div class="label-type-nine label5">表单</div>
+                <div class="label-type-nine label6">调度</div>
+            </div>
+            <div class="layer4"></div>
+            <div class="arrow"></div>
+            <div class="arrow2"></div>
+            <div class="shenpi-wangban">
+                <div class="flow-arrow fa1"></div>
+            </div>
+            <div class="wangbandb-wangbansys">
+                <div class="flow-arrow fa1"></div>
+                <!--网办系统到网办数据库-->
+                <div class="flow-arrow fa2"></div>
+                <!--网办系统到省级前置库-->
+                <div class="flow-arrow fa3"></div>
+            </div>
+        </div>
+        <!--部门数据共享模块-->
+        <div class="department-content">
+            <div class="light"></div>
+            <div class="layer1-black"></div>
+            <div class="layer1">
+                <div class="label-type-two label1">各部门</div>
+            </div>
+            <div class="layer2">
+                <div class="label-type-three label1">应用支撑库</div>
+                <div class="label-type-three label2">前置库</div>
+                <div class="label-type-three label3">原始库</div>
+                <div class="label-type-three label4">中心库</div>
+                <!--各部门到前置库-->
+                <div class="flow-arrow fa1"></div>
+                <!--前置库到原始库-->
+                <div class="flow-arrow fa2"></div>
+                <!--应用支撑库到service平台-->
+                <div class="flow-arrow fa3"></div>
+                <!--应用支撑库到bsp平台-->
+                <div class="flow-arrow fa4"></div>
+                <!--应用支撑库到share平台-->
+                <div class="flow-arrow fa5"></div>
+                <!--应用支撑库到console平台-->
+                <div class="flow-arrow fa6"></div>
+                <!--service平台到应用支撑库-->
+                <div class="flow-arrow fa7"></div>
+                <!--bsp平台到应用支撑库-->
+                <div class="flow-arrow fa8"></div>
+                <!--share平台到应用支撑库-->
+                <div class="flow-arrow fa9"></div>
+                <!--console平台到应用支撑库-->
+                <div class="flow-arrow fa10"></div>
+                <!--share平台到原始库-->
+                <div class="flow-arrow fa11"></div>
+                <!--原始库到share平台-->
+                <div class="flow-arrow fa12"></div>
+                <!--原始库到console平台-->
+                <div class="flow-arrow fa13"></div>
+                <!--console平台到原始库-->
+                <div class="flow-arrow fa14"></div>
+                <!--share平台到中心库-->
+                <div class="flow-arrow fa15"></div>
+                <!--中心库到share平台-->
+                <div class="flow-arrow fa16"></div>
+                <!--console平台到中心库-->
+                <div class="flow-arrow fa17"></div>
+                <!--中心库到console平台-->
+                <div class="flow-arrow fa18"></div>
+            </div>
+            <div class="line"></div>
+            <div class="layer3">
+                <div class="label-type-three label5">service平台</div>
+                <div class="label-type-three label6">BSP平台</div>
+                <div class="label-type-three label7">share平台</div>
+                <div class="label-type-three label8">console平台</div>
+            </div>
+            <div class="layer4"></div>
+            <div class="arrow"></div>
+        </div>
+        <!--部门共享数据模块到政务服务模块大箭头-->
+        <div class="department-arrow-zhengwu"></div>
+        <!--部门共享数据模块到政务服务模块-->
+        <div class="department-arrow-two-base">
+            <div class="flow-arrow fa1"></div>
+            <div class="flow-arrow fa2"></div>
+        </div>
+        <!--两人库-->
+        <div class="two-base-content">
+            <div class="layer1">
+                <div class="label-type-three label1">人口/法人库</div>
+            </div>
+            <div class="layer1-black"></div>
+            <div class="layer2">
+                <div class="label-type-three label2">人口/法人平台</div>
+            </div>
+            <div class="layer3"></div>
+            <div class="arrow"></div>
+        </div>
+        <!--大屏数据-->
+        <div class="big-screen-content">
+            <div class="layer1">
+                <div class="label-type-one label1">一网通办库</div>
+                <div class="label-type-one label2">办公厅大屏库</div>
+                <div class="label-type-one label3">大屏库</div>
+            </div>
+            <div class="layer1-black"></div>
+            <div class="layer2">
+                <div class="label-type-one label4">一网通办系统</div>
+                <div class="label-type-one label5">办公厅大屏系统</div>
+                <div class="label-type-one label6">大屏展示系统</div>
+            </div>
+            <div class="layer3"></div>
+            <div class="arrow"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-right-section">
+            <ul class="flex-list vert-list">
+                <li class="panel use-ball-list">
+                    <div class="panel-header">
+                        <span>今日受理办结量</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>
+                                <div class="ball-icon ball-blue" id="jrslsl">0</div>
+                                <div class="ball-name">受理数量</div>
+                            </li>
+                            <li>
+                                <div class="ball-icon ball-purple" id="jrbjsl">0</div>
+                                <div class="ball-name">办结数量</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel data-dire-list">
+                    <div class="panel-header">
+                        <span>今日服务接口调用次数</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="num-list">
+                            <ul></ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="panel data-calling-list">
+                    <div class="panel-header">
+                        <span>数据中心总览</span>
+                    </div>
+                    <div class="panel-body">
+                        <!-- <div class="num-list">
+                            <ul></ul>
+                        </div> -->
+                        <ul class="pic-num-list">
+                            <li>
+                                <div class="pic-num-left icon1"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">济南市总人口总数</span>
+                                    <span class="num">7132000</span>&nbsp;&nbsp;人
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic-num-left icon2"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">企业法人总数</span>
+                                    <span class="num">5362</span>&nbsp;&nbsp;人
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic-num-left icon2"></div>
+                                <div class="pic-num-right">
+                                    <span class="pic-num-right-txt">电子证照总数</span>
+                                    <span class="num">1876</span>&nbsp;&nbsp;个
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="m-bottom-section">
+            <ul class="flex-list hori-list">
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>事项网办深度</span>
+                    </div>
+                    <div class="panel-body" style="padding: 25px">
+                        <ul class="flex-row">
+                            <li style="margin-right: 30px">
+                                <div class="gradient-item num" id="count_online">35</div>
+                                <div class="white">线上事项数量</div>
+                            </li>
+                            <li>
+                                <div class="gradient-item purple num" id="count_offline">30</div>
+                                <div class="white">线下事项数量</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>政务服务可办理事项数</span>
+                    </div>
+                    <div class="panel-body" style="padding: 25px">
+                        <ul class="flex-row">
+                            <li style="margin-right: 30px">
+                                <div class="gradient-item num">109</div>
+                                <div class="white">线上事项</div>
+                            </li>
+                            <li>
+                                <div class="gradient-item purple num">87</div>
+                                <div class="white">线下事项</div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>共享交换数据提供部门数</span>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="flex-row">
+                            <li id="department1"></li>
+                            <li id="department2"></li>
+                            <li id="department3"></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>共享资源部门排名</span>
+                    </div>
+                    <div class="panel-body" id="ranking"></div>
+                </li>
+                <!--                 <li class="panel"> -->
+                <!--                     <div class="panel-header"> -->
+                <!--                         <span>证照类型</span> -->
+                <!--                     </div> -->
+                <!--                     <div class="panel-body" style="padding-top: 20px"> -->
+                <!--                         <div class="card"><span>个人证明</span><i>19</i></div> -->
+                <!--                         <div id="card-type1"></div> -->
+                <!--                         <div class="card"><span>企业证明</span><i>151</i></div> -->
+                <!--                         <div id="card-type2"></div> -->
+                <!--                     </div> -->
+                <!--                 </li> -->
+                <li class="panel">
+                    <div class="panel-header">
+                        <span>法人增长与注销情况</span>
+                    </div>
+                    <div class="panel-body">
+                        <div class="legal-people">
+                            <span style="float: left">今年增长<i class="yellow">3456</i>家</span>
+                            <span style="float: right">同比<i class="red">↑12.1%</i> </span>
+                        </div>
+                        <div class="legal-people">
+                            <span style="float: left">今年注销<i class="yellow">235</i>家&nbsp;&nbsp;&nbsp;</span>
+                            <span style="float: right">同比<i class="blue">↓9.9%</i>&nbsp;&nbsp;</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="login">
+        <div class="login-cont">
+            <div class="login-title">用户登录</div>
+            <div class="login-input">
+                <div class="input">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="请输入用户名" id="username">
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" placeholder="请输入密码" id="password">
+                </div>
+            </div>
+            <div class="login-btn" id="loginbtn">登录</div>
+            <div class="login-close">
+                <i class="fa fa-times"></i>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/js/globleset.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/index.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/js/index/index.js"></script>
+<script>
+    // 登录操作
+    $("#loginbtn").click(function () {
+        var login = ctx + "/userlogin";
+        $.ajax({
+            type: "GET",
+            async: true,
+            url: login,
+            data: {
+                "account":$("#username").val(),
+                "pwd":$("#password").val(),
+                "appCode":"INSPUR-DZZW-YTHZS"
+            },
+            success: function (result) {
+                if (result.resultUser.state == 200) {
+                    array = result.resultUser.menus;
+                    // spjid = result.resultUser.user.ID;
+                    // console.log(array)
+                    // 把获取到的菜单放到session里面
+                    sessionStorage.setItem("array", JSON.stringify(array));
+                    sessionStorage.setItem("username",result.resultUser.user.NAME);
+                    sessionStorage.setItem("user",result.resultUser.user.ID);
+                    window.location.href = 'egovIndex.html';
+                }else if(result.resultUser.state == "3" || result.resultUser.state == "2" || result.resultUser.state == "4"){
+                    console.log(result.resultUser.error);
+                    $("#login-info").html(result.resultUser.error)
+                }else {
+                    console.log(result.resultUser.error);
+                }
+            },
+            error: function (errorMsg) {
+
+            }
+        });
+    })
+
+</script>
+</html>

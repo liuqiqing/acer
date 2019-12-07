@@ -1,0 +1,18 @@
+package com.inspur.dao.dzjc;
+
+public interface dzjcMapper {
+    /**
+     * 红牌数量
+     * CUR_RESULT_TYPE=5
+     *   @return
+     */
+    int hongpai();
+
+    /**
+     * 黄牌数量
+     * CUR_RESULT_TYPE=2
+     * @return
+     */
+    int huangpai();
+
+}

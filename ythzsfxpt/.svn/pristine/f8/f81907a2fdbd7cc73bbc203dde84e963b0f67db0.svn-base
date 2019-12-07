@@ -1,0 +1,41 @@
+# Application config loaction
+spring.profiles.active=jn
+spring.config.location=classpath:/config/
+#==================== log  ============================
+logging.config=classpath:logback.xml
+
+logging.level.root = info
+logging.level.org.mybatis = debug
+logging.level.java.sql = debug
+logging.level.org.springframework.web = trace
+
+##  freemarker�������
+spring.freemarker.cache=true
+spring.freemarker.contentType=text/html
+spring.freemarker.request-context-attribute=ctx
+spring.freemarker.suffix=.html
+spring.freemarker.templateEncoding=UTF-8
+spring.freemarker.template-Loader-Path=classpath:/templates
+
+
+#370181000000  ������
+#370105000000  ������
+#370126000000  �̺���
+#370103000000  ������
+#370190000000  ������
+#370124000000  ƽ����
+#370125000000  ������
+#370112000000  ������
+#370102000000  ������
+#370113000000  ������
+#370104000000  ������
+#370116000000  ������
+#370117000000  �ֳ���
+
+
+
+
+
+
+
+

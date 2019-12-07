@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>政务服务首页-济南市政务服务一体化展示</title>
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/normalize.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/libs/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/common.css">
+    <link rel="stylesheet" href="${ctx.contextPath}/static/css/example.css">
+
+
+</head>
+<body>
+<div id="app">
+    <input id="contextPath" value="${ctx.contextPath}" type="hidden">
+    <div id="header">
+        <a href="index.html">
+            <div class="header-main"></div>
+        </a>
+        <div class="login-box">
+            <i class="fa fa-user"></i>
+            <span id="name"></span>
+            <i class="fa fa-sign-in"></i>
+            <span id="logout">注销</span>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="nav-toggle">
+            <i class="nav-arrow"></i>
+            <span>收起导航</span>
+        </div>
+        <div class="nav-main">
+            <div id="daohang">
+
+            </div>
+
+        </div>
+    </div>
+    <div id="main">
+        <div class="m-right-section">
+            <div class="titlespan" style="  height: 36px; font-size: 18px; color: #ffffff;">
+                <span>事项办理排名</span></div>
+            <div class="table-content">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>事项名称</th>
+                        <th>部门名称
+                            <div class="order-btn"></div>
+                        </th>
+                        <th>办理次数
+                            <div class="order-btn"></div>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody id="strlist">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="m-left-section">
+            <div class="info-section">
+                *<!--   一网服务 j进驻地区-->
+                <div class="chart-content" id="chart1">
+
+                </div>
+            </div>
+
+            <!--  公共服务清单公布情况  -->
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart2">
+
+                </div>
+            </div>
+            <!--  事项清单公布情况      -->
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart21">
+
+                </div>
+            </div>
+            <div class="info-section top-20 top-60">
+                <div class="chart-content" id="chart41">
+
+                </div>
+            </div>
+            <div class="info-section r-20 top-60">
+                <div class="chart-content" id="chart4">
+                    <div class="panel use-ball-list">
+                        <div class="panel-header">
+                            <span>今日受理办结量</span>
+                        </div>
+                        <div class="panel-body" style="display: flex;flex-direction: row">
+                            <div>
+                                <div class="ball-icon ball-blue" id="jrslsl">0</div>
+                                <div class="ball-name">受理数量</div>
+                            </div>
+                            <div>
+                                <div class="ball-icon ball-purple" id="jrbjsl">0</div>
+                                <div class="ball-name">办结数量</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-section r-20 top-60">
+                <div class="chart-content" id="chart5">
+                    <div class="panel use-ball-list">
+                        <div class="panel-header">
+                            <span>可网上办理事项数量</span>
+                        </div>
+                        <div class="panel-body" style="display: flex;flex-direction: row">
+                            <div>
+                                <div class="ball-icon ball-blue" id="wsblsx">0</div>
+                                <div class="ball-name">可网上办理事项</div>
+                            </div>
+                            <div>
+                                <div class="ball-icon ball-purple" id="wsbllv">0</div>
+                                <div class="ball-name">可网上办理率</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-bottom-section">
+
+            <div class="info-section">
+                <div class="chart-content" id="chart6">
+
+                </div>
+            </div>
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart7">
+
+                </div>
+            </div>
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart8">
+
+                </div>
+            </div>
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart81">
+
+                </div>
+            </div>
+            <div class="info-section r-20">
+                <div class="chart-content" id="chart3">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="${ctx.contextPath}/static/libs/jquery.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/jquery.nicescroll.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts.min.js"></script>
+<script src="${ctx.contextPath}/static/libs/echarts-wordcloud.js"></script>
+<script src="${ctx.contextPath}/static/js/common.js"></script>
+<!--导航的公共js-->
+<script src="${ctx.contextPath}/static/js/header.js"></script>
+<script src="${ctx.contextPath}/static/js/exmaple.js"></script>
+
+</html>

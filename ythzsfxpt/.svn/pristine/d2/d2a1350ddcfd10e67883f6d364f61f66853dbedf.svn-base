@@ -1,0 +1,66 @@
+# Application config loaction
+spring.profiles.active=jn
+spring.config.location=classpath:/config/
+#==================== log  ============================
+logging.config=classpath:logback.xml
+
+logging.level.root = info
+logging.level.org.mybatis = debug
+logging.level.java.sql = debug
+logging.level.org.springframework.web = trace
+
+##  freemarker相关配置
+spring.freemarker.cache=true
+spring.freemarker.contentType=text/html
+spring.freemarker.request-context-attribute=ctx
+spring.freemarker.suffix=.html
+spring.freemarker.templateEncoding=UTF-8
+spring.freemarker.template-Loader-Path=classpath:/templates
+
+
+#370181000000  章丘区
+#370105000000  天桥区
+#370126000000  商河县
+#370103000000  市中区
+#370190000000  高新区
+#370124000000  平阴县
+#370125000000  济阳县
+#370112000000  历城区
+#370102000000  历下区
+#370113000000  长清区
+#370104000000  槐荫区
+#370116000000  莱芜区
+#370117000000  钢城区
+
+
+
+#=============
+# 一窗状态
+#01	正常办理
+#02	不予受理
+#03	预审撤销
+#10	收件
+#11	待预审
+#12	预审通过
+#13	预审撤销
+#14	预审驳回
+#15	受理
+#16	预审通过（舟山个性化）
+#21	补齐补正
+#23	挂起
+#94	办结并出证（广州个性化）
+#96退件
+#97	作废
+#98	不予许可
+#99	准予许可
+#100	出件办结
+
+
+
+
+
+
+
+
+
+

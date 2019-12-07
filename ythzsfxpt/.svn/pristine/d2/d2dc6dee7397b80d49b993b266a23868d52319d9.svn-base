@@ -1,0 +1,1110 @@
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [static/], ServletContext resource [/], class path resource []]
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.BlspController:
+	{ /blspController/blspss}: blspss()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CityLevelController:
+	{ /cityLevelController/dyxsbhqs}: dyxsbhqs()
+	{ /cityLevelController/drxxbhqs}: drxxbhqs()
+	{ /cityLevelController/jnssxslqsm}: jnssxslqsm()
+	{ /cityLevelController/jnssxbjqsm}: jnssxbjqsm()
+	{ /cityLevelController/spbjlx}: spbjlx()
+	{ /cityLevelController/drxsbhqs}: drxsbhqs()
+	{ /cityLevelController/dyxxbhqs}: dyxxbhqs()
+	{ /cityLevelController/jnsbmbj}: jnsbmbj()
+	{ /cityLevelController/sbjsxqkfl}: sbjsxqkfl()
+	{ /cityLevelController/dnxxbhqs}: dnxxbhqs()
+	{ /cityLevelController/dnxsbhqs}: dnxsbhqs()
+	{ /cityLevelController/jnsbmsl}: jnsbmsl()
+	{ /cityLevelController/sxxzsl}: sxxzsl()
+	{ /cityLevelController/sxzlsl}: sxzlsl()
+	{ /cityLevelController/xsxxblsxqbsj}: xsblsx()
+	{ /cityLevelController/sbjsxqkflgjwbsdcx}: sbjsxqkflgjwbsdcx(String)
+	{ /cityLevelController/cityLevelDownload}: cityLevelDownload(String,String,HttpServletResponse)
+	{ /cityLevelController/jnssxxzflbt}: jnssxxzflbt()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CountyLevelController:
+	{ /countyLevelController/dyxsbhqs}: dyxsbhqs(String)
+	{ /countyLevelController/drxxbhqs}: drxxbhqs(String)
+	{ /countyLevelController/drxsbhqs}: drxsbhqs(String)
+	{ /countyLevelController/dyxxbhqs}: dyxxbhqs(String)
+	{ /countyLevelController/dnxxbhqs}: dnxxbhqs(String)
+	{ /countyLevelController/dnxsbhqs}: dnxsbhqs(String)
+	{ /countyLevelController/sxxzsl}: sxxzsl(String)
+	{ /countyLevelController/xsxxblsxqbsj}: xsblsx(String)
+	{ /countyLevelController/ysqgkkwsblsxtjList}: ysqgkkwsblsxtjList()
+	{ /countyLevelController/countyLevelDownload}: countyLevelDownload(String,String,HttpServletResponse)
+	{ /countyLevelController/qxsxzl}: qxsxzl(String)
+	{ /countyLevelController/xxgkNumYsqgksxNum}: xxgkNum(String)
+	{ /countyLevelController/sxsjzl}: sxsjzl(String,String)
+	{ /countyLevelController/qxbmsl}: qxbmsl(String)
+	{ /countyLevelController/sxxzsyjwsbls}: sxxzsyjwsbls(String)
+	{ /countyLevelController/qxbmbj}: qxbmbj(String)
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.EgovIndexController:
+	{ /egovIndexController/xxblsx}: xxblsx()
+	{ /egovIndexController/xsblsx}: xsblsx()
+	{ /egovIndexController/sxzlDownload}: egovIndexDownload(String,String,String,String,HttpServletResponse)
+	{ /egovIndexController/egovIdnexSXQSMDownload}: egovIdnexSXQSMDownload(HttpServletResponse)
+	{ /egovIndexController/org_list}: org_list(int,int,String)
+	{ /egovIndexController/sxxzxsslbjywzsl}: sxxzxsslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/sxxz}: sxxz()
+	{ /egovIndexController/xxdnblcs}: xxdnblcs()
+	{ /egovIndexController/sxxzdrxsslbjywsl}: sxxzdrxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xxdyblcs}: xxdyblcs()
+	{ /egovIndexController/sxxzdnxxslbjywsl}: sxxzdnxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xxdrblcs}: xxdrblcs()
+	{ /egovIndexController/sxxzdyxxslbjywsl}: sxxzdyxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xsdyblcs}: xsdyblcs()
+	{ /egovIndexController/xsdnblcs}: xsdnblcs()
+	{ /egovIndexController/day_online}: day_online(HttpServletRequest)
+	{ /egovIndexController/month_online}: month_online(HttpServletRequest)
+	{ /egovIndexController/xsdrblcs}: xsdrblcs()
+	{ /egovIndexController/year_online}: year_online(HttpServletRequest)
+	{ /egovIndexController/sxjbjn}: sxjb()
+	{ /egovIndexController/day_offline}: day_offline(HttpServletRequest)
+	{ /egovIndexController/month_offline}: month_offline(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxsslbjywsl}: sxxzdnxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxzl}: sxzl()
+	{ /egovIndexController/sxxzdyxsslbjywsl}: sxxzdyxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/bjlTableData}: sxxzbjlTableData()
+	{ /egovIndexController/sxxzdrxxslbjywsl}: sxxzdrxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxxslbjywzsl}: sxxzxxslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/szbmsxgszztxqbg}: szbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/sxbjqb}: sxbjqb()
+	{ /egovIndexController/sxbjby}: sxbjby()
+	{ /egovIndexController/bmbjjr}: bmbjjr()
+	{ /egovIndexController/bmbjby}: bmbjby()
+	{ /egovIndexController/sxslby}: sxslby()
+	{ /egovIndexController/bmbjqb}: bmbjqb()
+	{ /egovIndexController/sxslqb}: sxslqb()
+	{ /egovIndexController/szbmsxgsbzt}: szbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxslbr}: sxslbr()
+	{ /egovIndexController/bmsljr}: bmsljr()
+	{ /egovIndexController/bmslbn}: bmslbn()
+	{ /egovIndexController/bmbjbn}: bmbjbn()
+	{ /egovIndexController/bmslpm}: bmslpm()
+	{ /egovIndexController/bmbjpm}: bmbjpm()
+	{ /egovIndexController/szbmsxgszzt}: szbmsxgszzt(String,String,String)
+	{ /egovIndexController/year_offline}: year_offline(HttpServletRequest)
+	{ /egovIndexController/bmslqb}: bmslqb()
+	{ /egovIndexController/bmyjhuangpai}: bmyjhuangpai()
+	{ /egovIndexController/bmslby}: bmslby()
+	{ /egovIndexController/qxbmsxgszztxqbg}: qxbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/qxbmsxgszzt}: qxbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmyjhongpai}: bmyjhongpai()
+	{ /egovIndexController/sxbjbr}: sxbjbr()
+	{ /egovIndexController/sxbjbn}: sxbjbn()
+	{ /egovIndexController/sxbmslbjTableData}: sxslbjTableData(Integer,Integer)
+	{ /egovIndexController/sxbjqsm}: sxbjqsm()
+	{ /egovIndexController/sxslbn}: sxslbn()
+	{ /egovIndexController/toThirdPage}: thirdPage(String,String,String,String)
+	{ /egovIndexController/sxtjxxTableData}: sxtjxxTableData(Integer,Integer,String,String,String,String)
+	{ /egovIndexController/sxslqsm}: sxslqsm()
+	{ /egovIndexController/qxbmsxgsbzt}: qxbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxxzDownload}: sxxzDownload(HttpServletResponse)
+	{ /egovIndexController/szbmsxgsbztxqbg}: szbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzChart}: sxxzChart(String,String,String)
+	{ /egovIndexController/qxbmsxgsbztxqbg}: qxbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzTableDate}: sxxzTableDate(Integer,Integer)
+	{ /egovIndexController/sxxzchartxqbg}: sxxzchartxqbg(String,String,int,int,String,String)
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.IndexController:
+	{ /indexController/countOrg}: countOrg()
+	{ /indexController/onlineConduct}: onlineConduct()
+	{ /indexController/hotOrg}: hotOrg()
+	{ /indexController/jrfwjkdycs}: jrfwjkdycs()
+	{ /indexController/jrslbjsl}: jrslbjsl()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibIndexController:
+	{ /libIndexController/djdws}: djdws()
+	{ /libIndexController/amltj}: amltj(Integer,Integer)
+	{ /libIndexController/zzmbtjazttj}: zzmbtjazttj()
+	{ /libIndexController/zztjTableData}: zztjTableData(int,int)
+	{ /libIndexController/zzml}: zzml()
+	{ /libIndexController/zzsjywqzsj}: zzsjywqzsj()
+	{ /libIndexController/downloadExcel}: downloadExcel(HttpServletResponse)
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibLicenseController:
+	{ /libLicenseController/zzbfqkzxt}: zzbfqkzxt()
+	{ /libLicenseController/jszgz}: jszgz()
+	{ /libLicenseController/lxsjyxk}: lxsjyxk()
+	{ /libLicenseController/grzzzs}: grzzzs()
+	{ /libLicenseController/zzlxzs}: zzlxzs()
+	{ /libLicenseController/sydwfrzs}: sydwfrzs()
+	{ /libLicenseController/bfdwzs}: bfdwzs()
+	{ /libLicenseController/cjrzs}: cjrzs()
+	{ /libLicenseController/szqxzb}: szqxzb()
+	{ /libLicenseController/frzzsl}: frzzsl()
+	{ /libLicenseController/zzztPie}: zzztPie()
+	{ /libLicenseController/bmzzsl}: bmzzsl()
+	{ /libLicenseController/sqzzqk}: sqzzqk()
+	{ /libLicenseController/jnsdzzz}: jnsdzzz()
+	{ /libLicenseController/qygrgsyyzz}: qygrgsyyzz()
+	{ /libLicenseController/jsgcghxkz}: jsgcghxkz()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.PageController:
+	{ /index}: toIndex()
+	{ /{page}}: testController(String)
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareIndexController:
+	{ /shareIndex/statisticsUse}: statisticsUse()
+	{ /shareIndex/statistics}: statistics()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareResourceController:
+	{ /shareResourceController/xyResourceDownload}: xyResourceDownload(HttpServletResponse)
+	{ /shareResourceController/applyCityResourceQK}: applyCityResourceQK()
+	{ /shareResourceController/shqCityzyDownload}: shqCityzyDownload(HttpServletResponse)
+	{ /shareResourceController/cityZyProvideDownload}: cityZyProvideDownload(HttpServletResponse)
+	{ /shareResourceController/xybResourceTj}: xyResourceTj()
+	{ /shareResourceController/resourceTypeTj}: resourceTypeTj()
+	{ /shareResourceController/bmCatalogTj}: bmCatalogTj()
+	{ /shareResourceController/shqshjResourceQk}: shqshjResourceQk()
+	{ /shareResourceController/shQShjZyDownload}: shQShjZyDownload(HttpServletResponse)
+	{ /shareResourceController/qxZyQk}: qxZyQk()
+	{ /shareResourceController/qxZyQkDownload}: qxZyQkDownload(HttpServletResponse)
+	{ /shareResourceController/cityZyProvideQK}: cityZyProvideQK()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.SxglController:
+	{GET /sxgl/executor}: ScheduledExecutorService()
+	{GET /sxgl/wsblsl}: wsblsl()
+	{GET /sxgl/pdjh}: pdjh()
+	{POST /sxgl/tjcx}: tjsl()
+	{GET /sxgl/hhpsl}: hhpsl()
+	{GET /sxgl/getwbsd}: getwbsd()
+	{GET /sxgl/getckqs}: getckqs()
+	{POST /sxgl/ybjsl}: ybjsl()
+	{GET /sxgl/getpddhsj}: getpddhsj()
+	{POST /sxgl/kwsblsl}: kwsblsl()
+	{GET /sxgl/getpdjhsl}: getpdjhsl()
+	{POST /sxgl/sxbjqs}: sxbjqs()
+	{GET /sxgl/getdtbjsl}: getdtbjsl()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TestController:
+	{GET /userLogout}: userLogout(String)
+	{GET /testUrl}: testUrl(String)
+	{GET /userlogin}: login(String,String,String)
+	{GET /login}: userlogin()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TyslController:
+	{GET /tyslcontroller/getycsjqs}: getycsjqs()
+	{GET /tyslcontroller/getycsjsl}: getycsjsl()
+	{GET /tyslcontroller/tyslsum}: tyslsum()
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[TRACE] 2019-11-06 10:56:07 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/static/**] onto ResourceHttpRequestHandler ["classpath:/static/", "/"]
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [static/], ServletContext resource [/], class path resource []]
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.BlspController:
+	{ /blspController/blspss}: blspss()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CityLevelController:
+	{ /cityLevelController/dyxsbhqs}: dyxsbhqs()
+	{ /cityLevelController/drxxbhqs}: drxxbhqs()
+	{ /cityLevelController/jnssxslqsm}: jnssxslqsm()
+	{ /cityLevelController/jnssxbjqsm}: jnssxbjqsm()
+	{ /cityLevelController/spbjlx}: spbjlx()
+	{ /cityLevelController/drxsbhqs}: drxsbhqs()
+	{ /cityLevelController/dyxxbhqs}: dyxxbhqs()
+	{ /cityLevelController/jnsbmbj}: jnsbmbj()
+	{ /cityLevelController/sbjsxqkfl}: sbjsxqkfl()
+	{ /cityLevelController/dnxxbhqs}: dnxxbhqs()
+	{ /cityLevelController/dnxsbhqs}: dnxsbhqs()
+	{ /cityLevelController/jnsbmsl}: jnsbmsl()
+	{ /cityLevelController/sxxzsl}: sxxzsl()
+	{ /cityLevelController/sxzlsl}: sxzlsl()
+	{ /cityLevelController/xsxxblsxqbsj}: xsblsx()
+	{ /cityLevelController/sbjsxqkflgjwbsdcx}: sbjsxqkflgjwbsdcx(String)
+	{ /cityLevelController/cityLevelDownload}: cityLevelDownload(String,String,HttpServletResponse)
+	{ /cityLevelController/jnssxxzflbt}: jnssxxzflbt()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CountyLevelController:
+	{ /countyLevelController/dyxsbhqs}: dyxsbhqs(String)
+	{ /countyLevelController/drxxbhqs}: drxxbhqs(String)
+	{ /countyLevelController/drxsbhqs}: drxsbhqs(String)
+	{ /countyLevelController/dyxxbhqs}: dyxxbhqs(String)
+	{ /countyLevelController/dnxxbhqs}: dnxxbhqs(String)
+	{ /countyLevelController/dnxsbhqs}: dnxsbhqs(String)
+	{ /countyLevelController/sxxzsl}: sxxzsl(String)
+	{ /countyLevelController/xsxxblsxqbsj}: xsblsx(String)
+	{ /countyLevelController/ysqgkkwsblsxtjList}: ysqgkkwsblsxtjList()
+	{ /countyLevelController/countyLevelDownload}: countyLevelDownload(String,String,HttpServletResponse)
+	{ /countyLevelController/qxsxzl}: qxsxzl(String)
+	{ /countyLevelController/xxgkNumYsqgksxNum}: xxgkNum(String)
+	{ /countyLevelController/sxsjzl}: sxsjzl(String,String)
+	{ /countyLevelController/qxbmsl}: qxbmsl(String)
+	{ /countyLevelController/sxxzsyjwsbls}: sxxzsyjwsbls(String)
+	{ /countyLevelController/qxbmbj}: qxbmbj(String)
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.EgovIndexController:
+	{ /egovIndexController/xxblsx}: xxblsx()
+	{ /egovIndexController/xsblsx}: xsblsx()
+	{ /egovIndexController/sxzlDownload}: egovIndexDownload(String,String,String,String,HttpServletResponse)
+	{ /egovIndexController/egovIdnexSXQSMDownload}: egovIdnexSXQSMDownload(HttpServletResponse)
+	{ /egovIndexController/org_list}: org_list(int,int,String)
+	{ /egovIndexController/sxxzxsslbjywzsl}: sxxzxsslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/sxxz}: sxxz()
+	{ /egovIndexController/xxdnblcs}: xxdnblcs()
+	{ /egovIndexController/sxxzdrxsslbjywsl}: sxxzdrxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xxdyblcs}: xxdyblcs()
+	{ /egovIndexController/sxxzdnxxslbjywsl}: sxxzdnxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xxdrblcs}: xxdrblcs()
+	{ /egovIndexController/sxxzdyxxslbjywsl}: sxxzdyxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/xsdyblcs}: xsdyblcs()
+	{ /egovIndexController/xsdnblcs}: xsdnblcs()
+	{ /egovIndexController/day_online}: day_online(HttpServletRequest)
+	{ /egovIndexController/month_online}: month_online(HttpServletRequest)
+	{ /egovIndexController/xsdrblcs}: xsdrblcs()
+	{ /egovIndexController/year_online}: year_online(HttpServletRequest)
+	{ /egovIndexController/sxjbjn}: sxjb()
+	{ /egovIndexController/day_offline}: day_offline(HttpServletRequest)
+	{ /egovIndexController/month_offline}: month_offline(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxsslbjywsl}: sxxzdnxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxzl}: sxzl()
+	{ /egovIndexController/sxxzdyxsslbjywsl}: sxxzdyxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/bjlTableData}: sxxzbjlTableData()
+	{ /egovIndexController/sxxzdrxxslbjywsl}: sxxzdrxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxxslbjywzsl}: sxxzxxslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/szbmsxgszztxqbg}: szbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/sxbjqb}: sxbjqb()
+	{ /egovIndexController/sxbjby}: sxbjby()
+	{ /egovIndexController/bmbjjr}: bmbjjr()
+	{ /egovIndexController/bmbjby}: bmbjby()
+	{ /egovIndexController/sxslby}: sxslby()
+	{ /egovIndexController/bmbjqb}: bmbjqb()
+	{ /egovIndexController/sxslqb}: sxslqb()
+	{ /egovIndexController/szbmsxgsbzt}: szbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxslbr}: sxslbr()
+	{ /egovIndexController/bmsljr}: bmsljr()
+	{ /egovIndexController/bmslbn}: bmslbn()
+	{ /egovIndexController/bmbjbn}: bmbjbn()
+	{ /egovIndexController/bmslpm}: bmslpm()
+	{ /egovIndexController/bmbjpm}: bmbjpm()
+	{ /egovIndexController/szbmsxgszzt}: szbmsxgszzt(String,String,String)
+	{ /egovIndexController/year_offline}: year_offline(HttpServletRequest)
+	{ /egovIndexController/bmslqb}: bmslqb()
+	{ /egovIndexController/bmyjhuangpai}: bmyjhuangpai()
+	{ /egovIndexController/bmslby}: bmslby()
+	{ /egovIndexController/qxbmsxgszztxqbg}: qxbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/qxbmsxgszzt}: qxbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmyjhongpai}: bmyjhongpai()
+	{ /egovIndexController/sxbjbr}: sxbjbr()
+	{ /egovIndexController/sxbjbn}: sxbjbn()
+	{ /egovIndexController/sxbmslbjTableData}: sxslbjTableData(Integer,Integer)
+	{ /egovIndexController/sxbjqsm}: sxbjqsm()
+	{ /egovIndexController/sxslbn}: sxslbn()
+	{ /egovIndexController/toThirdPage}: thirdPage(String,String,String,String)
+	{ /egovIndexController/sxtjxxTableData}: sxtjxxTableData(Integer,Integer,String,String,String,String)
+	{ /egovIndexController/sxslqsm}: sxslqsm()
+	{ /egovIndexController/qxbmsxgsbzt}: qxbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxxzDownload}: sxxzDownload(HttpServletResponse)
+	{ /egovIndexController/szbmsxgsbztxqbg}: szbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzChart}: sxxzChart(String,String,String)
+	{ /egovIndexController/qxbmsxgsbztxqbg}: qxbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzTableDate}: sxxzTableDate(Integer,Integer)
+	{ /egovIndexController/sxxzchartxqbg}: sxxzchartxqbg(String,String,int,int,String,String)
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.IndexController:
+	{ /indexController/countOrg}: countOrg()
+	{ /indexController/onlineConduct}: onlineConduct()
+	{ /indexController/hotOrg}: hotOrg()
+	{ /indexController/jrfwjkdycs}: jrfwjkdycs()
+	{ /indexController/jrslbjsl}: jrslbjsl()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibIndexController:
+	{ /libIndexController/djdws}: djdws()
+	{ /libIndexController/amltj}: amltj(Integer,Integer)
+	{ /libIndexController/zzmbtjazttj}: zzmbtjazttj()
+	{ /libIndexController/zztjTableData}: zztjTableData(int,int)
+	{ /libIndexController/zzml}: zzml()
+	{ /libIndexController/zzsjywqzsj}: zzsjywqzsj()
+	{ /libIndexController/downloadExcel}: downloadExcel(HttpServletResponse)
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibLicenseController:
+	{ /libLicenseController/zzbfqkzxt}: zzbfqkzxt()
+	{ /libLicenseController/jszgz}: jszgz()
+	{ /libLicenseController/lxsjyxk}: lxsjyxk()
+	{ /libLicenseController/grzzzs}: grzzzs()
+	{ /libLicenseController/zzlxzs}: zzlxzs()
+	{ /libLicenseController/sydwfrzs}: sydwfrzs()
+	{ /libLicenseController/bfdwzs}: bfdwzs()
+	{ /libLicenseController/cjrzs}: cjrzs()
+	{ /libLicenseController/szqxzb}: szqxzb()
+	{ /libLicenseController/frzzsl}: frzzsl()
+	{ /libLicenseController/zzztPie}: zzztPie()
+	{ /libLicenseController/bmzzsl}: bmzzsl()
+	{ /libLicenseController/sqzzqk}: sqzzqk()
+	{ /libLicenseController/jnsdzzz}: jnsdzzz()
+	{ /libLicenseController/qygrgsyyzz}: qygrgsyyzz()
+	{ /libLicenseController/jsgcghxkz}: jsgcghxkz()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.PageController:
+	{ /index}: toIndex()
+	{ /{page}}: testController(String)
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareIndexController:
+	{ /shareIndex/statisticsUse}: statisticsUse()
+	{ /shareIndex/statistics}: statistics()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareResourceController:
+	{ /shareResourceController/xyResourceDownload}: xyResourceDownload(HttpServletResponse)
+	{ /shareResourceController/applyCityResourceQK}: applyCityResourceQK()
+	{ /shareResourceController/shqCityzyDownload}: shqCityzyDownload(HttpServletResponse)
+	{ /shareResourceController/cityZyProvideDownload}: cityZyProvideDownload(HttpServletResponse)
+	{ /shareResourceController/xybResourceTj}: xyResourceTj()
+	{ /shareResourceController/resourceTypeTj}: resourceTypeTj()
+	{ /shareResourceController/bmCatalogTj}: bmCatalogTj()
+	{ /shareResourceController/shqshjResourceQk}: shqshjResourceQk()
+	{ /shareResourceController/shQShjZyDownload}: shQShjZyDownload(HttpServletResponse)
+	{ /shareResourceController/qxZyQk}: qxZyQk()
+	{ /shareResourceController/qxZyQkDownload}: qxZyQkDownload(HttpServletResponse)
+	{ /shareResourceController/cityZyProvideQK}: cityZyProvideQK()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.SxglController:
+	{GET /sxgl/executor}: ScheduledExecutorService()
+	{GET /sxgl/wsblsl}: wsblsl()
+	{GET /sxgl/pdjh}: pdjh()
+	{POST /sxgl/tjcx}: tjsl()
+	{GET /sxgl/hhpsl}: hhpsl()
+	{GET /sxgl/getwbsd}: getwbsd()
+	{GET /sxgl/getckqs}: getckqs()
+	{POST /sxgl/ybjsl}: ybjsl()
+	{GET /sxgl/getpddhsj}: getpddhsj()
+	{POST /sxgl/kwsblsl}: kwsblsl()
+	{GET /sxgl/getpdjhsl}: getpdjhsl()
+	{POST /sxgl/sxbjqs}: sxbjqs()
+	{GET /sxgl/getdtbjsl}: getdtbjsl()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TestController:
+	{GET /userLogout}: userLogout(String)
+	{GET /testUrl}: testUrl(String)
+	{GET /userlogin}: login(String,String,String)
+	{GET /login}: userlogin()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TyslController:
+	{GET /tyslcontroller/getycsjqs}: getycsjqs()
+	{GET /tyslcontroller/getycsjsl}: getycsjsl()
+	{GET /tyslcontroller/tyslsum}: tyslsum()
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[TRACE] 2019-11-06 10:57:24 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/static/**] onto ResourceHttpRequestHandler ["classpath:/static/", "/"]
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [static/], ServletContext resource [/], class path resource []]
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.BlspController:
+	{ /blspController/blspss}: blspss()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CityLevelController:
+	{ /cityLevelController/cityLevelDownload}: cityLevelDownload(String,String,HttpServletResponse)
+	{ /cityLevelController/sbjsxqkflgjwbsdcx}: sbjsxqkflgjwbsdcx(String)
+	{ /cityLevelController/sxzlsl}: sxzlsl()
+	{ /cityLevelController/spbjlx}: spbjlx()
+	{ /cityLevelController/sxxzsl}: sxxzsl()
+	{ /cityLevelController/jnsbmsl}: jnsbmsl()
+	{ /cityLevelController/jnsbmbj}: jnsbmbj()
+	{ /cityLevelController/xsxxblsxqbsj}: xsblsx()
+	{ /cityLevelController/drxxbhqs}: drxxbhqs()
+	{ /cityLevelController/drxsbhqs}: drxsbhqs()
+	{ /cityLevelController/dnxsbhqs}: dnxsbhqs()
+	{ /cityLevelController/jnssxslqsm}: jnssxslqsm()
+	{ /cityLevelController/dnxxbhqs}: dnxxbhqs()
+	{ /cityLevelController/dyxsbhqs}: dyxsbhqs()
+	{ /cityLevelController/jnssxbjqsm}: jnssxbjqsm()
+	{ /cityLevelController/dyxxbhqs}: dyxxbhqs()
+	{ /cityLevelController/sbjsxqkfl}: sbjsxqkfl()
+	{ /cityLevelController/jnssxxzflbt}: jnssxxzflbt()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CountyLevelController:
+	{ /countyLevelController/ysqgkkwsblsxtjList}: ysqgkkwsblsxtjList()
+	{ /countyLevelController/countyLevelDownload}: countyLevelDownload(String,String,HttpServletResponse)
+	{ /countyLevelController/sxxzsl}: sxxzsl(String)
+	{ /countyLevelController/xsxxblsxqbsj}: xsblsx(String)
+	{ /countyLevelController/drxxbhqs}: drxxbhqs(String)
+	{ /countyLevelController/drxsbhqs}: drxsbhqs(String)
+	{ /countyLevelController/dnxsbhqs}: dnxsbhqs(String)
+	{ /countyLevelController/dnxxbhqs}: dnxxbhqs(String)
+	{ /countyLevelController/dyxsbhqs}: dyxsbhqs(String)
+	{ /countyLevelController/dyxxbhqs}: dyxxbhqs(String)
+	{ /countyLevelController/qxsxzl}: qxsxzl(String)
+	{ /countyLevelController/qxbmsl}: qxbmsl(String)
+	{ /countyLevelController/qxbmbj}: qxbmbj(String)
+	{ /countyLevelController/xxgkNumYsqgksxNum}: xxgkNum(String)
+	{ /countyLevelController/sxxzsyjwsbls}: sxxzsyjwsbls(String)
+	{ /countyLevelController/sxsjzl}: sxsjzl(String,String)
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.EgovIndexController:
+	{ /egovIndexController/sxzlDownload}: egovIndexDownload(String,String,String,String,HttpServletResponse)
+	{ /egovIndexController/egovIdnexSXQSMDownload}: egovIdnexSXQSMDownload(HttpServletResponse)
+	{ /egovIndexController/xxblsx}: xxblsx()
+	{ /egovIndexController/xsblsx}: xsblsx()
+	{ /egovIndexController/sxxzdrxxslbjywsl}: sxxzdrxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdyxsslbjywsl}: sxxzdyxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdyxxslbjywsl}: sxxzdyxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxsslbjywsl}: sxxzdnxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxxslbjywsl}: sxxzdnxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxsslbjywzsl}: sxxzxsslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/bjlTableData}: sxxzbjlTableData()
+	{ /egovIndexController/sxxzdrxsslbjywsl}: sxxzdrxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxxslbjywzsl}: sxxzxxslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/xsdrblcs}: xsdrblcs()
+	{ /egovIndexController/sxzl}: sxzl()
+	{ /egovIndexController/sxjbjn}: sxjb()
+	{ /egovIndexController/sxxz}: sxxz()
+	{ /egovIndexController/sxslbn}: sxslbn()
+	{ /egovIndexController/xxdyblcs}: xxdyblcs()
+	{ /egovIndexController/day_offline}: day_offline(HttpServletRequest)
+	{ /egovIndexController/sxbjqb}: sxbjqb()
+	{ /egovIndexController/sxbmslbjTableData}: sxslbjTableData(Integer,Integer)
+	{ /egovIndexController/sxslqsm}: sxslqsm()
+	{ /egovIndexController/toThirdPage}: thirdPage(String,String,String,String)
+	{ /egovIndexController/year_offline}: year_offline(HttpServletRequest)
+	{ /egovIndexController/xxdnblcs}: xxdnblcs()
+	{ /egovIndexController/month_offline}: month_offline(HttpServletRequest)
+	{ /egovIndexController/sxslbr}: sxslbr()
+	{ /egovIndexController/org_list}: org_list(int,int,String)
+	{ /egovIndexController/xxdrblcs}: xxdrblcs()
+	{ /egovIndexController/xsdnblcs}: xsdnblcs()
+	{ /egovIndexController/xsdyblcs}: xsdyblcs()
+	{ /egovIndexController/sxbjby}: sxbjby()
+	{ /egovIndexController/sxslqb}: sxslqb()
+	{ /egovIndexController/day_online}: day_online(HttpServletRequest)
+	{ /egovIndexController/year_online}: year_online(HttpServletRequest)
+	{ /egovIndexController/sxbjqsm}: sxbjqsm()
+	{ /egovIndexController/month_online}: month_online(HttpServletRequest)
+	{ /egovIndexController/sxslby}: sxslby()
+	{ /egovIndexController/sxbjbn}: sxbjbn()
+	{ /egovIndexController/sxbjbr}: sxbjbr()
+	{ /egovIndexController/szbmsxgszztxqbg}: szbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/qxbmsxgsbztxqbg}: qxbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzChart}: sxxzChart(String,String,String)
+	{ /egovIndexController/sxxzTableDate}: sxxzTableDate(Integer,Integer)
+	{ /egovIndexController/qxbmsxgszzt}: qxbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmbjjr}: bmbjjr()
+	{ /egovIndexController/bmslby}: bmslby()
+	{ /egovIndexController/qxbmsxgszztxqbg}: qxbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/bmbjpm}: bmbjpm()
+	{ /egovIndexController/szbmsxgsbztxqbg}: szbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/bmyjhuangpai}: bmyjhuangpai()
+	{ /egovIndexController/bmyjhongpai}: bmyjhongpai()
+	{ /egovIndexController/bmbjby}: bmbjby()
+	{ /egovIndexController/bmbjbn}: bmbjbn()
+	{ /egovIndexController/szbmsxgsbzt}: szbmsxgsbzt(String,String,String)
+	{ /egovIndexController/qxbmsxgsbzt}: qxbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxxzchartxqbg}: sxxzchartxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/sxxzDownload}: sxxzDownload(HttpServletResponse)
+	{ /egovIndexController/bmslbn}: bmslbn()
+	{ /egovIndexController/szbmsxgszzt}: szbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmslpm}: bmslpm()
+	{ /egovIndexController/sxtjxxTableData}: sxtjxxTableData(Integer,Integer,String,String,String,String)
+	{ /egovIndexController/bmbjqb}: bmbjqb()
+	{ /egovIndexController/bmslqb}: bmslqb()
+	{ /egovIndexController/bmsljr}: bmsljr()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.IndexController:
+	{ /indexController/jrslbjsl}: jrslbjsl()
+	{ /indexController/hotOrg}: hotOrg()
+	{ /indexController/onlineConduct}: onlineConduct()
+	{ /indexController/jrfwjkdycs}: jrfwjkdycs()
+	{ /indexController/countOrg}: countOrg()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibIndexController:
+	{ /libIndexController/zzsjywqzsj}: zzsjywqzsj()
+	{ /libIndexController/zztjTableData}: zztjTableData(int,int)
+	{ /libIndexController/djdws}: djdws()
+	{ /libIndexController/downloadExcel}: downloadExcel(HttpServletResponse)
+	{ /libIndexController/amltj}: amltj(Integer,Integer)
+	{ /libIndexController/zzml}: zzml()
+	{ /libIndexController/zzmbtjazttj}: zzmbtjazttj()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibLicenseController:
+	{ /libLicenseController/jszgz}: jszgz()
+	{ /libLicenseController/bmzzsl}: bmzzsl()
+	{ /libLicenseController/grzzzs}: grzzzs()
+	{ /libLicenseController/jnsdzzz}: jnsdzzz()
+	{ /libLicenseController/jsgcghxkz}: jsgcghxkz()
+	{ /libLicenseController/zzbfqkzxt}: zzbfqkzxt()
+	{ /libLicenseController/szqxzb}: szqxzb()
+	{ /libLicenseController/sydwfrzs}: sydwfrzs()
+	{ /libLicenseController/lxsjyxk}: lxsjyxk()
+	{ /libLicenseController/frzzsl}: frzzsl()
+	{ /libLicenseController/sqzzqk}: sqzzqk()
+	{ /libLicenseController/bfdwzs}: bfdwzs()
+	{ /libLicenseController/zzztPie}: zzztPie()
+	{ /libLicenseController/zzlxzs}: zzlxzs()
+	{ /libLicenseController/qygrgsyyzz}: qygrgsyyzz()
+	{ /libLicenseController/cjrzs}: cjrzs()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.PageController:
+	{ /index}: toIndex()
+	{ /{page}}: testController(String)
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareIndexController:
+	{ /shareIndex/statistics}: statistics()
+	{ /shareIndex/statisticsUse}: statisticsUse()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareResourceController:
+	{ /shareResourceController/cityZyProvideDownload}: cityZyProvideDownload(HttpServletResponse)
+	{ /shareResourceController/xyResourceDownload}: xyResourceDownload(HttpServletResponse)
+	{ /shareResourceController/applyCityResourceQK}: applyCityResourceQK()
+	{ /shareResourceController/shqCityzyDownload}: shqCityzyDownload(HttpServletResponse)
+	{ /shareResourceController/resourceTypeTj}: resourceTypeTj()
+	{ /shareResourceController/bmCatalogTj}: bmCatalogTj()
+	{ /shareResourceController/xybResourceTj}: xyResourceTj()
+	{ /shareResourceController/qxZyQk}: qxZyQk()
+	{ /shareResourceController/cityZyProvideQK}: cityZyProvideQK()
+	{ /shareResourceController/qxZyQkDownload}: qxZyQkDownload(HttpServletResponse)
+	{ /shareResourceController/shQShjZyDownload}: shQShjZyDownload(HttpServletResponse)
+	{ /shareResourceController/shqshjResourceQk}: shqshjResourceQk()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.SxglController:
+	{GET /sxgl/executor}: ScheduledExecutorService()
+	{POST /sxgl/tjcx}: tjsl()
+	{POST /sxgl/kwsblsl}: kwsblsl()
+	{POST /sxgl/ybjsl}: ybjsl()
+	{GET /sxgl/wsblsl}: wsblsl()
+	{GET /sxgl/hhpsl}: hhpsl()
+	{GET /sxgl/pdjh}: pdjh()
+	{GET /sxgl/getpdjhsl}: getpdjhsl()
+	{GET /sxgl/getckqs}: getckqs()
+	{POST /sxgl/sxbjqs}: sxbjqs()
+	{GET /sxgl/getwbsd}: getwbsd()
+	{GET /sxgl/getdtbjsl}: getdtbjsl()
+	{GET /sxgl/getpddhsj}: getpddhsj()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TestController:
+	{GET /userlogin}: login(String,String,String)
+	{GET /login}: userlogin()
+	{GET /userLogout}: userLogout(String)
+	{GET /testUrl}: testUrl(String)
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TyslController:
+	{GET /tyslcontroller/tyslsum}: tyslsum()
+	{GET /tyslcontroller/getycsjsl}: getycsjsl()
+	{GET /tyslcontroller/getycsjqs}: getycsjqs()
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[TRACE] 2019-11-06 11:03:48 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/static/**] onto ResourceHttpRequestHandler ["classpath:/static/", "/"]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@7a8fd045
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/ycResource.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.lang.String com.inspur.controller.PageController.testController(java.lang.String)
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [ycResource.html]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.freemarker.FreeMarkerView: name '/ythzs/ycResource'; URL [/ythzs/ycResource.html]] 
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/normalize.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/font-awesome.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/common.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/ycResource.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/login.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.nicescroll.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts-wordcloud.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/common.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/digifaw.ttf", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/header.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/ycResource.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/shareIndex/book.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/hdbg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/paneltitle.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/navarrow.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/bg.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/example/section-bg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjqs", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjsl", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjqs()
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjsl()
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjsl=0}]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjqs=[{ROWNUM=1, SUM=9, TIME=2019-11-05}, {ROWNUM=2, SUM=7, TIME=2019-11-04}, {ROWNUM=3, SUM=8, TIME=2019-11-01}, {ROWNUM=4, SUM=1, TIME=2019-10-31}, {ROWNUM=5, SUM=2, TIME=2019-10-30}, {ROWNUM=6, SUM=4, TIME=2019-10-29}, {ROWNUM=7, SUM=5, TIME=2019-10-28}]}]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/ycResource.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.lang.String com.inspur.controller.PageController.testController(java.lang.String)
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [ycResource.html]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.f.FreeMarkerViewResolver - View with key [/ythzs/ycResource] served from cache
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.v.InternalResourceViewResolver - View with key [/ythzs/ycResource] served from cache
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.freemarker.FreeMarkerView: name '/ythzs/ycResource'; URL [/ythzs/ycResource.html]] 
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/normalize.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/font-awesome.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/common.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/ycResource.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/login.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/digifaw.ttf", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.nicescroll.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts-wordcloud.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/common.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/header.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/ycResource.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/bg.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/example/section-bg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/hdbg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/shareIndex/book.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/paneltitle.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/navarrow.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjsl", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjsl()
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjqs", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjqs()
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjsl=0}]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjqs=[{ROWNUM=1, SUM=9, TIME=2019-11-05}, {ROWNUM=2, SUM=7, TIME=2019-11-04}, {ROWNUM=3, SUM=8, TIME=2019-11-01}, {ROWNUM=4, SUM=1, TIME=2019-10-31}, {ROWNUM=5, SUM=2, TIME=2019-10-30}, {ROWNUM=6, SUM=4, TIME=2019-10-29}, {ROWNUM=7, SUM=5, TIME=2019-10-28}]}]
+[TRACE] 2019-11-06 11:03:48 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [static/], ServletContext resource [/], class path resource []]
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.BlspController:
+	{ /blspController/blspss}: blspss()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CityLevelController:
+	{ /cityLevelController/cityLevelDownload}: cityLevelDownload(String,String,HttpServletResponse)
+	{ /cityLevelController/sbjsxqkflgjwbsdcx}: sbjsxqkflgjwbsdcx(String)
+	{ /cityLevelController/sxzlsl}: sxzlsl()
+	{ /cityLevelController/spbjlx}: spbjlx()
+	{ /cityLevelController/sxxzsl}: sxxzsl()
+	{ /cityLevelController/jnsbmsl}: jnsbmsl()
+	{ /cityLevelController/jnsbmbj}: jnsbmbj()
+	{ /cityLevelController/xsxxblsxqbsj}: xsblsx()
+	{ /cityLevelController/drxxbhqs}: drxxbhqs()
+	{ /cityLevelController/drxsbhqs}: drxsbhqs()
+	{ /cityLevelController/dnxsbhqs}: dnxsbhqs()
+	{ /cityLevelController/jnssxslqsm}: jnssxslqsm()
+	{ /cityLevelController/dnxxbhqs}: dnxxbhqs()
+	{ /cityLevelController/dyxsbhqs}: dyxsbhqs()
+	{ /cityLevelController/jnssxbjqsm}: jnssxbjqsm()
+	{ /cityLevelController/dyxxbhqs}: dyxxbhqs()
+	{ /cityLevelController/sbjsxqkfl}: sbjsxqkfl()
+	{ /cityLevelController/jnssxxzflbt}: jnssxxzflbt()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.CountyLevelController:
+	{ /countyLevelController/ysqgkkwsblsxtjList}: ysqgkkwsblsxtjList()
+	{ /countyLevelController/countyLevelDownload}: countyLevelDownload(String,String,HttpServletResponse)
+	{ /countyLevelController/sxxzsl}: sxxzsl(String)
+	{ /countyLevelController/xsxxblsxqbsj}: xsblsx(String)
+	{ /countyLevelController/drxxbhqs}: drxxbhqs(String)
+	{ /countyLevelController/drxsbhqs}: drxsbhqs(String)
+	{ /countyLevelController/dnxsbhqs}: dnxsbhqs(String)
+	{ /countyLevelController/dnxxbhqs}: dnxxbhqs(String)
+	{ /countyLevelController/dyxsbhqs}: dyxsbhqs(String)
+	{ /countyLevelController/dyxxbhqs}: dyxxbhqs(String)
+	{ /countyLevelController/qxsxzl}: qxsxzl(String)
+	{ /countyLevelController/qxbmsl}: qxbmsl(String)
+	{ /countyLevelController/qxbmbj}: qxbmbj(String)
+	{ /countyLevelController/xxgkNumYsqgksxNum}: xxgkNum(String)
+	{ /countyLevelController/sxxzsyjwsbls}: sxxzsyjwsbls(String)
+	{ /countyLevelController/sxsjzl}: sxsjzl(String,String)
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.EgovIndexController:
+	{ /egovIndexController/sxzlDownload}: egovIndexDownload(String,String,String,String,HttpServletResponse)
+	{ /egovIndexController/egovIdnexSXQSMDownload}: egovIdnexSXQSMDownload(HttpServletResponse)
+	{ /egovIndexController/xxblsx}: xxblsx()
+	{ /egovIndexController/xsblsx}: xsblsx()
+	{ /egovIndexController/sxxzdrxxslbjywsl}: sxxzdrxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdyxsslbjywsl}: sxxzdyxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdyxxslbjywsl}: sxxzdyxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxsslbjywsl}: sxxzdnxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzdnxxslbjywsl}: sxxzdnxxslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxsslbjywzsl}: sxxzxsslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/bjlTableData}: sxxzbjlTableData()
+	{ /egovIndexController/sxxzdrxsslbjywsl}: sxxzdrxsslbjywsl(HttpServletRequest)
+	{ /egovIndexController/sxxzxxslbjywzsl}: sxxzxxslbjywzsl(HttpServletRequest)
+	{ /egovIndexController/xsdrblcs}: xsdrblcs()
+	{ /egovIndexController/sxzl}: sxzl()
+	{ /egovIndexController/sxjbjn}: sxjb()
+	{ /egovIndexController/sxxz}: sxxz()
+	{ /egovIndexController/sxslbn}: sxslbn()
+	{ /egovIndexController/xxdyblcs}: xxdyblcs()
+	{ /egovIndexController/day_offline}: day_offline(HttpServletRequest)
+	{ /egovIndexController/sxbjqb}: sxbjqb()
+	{ /egovIndexController/sxbmslbjTableData}: sxslbjTableData(Integer,Integer)
+	{ /egovIndexController/sxslqsm}: sxslqsm()
+	{ /egovIndexController/toThirdPage}: thirdPage(String,String,String,String)
+	{ /egovIndexController/year_offline}: year_offline(HttpServletRequest)
+	{ /egovIndexController/xxdnblcs}: xxdnblcs()
+	{ /egovIndexController/month_offline}: month_offline(HttpServletRequest)
+	{ /egovIndexController/sxslbr}: sxslbr()
+	{ /egovIndexController/org_list}: org_list(int,int,String)
+	{ /egovIndexController/xxdrblcs}: xxdrblcs()
+	{ /egovIndexController/xsdnblcs}: xsdnblcs()
+	{ /egovIndexController/xsdyblcs}: xsdyblcs()
+	{ /egovIndexController/sxbjby}: sxbjby()
+	{ /egovIndexController/sxslqb}: sxslqb()
+	{ /egovIndexController/day_online}: day_online(HttpServletRequest)
+	{ /egovIndexController/year_online}: year_online(HttpServletRequest)
+	{ /egovIndexController/sxbjqsm}: sxbjqsm()
+	{ /egovIndexController/month_online}: month_online(HttpServletRequest)
+	{ /egovIndexController/sxslby}: sxslby()
+	{ /egovIndexController/sxbjbn}: sxbjbn()
+	{ /egovIndexController/sxbjbr}: sxbjbr()
+	{ /egovIndexController/szbmsxgszztxqbg}: szbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/qxbmsxgsbztxqbg}: qxbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/sxxzChart}: sxxzChart(String,String,String)
+	{ /egovIndexController/sxxzTableDate}: sxxzTableDate(Integer,Integer)
+	{ /egovIndexController/qxbmsxgszzt}: qxbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmbjjr}: bmbjjr()
+	{ /egovIndexController/bmslby}: bmslby()
+	{ /egovIndexController/qxbmsxgszztxqbg}: qxbmsxgszztxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/bmbjpm}: bmbjpm()
+	{ /egovIndexController/szbmsxgsbztxqbg}: szbmsxgsbztxqbg(String,int,String,int,int,String,String)
+	{ /egovIndexController/bmyjhuangpai}: bmyjhuangpai()
+	{ /egovIndexController/bmyjhongpai}: bmyjhongpai()
+	{ /egovIndexController/bmbjby}: bmbjby()
+	{ /egovIndexController/bmbjbn}: bmbjbn()
+	{ /egovIndexController/szbmsxgsbzt}: szbmsxgsbzt(String,String,String)
+	{ /egovIndexController/qxbmsxgsbzt}: qxbmsxgsbzt(String,String,String)
+	{ /egovIndexController/sxxzchartxqbg}: sxxzchartxqbg(String,String,int,int,String,String)
+	{ /egovIndexController/sxxzDownload}: sxxzDownload(HttpServletResponse)
+	{ /egovIndexController/bmslbn}: bmslbn()
+	{ /egovIndexController/szbmsxgszzt}: szbmsxgszzt(String,String,String)
+	{ /egovIndexController/bmslpm}: bmslpm()
+	{ /egovIndexController/sxtjxxTableData}: sxtjxxTableData(Integer,Integer,String,String,String,String)
+	{ /egovIndexController/bmbjqb}: bmbjqb()
+	{ /egovIndexController/bmslqb}: bmslqb()
+	{ /egovIndexController/bmsljr}: bmsljr()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.IndexController:
+	{ /indexController/jrslbjsl}: jrslbjsl()
+	{ /indexController/hotOrg}: hotOrg()
+	{ /indexController/onlineConduct}: onlineConduct()
+	{ /indexController/jrfwjkdycs}: jrfwjkdycs()
+	{ /indexController/countOrg}: countOrg()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibIndexController:
+	{ /libIndexController/zzsjywqzsj}: zzsjywqzsj()
+	{ /libIndexController/zztjTableData}: zztjTableData(int,int)
+	{ /libIndexController/djdws}: djdws()
+	{ /libIndexController/downloadExcel}: downloadExcel(HttpServletResponse)
+	{ /libIndexController/amltj}: amltj(Integer,Integer)
+	{ /libIndexController/zzml}: zzml()
+	{ /libIndexController/zzmbtjazttj}: zzmbtjazttj()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.LibLicenseController:
+	{ /libLicenseController/jszgz}: jszgz()
+	{ /libLicenseController/bmzzsl}: bmzzsl()
+	{ /libLicenseController/grzzzs}: grzzzs()
+	{ /libLicenseController/jnsdzzz}: jnsdzzz()
+	{ /libLicenseController/jsgcghxkz}: jsgcghxkz()
+	{ /libLicenseController/zzbfqkzxt}: zzbfqkzxt()
+	{ /libLicenseController/szqxzb}: szqxzb()
+	{ /libLicenseController/sydwfrzs}: sydwfrzs()
+	{ /libLicenseController/lxsjyxk}: lxsjyxk()
+	{ /libLicenseController/frzzsl}: frzzsl()
+	{ /libLicenseController/sqzzqk}: sqzzqk()
+	{ /libLicenseController/bfdwzs}: bfdwzs()
+	{ /libLicenseController/zzztPie}: zzztPie()
+	{ /libLicenseController/zzlxzs}: zzlxzs()
+	{ /libLicenseController/qygrgsyyzz}: qygrgsyyzz()
+	{ /libLicenseController/cjrzs}: cjrzs()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.PageController:
+	{ /index}: toIndex()
+	{ /{page}}: testController(String)
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareIndexController:
+	{ /shareIndex/statistics}: statistics()
+	{ /shareIndex/statisticsUse}: statisticsUse()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.ShareResourceController:
+	{ /shareResourceController/cityZyProvideDownload}: cityZyProvideDownload(HttpServletResponse)
+	{ /shareResourceController/xyResourceDownload}: xyResourceDownload(HttpServletResponse)
+	{ /shareResourceController/applyCityResourceQK}: applyCityResourceQK()
+	{ /shareResourceController/shqCityzyDownload}: shqCityzyDownload(HttpServletResponse)
+	{ /shareResourceController/resourceTypeTj}: resourceTypeTj()
+	{ /shareResourceController/bmCatalogTj}: bmCatalogTj()
+	{ /shareResourceController/xybResourceTj}: xyResourceTj()
+	{ /shareResourceController/qxZyQk}: qxZyQk()
+	{ /shareResourceController/cityZyProvideQK}: cityZyProvideQK()
+	{ /shareResourceController/qxZyQkDownload}: qxZyQkDownload(HttpServletResponse)
+	{ /shareResourceController/shQShjZyDownload}: shQShjZyDownload(HttpServletResponse)
+	{ /shareResourceController/shqshjResourceQk}: shqshjResourceQk()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.SxglController:
+	{GET /sxgl/executor}: ScheduledExecutorService()
+	{POST /sxgl/tjcx}: tjsl()
+	{POST /sxgl/kwsblsl}: kwsblsl()
+	{POST /sxgl/ybjsl}: ybjsl()
+	{GET /sxgl/wsblsl}: wsblsl()
+	{GET /sxgl/hhpsl}: hhpsl()
+	{GET /sxgl/pdjh}: pdjh()
+	{GET /sxgl/getpdjhsl}: getpdjhsl()
+	{GET /sxgl/getckqs}: getckqs()
+	{POST /sxgl/sxbjqs}: sxbjqs()
+	{GET /sxgl/getwbsd}: getwbsd()
+	{GET /sxgl/getdtbjsl}: getdtbjsl()
+	{GET /sxgl/getpddhsj}: getpddhsj()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TestController:
+	{GET /userlogin}: login(String,String,String)
+	{GET /login}: userlogin()
+	{GET /userLogout}: userLogout(String)
+	{GET /testUrl}: testUrl(String)
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	c.i.c.TyslController:
+	{GET /tyslcontroller/tyslsum}: tyslsum()
+	{GET /tyslcontroller/getycsjsl}: getycsjsl()
+	{GET /tyslcontroller/getycsjqs}: getycsjqs()
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.m.m.a.RequestMappingHandlerMapping - 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+[TRACE] 2019-11-06 11:27:52 [restartedMain] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped [/static/**] onto ResourceHttpRequestHandler ["classpath:/static/", "/"]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@66eeb1c5
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/ycResource.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.lang.String com.inspur.controller.PageController.testController(java.lang.String)
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [ycResource.html]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.freemarker.FreeMarkerView: name '/ythzs/ycResource'; URL [/ythzs/ycResource.html]] 
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/normalize.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/font-awesome.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/common.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/ycResource.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/login.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/digifaw.ttf", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.nicescroll.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts-wordcloud.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/common.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/header.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/ycResource.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/paneltitle.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/bg.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/example/section-bg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/hdbg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/shareIndex/book.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/navarrow.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjsl", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjsl()
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjqs", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjqs()
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjsl=0}]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjqs=[{ROWNUM=1, SUM=9, TIME=2019-11-05}, {ROWNUM=2, SUM=7, TIME=2019-11-04}, {ROWNUM=3, SUM=8, TIME=2019-11-01}, {ROWNUM=4, SUM=1, TIME=2019-10-31}, {ROWNUM=5, SUM=2, TIME=2019-10-30}, {ROWNUM=6, SUM=4, TIME=2019-10-29}, {ROWNUM=7, SUM=5, TIME=2019-10-28}]}]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/ycResource.html", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.lang.String com.inspur.controller.PageController.testController(java.lang.String)
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: [ycResource.html]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.f.FreeMarkerViewResolver - View with key [/ythzs/ycResource] served from cache
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.v.InternalResourceViewResolver - View with key [/ythzs/ycResource] served from cache
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - Rendering view [org.springframework.web.servlet.view.freemarker.FreeMarkerView: name '/ythzs/ycResource'; URL [/ythzs/ycResource.html]] 
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/normalize.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/font-awesome.min.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/common.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/ycResource.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/login.css", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3", parameters={masked}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/css/digifaw.ttf", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.cors.DefaultCorsProcessor - Skip: request is from same origin
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/jquery.nicescroll.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts.min.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/libs/echarts-wordcloud.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/common.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/header.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/js/ycResource.js", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/paneltitle.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/bg.jpg", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-4] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/example/section-bg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/hdbg.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-2] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/shareIndex/book.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-3] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/static/img/common/navarrow.png", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-5] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler ["classpath:/static/", "/"]] and 4 interceptors
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjsl", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjsl()
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - GET "/ythzs/tyslcontroller/getycsjqs", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to public java.util.Map<java.lang.String, java.lang.Object> com.inspur.controller.TyslController.getycsjqs()
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.ServletInvocableHandlerMethod - Arguments: []
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjqs=[{ROWNUM=1, SUM=9, TIME=2019-11-05}, {ROWNUM=2, SUM=7, TIME=2019-11-04}, {ROWNUM=3, SUM=8, TIME=2019-11-01}, {ROWNUM=4, SUM=1, TIME=2019-10-31}, {ROWNUM=5, SUM=2, TIME=2019-10-30}, {ROWNUM=6, SUM=4, TIME=2019-10-29}, {ROWNUM=7, SUM=5, TIME=2019-10-28}]}]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-1] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Writing [{ycsjsl=0}]
+[TRACE] 2019-11-06 11:27:52 [http-nio-127.0.0.1-8081-exec-6] o.s.web.servlet.DispatcherServlet - No view rendering, null ModelAndView returned.
